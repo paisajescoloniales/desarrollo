@@ -1,44 +1,42 @@
 ---
-title: Historia
-layout: default_main
-permalink: /historia
+layout: default
 ---
 
-  <!-- partial:index.partial.html -->
-  <!-- CAPÍTULO 0 -->
-  <section class="panel bg-azul">
-    <div>
-      <div class="titular">
-        <h2>Historia de una pintura</h2>
+<div class="container-fluid px-0">
+    <div class="row g-0 full-height">
+  
+      <!-- Scrollspy (left dots) -->
+      <div class="col-auto d-none d-lg-block position-relative">
+        <nav id="story-scrollspy" class="position-fixed start-0 top-25 ps-3">
+          <ul class="nav flex-column">
+            {% for i in (1..5) %}
+            <li class="nav-item">
+              <a class="nav-link small text-muted" href="#step{{ i }}">●</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </nav>
       </div>
-      <div class="row">
-        <div class="col-md-3 col-6">
-
-            <div class="ancla-capitulo"><img class="icono-cap" src="/assets/img/cap1.png" /></div>
-              <a href="/historia#capitulo1"> <h4 class="ancla-titulo">Una pintura de la sabana</h4></a>
-        </div>
-        <div class="col-md-3 col-6">
-          <a href="/historia#capitulo2">
-            <div class="ancla-capitulo"><img class="icono-cap" src="/assets/img/cap2.png" /></div>
-            <h4 class="ancla-titulo">Pueblos para los indios</h4></a>
-        </div>
-        <div class="col-md-3 col-6">
-          <a href="/historia#capitulo3">
-            <div class="ancla-capitulo"><img class="icono-cap" src="/assets/img/cap3.png" /></div>
-            <h4 class="ancla-titulo"> De terrazas a pastizales</h4></a>
-        </div>
-        <div class="col-md-3 col-6">
-          <a href="/historia#capitulo4">
-            <div class="ancla-capitulo"><img class="icono-cap" src="/assets/img/cap-4.png" /></div>
-            <h4 class="ancla-titulo">Un paisaje dividido</h4></a>
+  
+      <!-- Left column (text) -->
+      <div class="col-lg-4 overflow-auto" id="scroll-column" data-bs-spy="scroll"
+           data-bs-target="#story-scrollspy"
+           data-bs-offset="100"
+           tabindex="0">
+        <div class="steps-container">
+            
         </div>
       </div>
-      <div class="scroll-down enter"href="/historia#capitulo1">comenzar
-        <div class="arrow"></div>
+  
+      <!-- Right column (media) -->
+      <div class="col-lg-8 position-relative">
+        {% include story/slide-map.html %}
+        {% include story/slide-timeline.html %}
+        {% include story/slide-video.html %}
       </div>
+  
     </div>
-  </section>
-
+  </div>
   <!--- CAPÍTULO 1 -->
   <!-- {% include story/capitulo1.html %} -->
 
@@ -2418,6 +2416,11 @@ Los resguardos otorgaban “posesión” de la tierra a los indígenas, sin que 
   </div>
 
 
+  <script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-o9N1j/cgk+jN3lDZZ9V+odnP+0ie9AjpM8H7rJgN90Y="
+  crossorigin=""
+></script>
 
 
 

@@ -109,7 +109,7 @@
 }
 
 h6.descubrir-leyenda{
-padding-left: 1%
+padding-left: 1%;
       vertical-align: middle;
       display: contents;
 }
@@ -242,7 +242,7 @@ padding-left: 1%
 }
 
 .modal.piezas.fade{
-  background: rgb(0 0 0 / 30%);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .modal.piezas.fade .modal-dialog {

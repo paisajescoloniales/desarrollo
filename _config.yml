@@ -22,7 +22,7 @@ title: Paisajes Coloniales
 email: paisajescoloniales@gmail.com
 description: Redibujando los territorios andinos en el siglo XVII
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://paisajescoloniales.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:
 tagline: Redibujando los territorios andinos en el siglo XVII
 twitter:
@@ -36,22 +36,19 @@ theme: null
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-sass:
-  sass_dir: assets/css
+# sass:
+#   sass_dir: assets/css
 webrick:
   headers:
-    'Access-Control-Allow-Origin': '*'
+    "Access-Control-Allow-Origin": "*"
 kramdown:
- auto_ids:       true
- footnote_nr:    1
- entity_output:  as_char
- footnote_backlink: "&#x21a9;&#xfe0e;"
- toc_levels:     1..6
- smart_quotes:   lsquo,rsquo,ldquo,rdquo
- enable_coderay: false
-
-
-
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  footnote_backlink: "&#x21a9;&#xfe0e;"
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -72,8 +69,6 @@ kramdown:
 #   - spec
 #   - README.md
 
-
-
 # --------------------------------------------------------------
 # COLLECTION SETTINGS
 # --------------------------------------------------------------
@@ -88,11 +83,11 @@ collections:
     output: true
   paisajes: # name of collection
     output: true # makes sure pages are output as html files
-    layout: 'qatar_item' # the layout for the pages to use
+    layout: "qatar_item" # the layout for the pages to use
     metadata:
-      source: 'paisajes.csv' # path to the metadata file within `_data`
+      source: "paisajes.csv" # path to the metadata file within `_data`
     images:
-      source: 'raw_images/paisajes' # path to the directory of images within `_data`
+      source: "raw_images/paisajes" # path to the directory of images within `_data`
 
 # --------------------------------------------------------------
 # SEARCH INDEX SETTINGS
@@ -104,7 +99,7 @@ collections:
 
 search:
   main:
-    index: '/search/index.json' # file the index will get written to
+    index: "/search/index.json" # file the index will get written to
     collections:
       paisajes:
         content: false # whether or not to index page content
@@ -115,5 +110,4 @@ search:
           - _date
           - object_type
           - current_location
-
 # --------------------------------------------------------------

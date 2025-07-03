@@ -1,16 +1,3 @@
-@import "../../bootstrap/scss/bootstrap";
-@import "wax";
-@import "../../assets/css/custom/capitulos/right-modal.css";
-@import "../../assets/css/custom/capitulos/scroll.css";
-@import "../../assets/css/custom/capitulos/style.css";
-@import "../../assets/css/custom/explorar/style.css";
-@import "../../assets/css/custom/footer/style.css";
-@import "../../assets/css/custom/header/style.css";
-@import "../../assets/css/custom//home/style.css";
-@import "../../assets/css/custom/profesores/style.css";
-@import "../../assets/css/custom/about.css";
-@import "../../assets/css/custom/medias.css";
-
 h1{
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
@@ -167,7 +154,7 @@ h2 {
  }
  }
 
-//  panel
+/* //  panel */
 #map-container {
   height: 100vh;
 }
