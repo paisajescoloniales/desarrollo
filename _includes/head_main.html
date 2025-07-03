@@ -26,7 +26,9 @@
     | {{ page.title }}{% endif %}
   </title>
 
-  <link rel="canonical" href="{{ page.url | absolute_url }}" />
+  {% if page.url == "https://paisajescoloniales.com" %}
+    <link rel="canonical" href="{{ page.url | prepend: site.url }}" />
+  {% endif %}
   <link
     rel="icon"
     type="image/png"
@@ -55,10 +57,10 @@
     rel="stylesheet"
     href="https://codepen.io/GreenSock/pen/7ba936b34824fefdccfe2c6d9f0b740b.css"
   />
-  <!-- <link
-    rel="stylesheet"
-    href="{{ '/assets/css/custom/main.css' | relative_url }}"
-  /> -->
+  <link
+  rel="stylesheet"
+  href="{{ '/assets/css/main.css' | relative_url }}"
+/>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script
     async
