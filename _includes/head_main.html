@@ -26,7 +26,9 @@
     | {{ page.title }}{% endif %}
   </title>
 
-  <link rel="canonical" href="{{ page.url | absolute_url }}" />
+  {% if site.url == "https://paisajescoloniales.com" %}
+    <link rel="canonical" href="{{ page.url | absolute_url }}" />
+  {% endif %}
   <link
     rel="icon"
     type="image/png"
