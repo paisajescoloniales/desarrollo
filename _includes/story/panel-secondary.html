@@ -1,0 +1,17 @@
+<div
+  class="offcanvas offcanvas-end offcanvas-first p-5"
+  tabindex="-1"
+  id="{{ include.id }}"
+  aria-labelledby="{{ include.id }}Label"
+>
+  <div class="offcanvas-header">
+    <h3 id="{{ include.id }}Label" class="pt-5">{{ include.title }}</h3>
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div class="offcanvas-body">{{ include.content }}</div>
+</div>
