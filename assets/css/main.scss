@@ -209,16 +209,16 @@ h2 {
 }
 
 // Import Bootstrap
-@import "../bootstrap/scss/bootstrap";
-
-// En este momento, los estilos se importan como CSS porque no hay archivos SCSS disponibles.
-@import "custom/capitulos/right-modal.css";
-@import "custom/capitulos/scroll.css";
-@import "custom/capitulos/style.css";
-@import "custom/explorar/style.css";
-@import "custom/footer/style.css";
-@import "custom/header/style.css";
-@import "custom/home/style.css";
-@import "custom/profesores/style.css";
-@import "custom/about.css";
-@import "custom/medias.css";
+---
+---
+@import "../../bootstrap/scss/bootstrap";
+@import "wax";
+@import "../../assets/css/custom/capitulos/right-modal.css";
+@import "../../assets/css/custom/capitulos/scroll.css";
+@import "../../assets/css/custom/explorar/style.css";
+@import "../../assets/css/custom/footer/style.css";
+@import "../../assets/css/custom/header/style.css";
+@import "../../assets/css/custom//home/style.css";
+@import "../../assets/css/custom/profesores/style.css";
+@import "../../assets/css/custom/about.css";
+@import "../../assets/css/custom/medias.css";
