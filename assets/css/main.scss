@@ -206,7 +206,7 @@ h2 {
 }
 
 // Import Bootstrap
-@import "bootstrap/scss/bootstrap";
+@import "../bootstrap/scss/bootstrap";
 
 // En este momento, los estilos se importan como CSS porque no hay archivos SCSS disponibles.
 @import "custom/capitulos/right-modal.css";
