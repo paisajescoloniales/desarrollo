@@ -1,16 +1,3 @@
-// Converted CSS files to SCSS partials and cleaned paths
-@import "custom/capitulos/right-modal.css";
-@import "custom/capitulos/scroll.css";
-@import "custom/capitulos/style.css";
-@import "custom/explorar/style.css";
-@import "custom/footer/style.css";
-@import "custom/header/style.css";
-@import "custom/home/style.css";
-@import "custom/profesores/style.css";
-@import "custom/about.css";
-@import "custom/medias.css";
-
-
 h1{
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
@@ -217,3 +204,18 @@ h2 {
 #infoPanelLevel3 {
   z-index: 1070;
 }
+
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+// En este momento, los estilos se importan como CSS porque no hay archivos SCSS disponibles.
+@import "custom/capitulos/right-modal.css";
+@import "custom/capitulos/scroll.css";
+@import "custom/capitulos/style.css";
+@import "custom/explorar/style.css";
+@import "custom/footer/style.css";
+@import "custom/header/style.css";
+@import "custom/home/style.css";
+@import "custom/profesores/style.css";
+@import "custom/about.css";
+@import "custom/medias.css";
