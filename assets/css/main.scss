@@ -1,3 +1,22 @@
+// ---
+// ---
+
+@import "wax";
+@import "bootstrap/scss/bootstrap";
+
+// Converted CSS files to SCSS partials and cleaned paths
+@import "custom/capitulos/right-modal";
+@import "custom/capitulos/scroll";
+@import "custom/capitulos/style";
+@import "custom/explorar/style";
+@import "custom/footer/style";
+@import "custom/header/style";
+@import "custom/home/style";
+@import "custom/profesores/style";
+@import "custom/about";
+@import "custom/medias";
+
+
 h1{
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
@@ -154,7 +173,7 @@ h2 {
  }
  }
 
-/* //  panel */
+//  panel
 #map-container {
   height: 100vh;
 }

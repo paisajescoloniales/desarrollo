@@ -36,8 +36,8 @@ theme: null
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-# sass:
-#   sass_dir: assets/css
+sass:
+  sass_dir: assets/css
 webrick:
   headers:
     "Access-Control-Allow-Origin": "*"
