@@ -1,0 +1,66 @@
+{%- comment -%} Adapter: renders one story row from _data/story.json Outputs: •
+Scrolling step (step.html) • Layer 1 offcanvas (panel-primary.html) • Layer 2
+stacked panel (panel-secondary.html) Assumptions: - row has: id, question,
+answer, view, x, y, zoom - row.media (optional): { type, src, width, height,
+start } - row.layer1 / row.layer2 (optional): { title, text, media } {%-
+endcomment -%} {%- assign row = include.row -%} {%- assign step_id = 'step' |
+append: row.id -%} {%- assign panel1_id = 'panel-' | append: row.id | append:
+'-1' -%} {%- assign panel2_id = 'panel-' | append: row.id | append: '-2' -%} {%-
+assign has_layer1 = row.layer1 and (row.layer1.title or row.layer1.text or
+row.layer1.media) -%} {%- assign has_layer2 = row.layer2 and (row.layer2.title
+or row.layer2.text or row.layer2.media) -%} {%- comment -%} Unpack right‑panel
+media override and make src baseurl‑safe if local {%- endcomment -%} {%- assign
+mtype = '' -%} {%- assign msrc = '' -%} {%- assign mW = '' -%} {%- assign mH =
+'' -%} {%- assign mStart = '' -%} {%- if row.media -%} {%- assign mtype =
+row.media.type -%} {%- assign msrc = row.media.src -%} {%- assign mW =
+row.media.width -%} {%- assign mH = row.media.height -%} {%- assign mStart =
+row.media.start -%} {%- endif -%} {%- assign safe_msrc = msrc -%} {%- if msrc
+and msrc contains '://' -%} {%- elsif msrc and msrc != '' -%} {%- assign
+safe_msrc = msrc | relative_url -%} {%- endif -%} {%- comment -%} Compute
+offcanvas target for the step button (only if layer 1 exists) {%- endcomment -%}
+{%- assign off_id = '' -%} {%- if has_layer1 -%} {%- assign off_id = panel1_id
+-%} {%- endif -%} {%- assign pin1 = '' -%} {%- assign pin2 = '' -%} {%- assign
+pin3 = '' -%} {%- assign pin4 = '' -%} {%- if row.pins and row.pins.size > 0 -%}
+{%- for p in row.pins -%} {%- case forloop.index0 -%} {%- when 0 -%}{%- assign
+pin1 = p -%} {%- when 1 -%}{%- assign pin2 = p -%} {%- when 2 -%}{%- assign pin3
+= p -%} {%- when 3 -%}{%- assign pin4 = p -%} {%- endcase -%} {%- endfor -%} {%-
+endif -%} {%- include story/step.html id=step_id data_step=row.view x=row.x
+y=row.y zoom=row.zoom title=row.question text=row.answer offcanvas_id=off_id
+media_type=mtype media_src=safe_msrc media_width=mW media_height=mH
+media_start=mStart pin1=pin1 pin2=pin2 pin3=pin3 pin4=pin4 -%} {%- comment -%}
+Helper: render layer text with optional inline image AFTER the first paragraph.
+We treat blank lines as paragraph breaks using newline_to_br then split on
+<br /><br />. {%- endcomment -%} {%- capture layer1_html -%} {%- assign l =
+row.layer1 -%} {%- if l -%} {%- assign paras = l.text | default: "" |
+newline_to_br | split: "<br /><br />" -%} {%- if paras.size > 0 -%}
+<p>{{ paras[0] | strip }}</p>
+{%- if l.media -%}
+<figure class="my-3">
+  <img src="{{ l.media | relative_url }}" class="img-fluid" alt="" />
+</figure>
+{%- endif -%} {%- for p in paras offset:1 -%}
+<p>{{ p | strip }}</p>
+{%- endfor -%} {%- elsif l.media -%}
+<figure class="my-3">
+  <img src="{{ l.media | relative_url }}" class="img-fluid" alt="" />
+</figure>
+{%- endif -%} {%- endif -%} {%- endcapture -%} {%- capture layer2_html -%} {%-
+assign l = row.layer2 -%} {%- if l -%} {%- assign paras = l.text | default: "" |
+newline_to_br | split: "<br /><br />" -%} {%- if paras.size > 0 -%}
+<p>{{ paras[0] | strip }}</p>
+{%- if l.media -%}
+<figure class="my-3">
+  <img src="{{ l.media | relative_url }}" class="img-fluid" alt="" />
+</figure>
+{%- endif -%} {%- for p in paras offset:1 -%}
+<p>{{ p | strip }}</p>
+{%- endfor -%} {%- elsif l.media -%}
+<figure class="my-3">
+  <img src="{{ l.media | relative_url }}" class="img-fluid" alt="" />
+</figure>
+{%- endif -%} {%- endif -%} {%- endcapture -%} {%- if has_layer1 -%} {%- assign
+nested_id = '' -%} {%- if has_layer2 -%} {%- assign nested_id = panel2_id -%}
+{%- endif -%} {%- include story/panel-primary.html id=panel1_id
+title=row.layer1.title content=layer1_html nested_button_id=nested_id -%} {%-
+endif -%} {%- if has_layer2 -%} {%- include story/panel-secondary.html
+id=panel2_id title=row.layer2.title content=layer2_html -%} {%- endif -%}

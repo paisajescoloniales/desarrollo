@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {% include head.html %}
+    <!-- Leaflet CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+  </head>
+  <body>
+    {% include header_main.html %}
+    <div class="container-fluid px-0">
+      <div class="row g-0 full-height">
+        <!-- Optional scrollspy -->
+        <div class="col-auto d-none d-lg-block position-relative">
+          <nav id="story-scrollspy" class="position-fixed start-0 top-25 ps-3">
+            <ul class="nav flex-column">
+              {% for section in site.data.chapter-1 %}
+              <li class="nav-item">
+                <a class="nav-link small text-muted" href="#{{ section.id }}"
+                  >●</a
+                >
+              </li>
+              {% endfor %}
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Left column: Story steps -->
+        <div
+          class="col-lg-4 overflow-auto"
+          id="scroll-column"
+          data-bs-spy="scroll"
+          data-bs-target="#story-scrollspy"
+          data-bs-offset="100"
+          tabindex="0"
+        >
+          <div class="steps-container">
+            {% for section in site.data.chapter-1 %} {% capture step_text %}
+            <h5 class="pregunta">{{ section.question }}</h5>
+            <p>{{ section.paragraph }}</p>
+            {% if section.offcanvas %}
+            <button
+              type="button"
+              class="btn btn-info mas"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#{{ section.offcanvas.id }}"
+              aria-controls="{{ section.offcanvas.id }}"
+            >
+              <img class="s" src="/assets/img/sabermas.png" />Saber más
+            </button>
+            {% endif %} {% endcapture %} {% include story/step.html
+            id=section.id data_step=section.step x=section.x y=section.y
+            zoom=section.zoom title="" text=step_text
+            offcanvas_id=section.offcanvas.id %} {% if section.offcanvas %} {%
+            capture primary_content %} {% for p in section.offcanvas.paragraphs
+            %}
+            <p>{{ p }}</p>
+            {% endfor %} {% if section.offcanvas.images %} {% for img in
+            section.offcanvas.images %}
+            <img class="img-50" src="{{ img.src }}" />
+            <p class="piedefoto">{{ img.caption }}</p>
+            {% endfor %} {% elsif section.offcanvas.image %}
+            <img class="img-50" src="{{ section.offcanvas.image }}" />
+            <p class="piedefoto">{{ section.offcanvas.caption }}</p>
+            {% endif %} {% if section.offcanvas.secondary %}
+            <button
+              class="btn btn-secondary"
+              onclick="openLayeredPanel('{{ section.offcanvas.secondary.id }}')"
+            >
+              {{ section.offcanvas.secondary.button.label }}
+            </button>
+            {% elsif section.offcanvas.nested %}
+            <button
+              class="btn btn-secondary"
+              onclick="openLayeredPanel('{{ section.offcanvas.nested.id }}')"
+            >
+              Ver fuente primaria
+            </button>
+            {% endif %} {% endcapture %} {% assign nested_id =
+            section.offcanvas.secondary.id %} {% if nested_id == nil %} {%
+            assign nested_id = section.offcanvas.nested.id %} {% endif %} {%
+            include story/panel-primary.html id=section.offcanvas.id
+            title=section.offcanvas.title content=primary_content
+            nested_button_id=nested_id %} {% endif %} {% if
+            section.offcanvas.secondary %} {% capture secondary_content %} {% if
+            section.offcanvas.secondary.heading %}
+            <h5 class="fuente-doc">
+              {{ section.offcanvas.secondary.heading }}
+            </h5>
+            {% endif %} {% for p in section.offcanvas.secondary.paragraphs %}
+            <p>{{ p }}</p>
+            {% endfor %} {% if section.offcanvas.secondary.image %}
+            <img src="{{ section.offcanvas.secondary.image }}" />
+            <p class="piedefoto">{{ section.offcanvas.secondary.caption }}</p>
+            {% endif %} {% if section.offcanvas.secondary.carousel %}
+            <div
+              id="carousel-{{ section.offcanvas.secondary.id }}"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <div class="carousel-inner">
+                {% for slide in section.offcanvas.secondary.carousel %}
+                <div
+                  class="carousel-item {% if forloop.first %}active{% endif %}"
+                >
+                  <img src="{{ slide.image }}" class="d-block w-100" />
+                  <p class="piedefoto centro">{{ slide.caption }}</p>
+                </div>
+                {% endfor %}
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#carousel-{{ section.offcanvas.secondary.id }}"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon abierto"
+                  aria-hidden="true"
+                ></span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carousel-{{ section.offcanvas.secondary.id }}"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon abierto1"
+                  aria-hidden="true"
+                ></span>
+              </a>
+            </div>
+            {% endif %} {% endcapture %} {% include story/panel-secondary.html
+            id=section.offcanvas.secondary.id
+            title=section.offcanvas.secondary.title content=secondary_content %}
+            {% endif %} {% if section.offcanvas.tertiary %} {% capture
+            tertiary_content %} {% for p in
+            section.offcanvas.tertiary.paragraphs %}
+            <p>{{ p }}</p>
+            {% endfor %} {% if section.offcanvas.tertiary.image %}
+            <img src="{{ section.offcanvas.tertiary.image }}" />
+            <p class="piedefoto">{{ section.offcanvas.tertiary.caption }}</p>
+            {% endif %} {% endcapture %} {% include story/panel-tertiary.html
+            id=section.offcanvas.tertiary.id
+            title=section.offcanvas.tertiary.title content=tertiary_content %}
+            {% endif %} {% endfor %}
+          </div>
+        </div>
+
+        <!-- Right column: Map/media -->
+        <div class="col-lg-8 position-relative">
+          {% include story/slide-map.html %}
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    {% include scripts.html %} {% include footer_main.html %}
+  </body>
+</html>

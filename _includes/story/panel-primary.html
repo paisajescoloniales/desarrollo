@@ -1,3 +1,4 @@
+<!-- panel-primary.html -->
 <div
   class="offcanvas offcanvas-end offcanvas-first p-5"
   tabindex="-1"
@@ -16,8 +17,8 @@
   <div class="offcanvas-body">
     {{ include.content }} {% if include.nested_button_id %}
     <button
-      class="btn btn-secondary"
-      onclick="openLayeredPanel('{{ include.nested_button_id }}')"
+      class="btn btn-secondary mt-3"
+      onclick="openStackedPanel('{{ include.nested_button_id }}')"
     >
       Go deeper
     </button>

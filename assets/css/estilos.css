@@ -1,0 +1,123 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+   /* header */
+   .navbar {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  .navbar .nav-link {
+    font-weight: 500;
+  }
+  
+  h1, h3, h4{
+    font-family: serif!important;
+  }
+  h2,h5,h6,p,a{
+    font-family: sans-serif!important;
+  }
+
+
+
+/* story page */
+.full-height {
+    height: 100vh;
+  }
+  
+  #story-scrollspy .nav-link {
+    font-size: 1rem;
+    color: #ccc;
+    padding: 0.3rem;
+    transition: color 0.2s ease;
+  }
+  #story-scrollspy .nav-link.active {
+    color: #da0c0c!important;
+  }
+
+  #story-scrollspy .nav-link {
+    font-size: 1.2rem;
+    color: #ccc;
+    padding: 0.25rem;
+    transition: color 0.2s ease;
+  }
+  
+  #story-scrollspy .nav-link.active {
+    color: #000;        /* black or primary */
+    font-weight: bold;  /* optional emphasis */
+  }
+  
+  
+#scroll-column {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    background-color: #f8f9fa;
+    padding: 1rem 2rem;
+  }
+  
+  #map-container {
+    height: 100vh;
+  }
+  
+  #map {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .step {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+  #timeline-slide iframe {
+    height: 768px;
+    border: none;
+  }
+  
+  .offcanvas-first {
+    width: 60%!important;
+    max-width: 1080px;
+  }
+  
+  .offcanvas-second {
+    width: 58%!important;
+    max-width: 1040px;
+    z-index: 1055;
+  }
+
+  .offcanvas-backdrop.show {
+    opacity: 0.25!important;
+    }
+
+/* Base stacked panel */
+.stacked-canvas {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: min(57vw, 90vw);
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,.15);
+  transform: translateX(100%);
+  transition: transform .28s ease;
+  z-index: 1055; /* above Bootstrap offcanvas (1045) */
+  overflow-y: auto;
+}
+
+/* Visible state */
+.stacked-canvas.is-open {
+  transform: translateX(0);
+}
+
+/* Layer‑2 specific (tweak if you add a 3rd layer someday) */
+.stacked-canvas-second { z-index: 1055; }
+
+.stacked-body { padding-bottom: 2rem; }
+
+

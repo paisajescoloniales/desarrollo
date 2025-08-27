@@ -1,17 +1,20 @@
+<!-- panel-secondary.html -->
+
 <div
-  class="offcanvas offcanvas-end offcanvas-first p-5"
-  tabindex="-1"
+  class="stacked-canvas stacked-canvas-second p-5"
   id="{{ include.id }}"
   aria-labelledby="{{ include.id }}Label"
+  aria-hidden="true"
+  role="dialog"
 >
-  <div class="offcanvas-header">
-    <h3 id="{{ include.id }}Label" class="pt-5">{{ include.title }}</h3>
+  <div class="stacked-header d-flex justify-content-between align-items-start">
+    <h3 id="{{ include.id }}Label" class="pt-5 mb-0">{{ include.title }}</h3>
     <button
       type="button"
       class="btn-close"
-      data-bs-dismiss="offcanvas"
       aria-label="Close"
+      onclick="closeStackedPanel('{{ include.id }}')"
     ></button>
   </div>
-  <div class="offcanvas-body">{{ include.content }}</div>
+  <div class="stacked-body mt-3">{{ include.content }}</div>
 </div>

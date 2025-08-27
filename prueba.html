@@ -3,3 +3,156 @@ title: prueba
 layout: chapter
 permalink: /prueba
 ---
+
+<style>
+  h1,
+  h3,
+  h4 {
+    font-family: serif !important;
+  }
+  h2,
+  h5,
+  h6,
+  p,
+  a {
+    font-family: sans-serif !important;
+  }
+
+  /* story page */
+  .full-height {
+    height: 100vh;
+  }
+
+  #story-scrollspy .nav-link {
+    font-size: 1rem;
+    color: #ccc;
+    padding: 0.3rem;
+    transition: color 0.2s ease;
+  }
+  #story-scrollspy .nav-link.active {
+    color: #da0c0c !important;
+  }
+
+  #story-scrollspy .nav-link {
+    font-size: 1.2rem;
+    color: #ccc;
+    padding: 0.25rem;
+    transition: color 0.2s ease;
+  }
+
+  #story-scrollspy .nav-link.active {
+    color: #000; /* black or primary */
+    font-weight: bold; /* optional emphasis */
+  }
+
+  #scroll-column {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    background-color: #f8f9fa;
+    padding: 1rem 2rem;
+  }
+
+  #map-container {
+    height: 100vh;
+  }
+
+  #map {
+    width: 100%;
+    height: 100%;
+  }
+
+  .step {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+  #timeline-slide iframe {
+    height: 768px;
+    border: none;
+  }
+
+  .offcanvas-first {
+    width: 60% !important;
+    max-width: 1080px;
+  }
+
+  .offcanvas-second {
+    width: 58% !important;
+    max-width: 1040px;
+    z-index: 1055;
+  }
+
+  .offcanvas-backdrop.show {
+    opacity: 0.25 !important;
+  }
+
+  /* Base stacked panel */
+  .stacked-canvas {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: min(57vw, 90vw);
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transform: translateX(100%);
+    transition: transform 0.28s ease;
+    z-index: 1055; /* above Bootstrap offcanvas (1045) */
+    overflow-y: auto;
+  }
+
+  /* Visible state */
+  .stacked-canvas.is-open {
+    transform: translateX(0);
+  }
+
+  /* Layer‑2 specific (tweak if you add a 3rd layer someday) */
+  .stacked-canvas-second {
+    z-index: 1055;
+  }
+
+  .stacked-body {
+    padding-bottom: 2rem;
+  }
+</style>
+<div class="container-fluid px-0">
+  <div class="row g-0 full-height">
+    <!-- Scrollspy (dots on the left) -->
+    <div class="col-auto d-none d-lg-block position-relative">
+      <nav id="story-scrollspy" class="position-fixed start-0 top-25 ps-3">
+        <ul class="nav flex-column">
+          {%- assign rows = site.data.story -%} {%- for row in rows -%}
+          <li class="nav-item">
+            <a class="nav-link small text-muted" href="#step{{ row.id }}">●</a>
+          </li>
+          {%- endfor -%}
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Left column: scrolling steps -->
+    <div
+      class="col-lg-4 overflow-auto"
+      id="scroll-column"
+      data-bs-spy="scroll"
+      data-bs-target="#story-scrollspy"
+      data-bs-offset="100"
+      tabindex="0"
+    >
+      <div class="steps-container">
+        {%- for row in site.data.story -%} {%- include story/adapter.html
+        row=row -%} {%- endfor -%}
+      </div>
+    </div>
+
+    <!-- Right column: media area (map/timeline/video) -->
+    <div class="col-lg-8 position-relative">
+      {% include story/slide-map.html %} {% include story/slide-timeline.html %}
+      {% include story/slide-video.html %}
+    </div>
+  </div>
+</div>
