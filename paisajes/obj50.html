@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>
+    Paisajes Coloniales | Pueblo de Suta
+  </title>
+  <link
+    rel="icon"
+    type="image/png"
+    href="https://paisajescoloniales.com/assets/img/logo.png"
+  />
+
+  <link
+    href="//fonts.googleapis.com/css?family=Signika+Negative:300,400,600"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://codepen.io/GreenSock/pen/7ba936b34824fefdccfe2c6d9f0b740b.css"
+  />
+
+  <!-- Leaflet CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha512-sA+e/6hU0Ti7/4zUyWyyLG1GohNwSvlQzqmiHHv67n88iyKWDY5FZ4cPKK9R3LREgHYR/qc1WVz7gPrZ+1yFzQ=="
+    crossorigin=""
+  />
+
+  <!-- Custom CSS compiled from main.scss -->
+  <link
+    rel="stylesheet"
+    href="/assets/css/main.css"
+  />
+
+  <!-- Bootstrap 4 CSS (local) -->
+  <link
+    href="/assets/bootstrap/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <script
+    type="text/javascript"
+    src="https://paisajescoloniales.com/assets/jquery-3.2.1.min.js"
+  ></script>
+  <noscript><p>Please enable JavaScript in your browser.</p></noscript>
+</head>
+
+
+  <body>
+    <time datetime='2025-11-29 14:57'></time>
+    <!---<link rel='stylesheet' href='/assets/css/custom/header/style.css'>--->
+
+<nav class="navbar menu fixed-top">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+  <!-- <img class="casita" src="/assets/img/casita.png" /> -->
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="navbar-text" href="#">Paisajes Coloniales<span class="idioma"><a class="active-idioma"href="https://paisajescoloniales.com">Es</a> | <a class="otro-idioma"href="https://colonial-landscapes.com">En</a></span></div>
+
+  <div class="collapse navbar-collapse" id="navbarText">
+    <div class="navbar-nav mr-auto">
+
+        <a class="nav-link principal" href="/index.html">Inicio <span class="sr-only">(current)</span></a>
+
+        <a class="nav-link principal" href="/historia.html">Historia de una pintura</a>
+
+        <a class="nav-link principal" href="/explora.html">Explorar el mapa</a>
+
+        <a class="nav-link principal" href="/coleccion.html">Colección de fuentes</a>
+
+        <a class="nav-link secundario" href="/profesores.html">Para profesores</a>
+
+        <a class="nav-link secundario" href="/acerca.html">Acerca de este proyecto</a>
+      
+
+    </div>
+
+  </div>
+</nav>
+
+
+    
+    
+    <div id='wax-main'>
+      <div id='wax-content' class='wax-inline-container'>
+        <div class="back"><a href="/coleccion.html">Volver a la colección completa</a></div>
+
+
+<h3 alt="Pueblo de Suta" class='item-label'>Pueblo de Suta</h3>
+
+
+
+
+  <div class='item-view'>
+    <span class='pagination-link' id='prevlink'></span>
+    
+      <div id="osd" class="image-viewer"></div>
+<script async defer src="https://paisajescoloniales.com/assets/openseadragon/openseadragon.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    var manifestUrl = "https://paisajescoloniales.com/img/derivatives/iiif/obj50/manifest.json";
+    $.getJSON(manifestUrl, function(data) {
+      var tileSources = [];
+      $.each(data.sequences[0].canvases, function(k, val) {
+        tileSources.push(val.images[0].resource.service['@id'] + '/info.json');
+      });
+      OpenSeadragon({
+        id: "osd",
+        sequenceMode: true,
+        prefixUrl: "https://paisajescoloniales.com/assets/openseadragon/images/",
+        tileSources: tileSources,
+        homeFillsViewer: false,
+        showReferenceStrip: true
+      });
+    });
+  });
+</script>
+
+    
+    <span class='pagination-link' id='nextlink'></span>
+  </div>
+  
+
+
+
+  <script type='text/javascript'>
+    $('#prevlink').append(`<a href='https://paisajescoloniales.com/paisajes/obj49.html' display='none'>&#8249;</a>`);
+    $('#nextlink').append(`<a href='https://paisajescoloniales.com/paisajes/obj51.html' display='none'>&#8250;</a>`);
+  </script>
+
+
+
+
+
+
+
+
+  <dl class='metadata-block'>
+  
+    
+
+    
+    
+      
+        <dt>Título</dt>
+        <dd>Pueblo de Suta</dd>
+    
+  
+    
+
+    
+    
+      
+        <dt>Fecha</dt>
+        <dd>1803</dd>
+    
+  
+    
+
+    
+    
+      
+        <dt>Autor</dt>
+        <dd>Anónimo</dd>
+    
+  
+    
+
+    
+    
+      
+        <dt>Tipo de objeto</dt>
+        <dd>Mapas y planos</dd>
+    
+  
+    
+
+    
+    
+      
+        <dt>Lugar de producción</dt>
+        <dd>Suta, Colombia</dd>
+    
+  
+    
+
+    
+    
+      
+        <dt>Ubicación actual</dt>
+        <dd>Bogotá, Colombia. Archivo General de la Nación, CO.AGN.SMP.4, REF.468A</dd>
+    
+  
+    
+
+    
+    
+  
+</dl>
+
+
+
+      </div>
+    </div>
+
+    <script src="/assets/jquery/dist/jquery.min.js"></script>
+<script src="/assets/popper.js/dist/umd/popper.min.js"></script>
+<script src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/MotionPathPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.utils.toArray(".panel").forEach((panel, i) => {
+    ScrollTrigger.create({
+      trigger: panel,
+      start: "top top",
+      pin: true,
+      pinSpacing: false,
+      onEnter: () => (panel.style.pointerEvents = "auto"),
+      onLeave: () => (panel.style.pointerEvents = "none"),
+    });
+  });
+</script>
+
+<!---
+  <script>
+    ScrollTrigger.create({
+      snap:[0, 0.1, 0.5, 0.8, 1] // snap whole page to the closest section!
+    });
+  </script>-->
+<!-- <script>
+  $(".carousel").carousel({
+    interval: false,
+  });
+</script> -->
+<script>
+  $(document).on("click", "[data-toggle='modal']", function () {
+    $(".modal-backdrop").eq(0).css({
+      display: "none",
+    });
+
+    // if more than 1 modal openned.
+    if ($(".modal-backdrop").length > 1) {
+      // move backdrop up (in z)
+      var ZindexBackdrop =
+        parseInt($(".modal-backdrop").eq(0).css("z-index")) + 20;
+      console.log("Backdrop z-index: " + ZindexBackdrop);
+      $(".modal-backdrop").eq(1).css({
+        "z-index": ZindexBackdrop,
+      });
+
+      // move modal up (in z)
+      var ZindexModal = parseInt($(".modal").eq(0).css("z-index")) + 20;
+      console.log("Modal z-index: " + ZindexModal);
+      $(".modal").eq(1).css({
+        "z-index": ZindexModal,
+      });
+    }
+  });
+</script>
+
+  </body>
+
+  <script type='text/javascript' async defer src='https://paisajescoloniales.com/assets/bootstrap/bootstrap.min.js'></script>
+  <script type='text/javascript' async defer src='https://paisajescoloniales.com/assets/popper.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/MotionPathPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  
+
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.utils.toArray(".panel").forEach((panel, i) => {
+      ScrollTrigger.create({
+        trigger: panel,
+        start: "top top",
+        pin: true,
+        pinSpacing: false,
+        onEnter: () => panel.style.pointerEvents = 'auto',
+        onLeave: () => panel.style.pointerEvents = 'none',
+      });
+    });
+
+    </script>
+</html>

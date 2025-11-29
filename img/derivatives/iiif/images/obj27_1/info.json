@@ -1,9 +1,6 @@
----
-layout: none
----
 {
   "@context": "http://iiif.io/api/image/2/context.json",
-  "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/images/obj27_1",
+  "@id": "https://paisajescoloniales.com/img/derivatives/iiif/images/obj27_1",
   "protocol": "http://iiif.io/api/image",
   "width": 1467,
   "height": 1936,

@@ -1,22 +1,19 @@
----
-layout: none
----
 {
   "@type": "oa:Annotation",
-  "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/annotation/obj51_recto.json",
+  "@id": "https://paisajescoloniales.com/img/derivatives/iiif/annotation/obj51_recto.json",
   "motivation": "sc:painting",
   "resource": {
-    "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/images/obj51_recto/full/full/0/default.jpg",
+    "@id": "https://paisajescoloniales.com/img/derivatives/iiif/images/obj51_recto/full/full/0/default.jpg",
     "@type": "dcterms:Image",
     "format": "image/jpeg",
     "service": {
       "@context": "http://iiif.io/api/image/2/context.json",
-      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/images/obj51_recto",
+      "@id": "https://paisajescoloniales.com/img/derivatives/iiif/images/obj51_recto",
       "profile": "http://iiif.io/api/image/2/level0.json"
     },
     "width": 1140,
     "height": 1699
   },
-  "on": "{{ '/' | absolute_url }}img/derivatives/iiif/canvas/obj51_recto.json",
+  "on": "https://paisajescoloniales.com/img/derivatives/iiif/canvas/obj51_recto.json",
   "@context": "http://iiif.io/api/presentation/2/context.json"
 }

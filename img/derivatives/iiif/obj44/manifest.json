@@ -1,105 +1,102 @@
----
-layout: none
----
 {
   "@context": "http://iiif.io/api/presentation/2/context.json",
-  "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/obj44/manifest.json",
+  "@id": "https://paisajescoloniales.com/img/derivatives/iiif/obj44/manifest.json",
   "@type": "sc:Manifest",
   "label": "obj44",
-  "thumbnail": "{{ '/' | absolute_url }}img/derivatives/iiif/images/obj44_1/full/250,/0/default.jpg",
+  "thumbnail": "https://paisajescoloniales.com/img/derivatives/iiif/images/obj44_1/full/250,/0/default.jpg",
   "viewingDirection": "left-to-right",
   "viewingHint": "individuals",
   "sequences": [
     {
-      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/sequence/obj44_1.json",
+      "@id": "https://paisajescoloniales.com/img/derivatives/iiif/sequence/obj44_1.json",
       "@type": "sc:Sequence",
       "canvases": [
         {
           "@type": "sc:Canvas",
-          "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/canvas/obj44_1.json",
+          "@id": "https://paisajescoloniales.com/img/derivatives/iiif/canvas/obj44_1.json",
           "label": "Page 1",
           "width": 1224,
           "height": 1584,
-          "thumbnail": "{{ '/' | absolute_url }}img/derivatives/iiif/images/obj44_1/full/250,/0/default.jpg",
+          "thumbnail": "https://paisajescoloniales.com/img/derivatives/iiif/images/obj44_1/full/250,/0/default.jpg",
           "images": [
             {
               "@type": "oa:Annotation",
-              "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/annotation/obj44_1.json",
+              "@id": "https://paisajescoloniales.com/img/derivatives/iiif/annotation/obj44_1.json",
               "motivation": "sc:painting",
               "resource": {
-                "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/images/obj44_1/full/full/0/default.jpg",
+                "@id": "https://paisajescoloniales.com/img/derivatives/iiif/images/obj44_1/full/full/0/default.jpg",
                 "@type": "dcterms:Image",
                 "format": "image/jpeg",
                 "service": {
                   "@context": "http://iiif.io/api/image/2/context.json",
-                  "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/images/obj44_1",
+                  "@id": "https://paisajescoloniales.com/img/derivatives/iiif/images/obj44_1",
                   "profile": "http://iiif.io/api/image/2/level0.json"
                 },
                 "width": 1224,
                 "height": 1584
               },
-              "on": "{{ '/' | absolute_url }}img/derivatives/iiif/canvas/obj44_1.json"
+              "on": "https://paisajescoloniales.com/img/derivatives/iiif/canvas/obj44_1.json"
             }
           ]
         },
         {
           "@type": "sc:Canvas",
-          "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/canvas/obj44_2.json",
+          "@id": "https://paisajescoloniales.com/img/derivatives/iiif/canvas/obj44_2.json",
           "label": "Page 2",
           "width": 1224,
           "height": 1584,
-          "thumbnail": "{{ '/' | absolute_url }}img/derivatives/iiif/images/obj44_2/full/250,/0/default.jpg",
+          "thumbnail": "https://paisajescoloniales.com/img/derivatives/iiif/images/obj44_2/full/250,/0/default.jpg",
           "images": [
             {
               "@type": "oa:Annotation",
-              "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/annotation/obj44_2.json",
+              "@id": "https://paisajescoloniales.com/img/derivatives/iiif/annotation/obj44_2.json",
               "motivation": "sc:painting",
               "resource": {
-                "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/images/obj44_2/full/full/0/default.jpg",
+                "@id": "https://paisajescoloniales.com/img/derivatives/iiif/images/obj44_2/full/full/0/default.jpg",
                 "@type": "dcterms:Image",
                 "format": "image/jpeg",
                 "service": {
                   "@context": "http://iiif.io/api/image/2/context.json",
-                  "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/images/obj44_2",
+                  "@id": "https://paisajescoloniales.com/img/derivatives/iiif/images/obj44_2",
                   "profile": "http://iiif.io/api/image/2/level0.json"
                 },
                 "width": 1224,
                 "height": 1584
               },
-              "on": "{{ '/' | absolute_url }}img/derivatives/iiif/canvas/obj44_2.json"
+              "on": "https://paisajescoloniales.com/img/derivatives/iiif/canvas/obj44_2.json"
             }
           ]
         },
         {
           "@type": "sc:Canvas",
-          "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/canvas/obj44_3.json",
+          "@id": "https://paisajescoloniales.com/img/derivatives/iiif/canvas/obj44_3.json",
           "label": "Page 3",
           "width": 1224,
           "height": 1584,
-          "thumbnail": "{{ '/' | absolute_url }}img/derivatives/iiif/images/obj44_3/full/250,/0/default.jpg",
+          "thumbnail": "https://paisajescoloniales.com/img/derivatives/iiif/images/obj44_3/full/250,/0/default.jpg",
           "images": [
             {
               "@type": "oa:Annotation",
-              "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/annotation/obj44_3.json",
+              "@id": "https://paisajescoloniales.com/img/derivatives/iiif/annotation/obj44_3.json",
               "motivation": "sc:painting",
               "resource": {
-                "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/images/obj44_3/full/full/0/default.jpg",
+                "@id": "https://paisajescoloniales.com/img/derivatives/iiif/images/obj44_3/full/full/0/default.jpg",
                 "@type": "dcterms:Image",
                 "format": "image/jpeg",
                 "service": {
                   "@context": "http://iiif.io/api/image/2/context.json",
-                  "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/images/obj44_3",
+                  "@id": "https://paisajescoloniales.com/img/derivatives/iiif/images/obj44_3",
                   "profile": "http://iiif.io/api/image/2/level0.json"
                 },
                 "width": 1224,
                 "height": 1584
               },
-              "on": "{{ '/' | absolute_url }}img/derivatives/iiif/canvas/obj44_3.json"
+              "on": "https://paisajescoloniales.com/img/derivatives/iiif/canvas/obj44_3.json"
             }
           ]
         }
       ]
     }
   ],
-  "full": "{{ '/' | absolute_url }}img/derivatives/iiif/images/obj44_1/full/full/0/default.jpg"
+  "full": "https://paisajescoloniales.com/img/derivatives/iiif/images/obj44_1/full/full/0/default.jpg"
 }
