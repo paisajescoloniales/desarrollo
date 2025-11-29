@@ -40,7 +40,6 @@ permalink: /historia
   </section>
 
   <!--- CAPÍTULO 1 -->
-  <!-- {% include story/capitulo1.html %} -->
 
   <section class="panel bg-azul">
       <a id="capitulo1"></a>
@@ -2431,19 +2430,8 @@ Los resguardos otorgaban “posesión” de la tierra a los indígenas, sin que 
 
 
 
-  <script>
-    gsap.registerPlugin(ScrollTrigger);
-
-    gsap.utils.toArray(".panel").forEach((panel, i) => {
-      ScrollTrigger.create({
-        trigger: panel,
-        start: "top top",
-        pin: true,
-        pinSpacing: false,
-      });
-    });
-  </script>
-
+  <!-- GSAP ScrollTrigger initialization moved to footer_main.html -->
+  <!--
   <script>
     ScrollTrigger.create({
       snap: 1 / 26 // snap whole page to the closest section!

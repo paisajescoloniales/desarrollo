@@ -131,6 +131,7 @@ GEM
       rake
       safe_yaml
       wax_iiif (~> 0.2)
+    webrick (1.9.2)
     yell (2.2.2)
 
 PLATFORMS
@@ -152,6 +153,7 @@ DEPENDENCIES
   tzinfo-data
   wax_theme!
   wdm (~> 0.1.1)
+  webrick (~> 1.8)
 
 BUNDLED WITH
    2.6.9
