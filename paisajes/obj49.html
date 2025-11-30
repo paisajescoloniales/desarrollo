@@ -9,7 +9,7 @@
   <link
     rel="icon"
     type="image/png"
-    href="https://paisajescoloniales.com/assets/img/logo.png"
+    href="/assets/img/logo.png"
   />
 
   <link
@@ -34,8 +34,8 @@
   <link
     rel="stylesheet"
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha512-sA+e/6hU0Ti7/4zUyWyyLG1GohNwSvlQzqmiHHv67n88iyKWDY5FZ4cPKK9R3LREgHYR/qc1WVz7gPrZ+1yFzQ=="
-    crossorigin=""
+   
+   
   />
 
   <!-- Custom CSS compiled from main.scss -->
@@ -52,7 +52,7 @@
 
   <script
     type="text/javascript"
-    src="https://paisajescoloniales.com/assets/jquery-3.2.1.min.js"
+    src="/assets/jquery-3.2.1.min.js"
   ></script>
   <noscript><p>Please enable JavaScript in your browser.</p></noscript>
 </head>
@@ -107,11 +107,11 @@
     <span class='pagination-link' id='prevlink'></span>
     
       <div id="osd" class="image-viewer"></div>
-<script async defer src="https://paisajescoloniales.com/assets/openseadragon/openseadragon.min.js"></script>
+<script async defer src="/assets/openseadragon/openseadragon.min.js"></script>
 
 <script>
   $(document).ready(function () {
-    var manifestUrl = "https://paisajescoloniales.com/img/derivatives/iiif/obj49/manifest.json";
+    var manifestUrl = "/img/derivatives/iiif/obj49/manifest.json";
     $.getJSON(manifestUrl, function(data) {
       var tileSources = [];
       $.each(data.sequences[0].canvases, function(k, val) {
@@ -120,7 +120,7 @@
       OpenSeadragon({
         id: "osd",
         sequenceMode: true,
-        prefixUrl: "https://paisajescoloniales.com/assets/openseadragon/images/",
+        prefixUrl: "/assets/openseadragon/images/",
         tileSources: tileSources,
         homeFillsViewer: false,
         showReferenceStrip: true
@@ -137,8 +137,8 @@
 
 
   <script type='text/javascript'>
-    $('#prevlink').append(`<a href='https://paisajescoloniales.com/paisajes/obj48.html' display='none'>&#8249;</a>`);
-    $('#nextlink').append(`<a href='https://paisajescoloniales.com/paisajes/obj50.html' display='none'>&#8250;</a>`);
+    $('#prevlink').append(`<a href='/paisajes/obj48.html' display='none'>&#8249;</a>`);
+    $('#nextlink').append(`<a href='/paisajes/obj50.html' display='none'>&#8250;</a>`);
   </script>
 
 
@@ -278,8 +278,8 @@
 
   </body>
 
-  <script type='text/javascript' async defer src='https://paisajescoloniales.com/assets/bootstrap/bootstrap.min.js'></script>
-  <script type='text/javascript' async defer src='https://paisajescoloniales.com/assets/popper.min.js'></script>
+  <script type='text/javascript' async defer src='/assets/bootstrap/dist/js/bootstrap.min.js'></script>
+  <script type='text/javascript' async defer src='/assets/popper.js/dist/umd/popper.min.js'></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/MotionPathPlugin.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>

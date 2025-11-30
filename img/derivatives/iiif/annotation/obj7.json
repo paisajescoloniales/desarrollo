@@ -1,19 +1,19 @@
 {
   "@type": "oa:Annotation",
-  "@id": "https://paisajescoloniales.com/img/derivatives/iiif/annotation/obj7.json",
+  "@id": "/img/derivatives/iiif/annotation/obj7.json",
   "motivation": "sc:painting",
   "resource": {
-    "@id": "https://paisajescoloniales.com/img/derivatives/iiif/images/obj7/full/full/0/default.jpg",
+    "@id": "/img/derivatives/iiif/images/obj7/full/full/0/default.jpg",
     "@type": "dcterms:Image",
     "format": "image/jpeg",
     "service": {
       "@context": "http://iiif.io/api/image/2/context.json",
-      "@id": "https://paisajescoloniales.com/img/derivatives/iiif/images/obj7",
+      "@id": "/img/derivatives/iiif/images/obj7",
       "profile": "http://iiif.io/api/image/2/level0.json"
     },
     "width": 1140,
     "height": 1603
   },
-  "on": "https://paisajescoloniales.com/img/derivatives/iiif/canvas/obj7.json",
+  "on": "/img/derivatives/iiif/canvas/obj7.json",
   "@context": "http://iiif.io/api/presentation/2/context.json"
 }
