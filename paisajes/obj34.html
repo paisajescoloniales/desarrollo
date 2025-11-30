@@ -117,32 +117,9 @@
 
 
 
-      <div id="image-viewer" style="width: 100%; height: 600px; background: #000;"></div>
+      <div id="image-viewer" data-obj-id="obj34" style="width: 100%; height: 600px; background: #000;"></div>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var objId = 'obj34';
-    var imageUrl = '../img/derivatives/iiif/images/' + objId + '/full/full/0/default.jpg';
-
-    // Get image dimensions (these will be set per object)
-    var img = new Image();
-    img.onload = function() {
-      var bounds = [[0, 0], [img.height, img.width]];
-
-      var map = L.map('image-viewer', {
-        crs: L.CRS.Simple,
-        minZoom: -2,
-        maxZoom: 2,
-        zoomControl: true,
-        attributionControl: false
-      });
-
-      L.imageOverlay(imageUrl, bounds).addTo(map);
-      map.fitBounds(bounds);
-    };
-    img.src = imageUrl;
-  });
-</script>
+<script src="../assets/js/object-viewer.js"></script>
 <span class='pagination-link' id='nextlink'></span>
   </div>
 
