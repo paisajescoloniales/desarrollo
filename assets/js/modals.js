@@ -1,24 +1,28 @@
-// Modal z-index management for multiple stacked modals (jQuery - to be converted to vanilla JS later)
-$(document).on("click", "[data-toggle='modal']", function () {
-  $(".modal-backdrop").eq(0).css({
-    display: "none",
-  });
+// Modal z-index management for multiple stacked modals (vanilla JS)
+document.addEventListener('click', function(event) {
+  const trigger = event.target.closest('[data-toggle="modal"]');
 
-  // if more than 1 modal openned.
-  if ($(".modal-backdrop").length > 1) {
-    // move backdrop up (in z)
-    var ZindexBackdrop =
-      parseInt($(".modal-backdrop").eq(0).css("z-index")) + 20;
-    console.log("Backdrop z-index: " + ZindexBackdrop);
-    $(".modal-backdrop").eq(1).css({
-      "z-index": ZindexBackdrop,
-    });
+  if (trigger) {
+    const backdrops = document.querySelectorAll('.modal-backdrop');
 
-    // move modal up (in z)
-    var ZindexModal = parseInt($(".modal").eq(0).css("z-index")) + 20;
-    console.log("Modal z-index: " + ZindexModal);
-    $(".modal").eq(1).css({
-      "z-index": ZindexModal,
-    });
+    if (backdrops.length > 0) {
+      backdrops[0].style.display = 'none';
+    }
+
+    // if more than 1 modal openned
+    if (backdrops.length > 1) {
+      // move backdrop up (in z)
+      const zIndexBackdrop = parseInt(window.getComputedStyle(backdrops[0]).zIndex) + 20;
+      console.log('Backdrop z-index: ' + zIndexBackdrop);
+      backdrops[1].style.zIndex = zIndexBackdrop;
+
+      // move modal up (in z)
+      const modals = document.querySelectorAll('.modal');
+      if (modals.length > 1) {
+        const zIndexModal = parseInt(window.getComputedStyle(modals[0]).zIndex) + 20;
+        console.log('Modal z-index: ' + zIndexModal);
+        modals[1].style.zIndex = zIndexModal;
+      }
+    }
   }
 });

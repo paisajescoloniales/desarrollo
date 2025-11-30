@@ -74,7 +74,7 @@ img.btn.btn-img:hover { opacity: .5; }
 
 body { overflow-x: hidden; overflow-y: scroll; position: relative; }
 
-.panel, .panel-home { width: 100%; height: 100vh; display: -webkit-box; display: flex; -webkit-box-pack: center; justify-content: center; -webkit-box-align: center; align-items: center; font-weight: 600; font-size: 1.2em; text-align: center; position: relative; box-sizing: border-box; padding: 10px; }
+.panel, .panel-home { width: 100%; height: 100vh; display: -webkit-box; display: flex; -webkit-box-pack: center; justify-content: center; -webkit-box-align: center; align-items: center; font-weight: 600; font-size: 1.2em; text-align: center; box-sizing: border-box; padding: 10px; }
 
 p.panel, p.panel-home { text-align: left; font-size: 1em; font-family: 'Lora', serif; font-weight: 300; color: #180B26; }
 
@@ -508,7 +508,7 @@ b, strong { font-weight: 600; }
 
 .bg-oscuro { background-color: #180B26; color: #F4EFEF; padding-bottom: 5%; position: relative; }
 
-.bg-crema { background-color: #F4EFEF; color: #180B26; position: relative; }
+.bg-crema { background-color: #F4EFEF; color: #180B26; }
 
 .bg-img { background-image: url("/assets/img/mapa2.png"); background-repeat: no-repeat; background-attachment: fixed; background-position: center; background-size: 120% auto; width: 100%; margin: 0; position: absolute; top: 0; bottom: 0; }
 
@@ -543,4 +543,3 @@ b, strong { font-weight: 600; }
 /* Third layer */
 #infoPanelLevel3 { z-index: 1070; }
 
-/*# sourceMappingURL=main.css.map */
