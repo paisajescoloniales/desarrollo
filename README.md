@@ -75,10 +75,6 @@ The following remain on CDN:
 
 2. **Google Analytics** - Site analytics
 
-### Why Keep Google Fonts on CDN?
-
-Google Fonts provides automatic optimization, format selection (WOFF2, WOFF, TTF), and subset generation based on the browser and language. Self-hosting fonts would require manually managing all these variations and keeping them updated.
-
 ## Maintenance Guide
 
 ### Updating IIIF Images
