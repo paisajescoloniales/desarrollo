@@ -61,32 +61,23 @@ spanish/
 - **Popper.js** - Required for Bootstrap tooltips/popovers
 - **Leaflet 1.7.1** - Map library for IIIF viewers
 - **leaflet-iiif** - IIIF plugin for Leaflet
+- **GSAP 3.11.3** - Animation library for card stacking
+- **Normalize.css 5.0.0** - CSS reset
+- **GreenSock CSS** - GSAP demo styles
 
 ### CDN Dependencies
-The following remain on CDN for performance and reliability:
+The following remain on CDN:
 
 1. **Google Fonts**
    - Lora (serif, body text)
    - Raleway (sans-serif, headings)
    - Material Icons
 
-2. **Normalize.css** (cdnjs) - CSS reset
+2. **Google Analytics** - Site analytics
 
-3. **GSAP 3.11.3** (cdnjs)
-   - gsap.min.js
-   - ScrollTrigger.min.js
-   - Used for card stacking in historia.html
+### Why Keep Google Fonts on CDN?
 
-4. **GreenSock CSS** (CodePen) - GSAP demo styles
-
-5. **Google Analytics** - Site analytics
-
-### Why Keep Some CDN Dependencies?
-
-- **Fonts**: Google Fonts provides automatic optimization and format selection
-- **GSAP**: Small, stable library with reliable CDN
-- **Normalize.css**: Tiny CSS file, universally cached
-- **Google Analytics**: External service, must remain on CDN
+Google Fonts provides automatic optimization, format selection (WOFF2, WOFF, TTF), and subset generation based on the browser and language. Self-hosting fonts would require manually managing all these variations and keeping them updated.
 
 ## Maintenance Guide
 
