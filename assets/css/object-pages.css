@@ -1,0 +1,144 @@
+/* Object page styles - matching coleccion.html */
+
+/* Main content area */
+#wax-main {
+  background-color: #F4EFEF !important;
+  width: 100vw;
+  max-width: 100%;
+  padding-top: 80px; /* Account for fixed navbar */
+}
+
+#wax-content {
+  min-height: 70vh;
+}
+
+.wax-inline-container {
+  margin: 0 auto !important;
+  max-width: 90% !important;
+  width: 800px !important;
+  padding: 20px;
+}
+
+/* Typography */
+h3.item-label {
+  color: #180B26;
+  font-family: Lora, serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-top: 0;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+/* Back link */
+.back {
+  margin-bottom: 16px;
+}
+
+.back a {
+  color: #180B26;
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: 500;
+}
+
+.back a:hover {
+  text-decoration: underline;
+  color: #2d1a42;
+}
+
+/* Metadata block */
+.metadata-block {
+  box-sizing: border-box;
+  color: #180B26;
+  display: block;
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  max-width: 100%;
+  padding: 16px 0;
+  text-align: left;
+}
+
+.metadata-block dt {
+  font-weight: 600;
+  color: #180B26;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.metadata-block dd {
+  margin-left: 0;
+  margin-bottom: 12px;
+  color: #180B26;
+}
+
+.item-view {
+  position: relative;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.pagination-link {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.pagination-link a {
+  font-size: 48px;
+  color: #180B26;
+  text-decoration: none;
+  padding: 0 10px;
+  font-weight: 600;
+  line-height: 1;
+  display: block;
+}
+
+.pagination-link a:hover {
+  color: #2d1a42;
+}
+
+#prevlink {
+  order: 1;
+}
+
+#image-viewer {
+  order: 2;
+  flex-grow: 1;
+}
+
+#nextlink {
+  order: 3;
+}
+
+/* Leaflet viewer styling */
+#image-viewer {
+  margin: 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  min-width: 0; /* Allow flex shrinking */
+}
+
+/* Leaflet controls styling */
+.leaflet-control-zoom {
+  border: 2px solid rgba(0,0,0,0.2);
+  border-radius: 4px;
+}
+
+.leaflet-bar a {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+.leaflet-bar a:hover {
+  background-color: #f4f4f4;
+}
