@@ -377,15 +377,7 @@
           buttonDiv.append(`<button class='btn facet' data-filter='${facetValue}'>${facetLabel}</button>`);
         }
 
-        $(document).ready(function(){
-          $(".facet").click(function(){
-            var filterValue = $(this).attr('data-filter');
-            $('.facet').removeClass('active');
-            $(this).addClass('active');
-            if(filterValue == 'all') { $('.all').show('slow'); }
-            else { $('.all').hide('slow'); $(`.${filterValue}`).show('slow'); }
-          });
-        });
+        // Gallery filtering moved to external file: assets/js/gallery.js
       
     
   });
@@ -430,31 +422,9 @@
     interval: false,
   });
 </script> -->
-<script>
-  $(document).on("click", "[data-toggle='modal']", function () {
-    $(".modal-backdrop").eq(0).css({
-      display: "none",
-    });
-
-    // if more than 1 modal openned.
-    if ($(".modal-backdrop").length > 1) {
-      // move backdrop up (in z)
-      var ZindexBackdrop =
-        parseInt($(".modal-backdrop").eq(0).css("z-index")) + 20;
-      console.log("Backdrop z-index: " + ZindexBackdrop);
-      $(".modal-backdrop").eq(1).css({
-        "z-index": ZindexBackdrop,
-      });
-
-      // move modal up (in z)
-      var ZindexModal = parseInt($(".modal").eq(0).css("z-index")) + 20;
-      console.log("Modal z-index: " + ZindexModal);
-      $(".modal").eq(1).css({
-        "z-index": ZindexModal,
-      });
-    }
-  });
-</script>
+<!-- Gallery filtering and modal handling -->
+<script src="/assets/js/gallery.js"></script>
+<script src="/assets/js/modals.js"></script>
 
   </body>
 
