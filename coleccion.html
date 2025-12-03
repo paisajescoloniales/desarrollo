@@ -799,12 +799,12 @@
         var $triangle = $btn.find(".text-triangle");
         var $collapse = $("#collapseOne");
 
-        $collapse.on("shown.bs.collapse", function () {
-          $triangle.addClass("open");
+        $collapse.on("show.bs.collapse", function () {
+          $triangle.addClass("open"); // flecha baja cuando EMPIEZA a abrirse
         });
 
-        $collapse.on("hidden.bs.collapse", function () {
-          $triangle.removeClass("open");
+        $collapse.on("hide.bs.collapse", function () {
+          $triangle.removeClass("open"); // flecha sube cuando EMPIEZA a cerrarse
         });
       });
     </script>

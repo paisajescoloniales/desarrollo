@@ -555,8 +555,8 @@ b, strong { font-weight: 600; }
 /* CONTENEDOR */
 .scrollspy-nav {
   position: fixed;
-  top: 120px;
-  left: 20px;
+  top: 40px;
+  left: 10px;
   width: 20px;
   z-index: 900;
 }
@@ -574,20 +574,19 @@ b, strong { font-weight: 600; }
 /* PUNTOS */
 .dot {
   display: block;
-  width: 10px;
-  height: 10px;
-  margin: 8px 0;
-  border: 2px solid #739CBF; 
+  width: 8px;
+  height: 8px;
+  margin: 6px auto;
+  border: 1.75px solid #739CBF; 
   border-radius: 50%;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 /* Capítulos: puntos más grandes */
 .chapter-dot {
-  width: 14px;
-  height: 14px;
-  border-width: 2px;
-  margin: 12px 0;
+  width: 12px;
+  height: 12px;
+  margin: 10px auto;
 }
 
 /* PUNTO ACTIVO */
