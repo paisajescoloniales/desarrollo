@@ -2532,12 +2532,6 @@ Los resguardos otorgaban “posesión” de la tierra a los indígenas, sin que 
 
 
 
-<!---
-  <script>
-    $('.carousel').carousel({
-      interval: false,
-    })
-  </script>
 
 
 
@@ -2592,28 +2586,30 @@ Los resguardos otorgaban “posesión” de la tierra a los indígenas, sin que 
   });
 </script>
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var accordionBtn = document.querySelector(
-      "#headingOne button[data-toggle='collapse']"
-    );
-    var triangle = accordionBtn
-      ? accordionBtn.querySelector(".text-triangle")
-      : null;
+document.addEventListener("DOMContentLoaded", function () {
 
-    if (!accordionBtn || !triangle) return;
+  var accordionBtn = document.querySelector(
+    "#headingOne button[data-toggle='collapse']"
+  );
 
-    // Bootstrap dispara 'shown.bs.collapse' y 'hidden.bs.collapse'
-    var collapse = document.getElementById("collapseOne");
+  var collapse = document.getElementById("collapseOne");
+  var triangle = accordionBtn
+    ? accordionBtn.querySelector(".text-triangle")
+    : null;
 
-    collapse.addEventListener("shown.bs.collapse", function () {
-      triangle.classList.add("open");   // panel ABIERTO → flecha abajo
-    });
+  if (!accordionBtn || !collapse || !triangle) return;
 
-    collapse.addEventListener("hidden.bs.collapse", function () {
-      triangle.classList.remove("open"); // panel CERRADO → flecha arriba
-    });
+  // Bootstrap 5 collapse events (no jQuery!)
+  collapse.addEventListener("shown.bs.collapse", function () {
+    triangle.classList.add("open");    // flecha ↓
   });
+
+  collapse.addEventListener("hidden.bs.collapse", function () {
+    triangle.classList.remove("open"); // flecha ↑
+  });
+});
 </script>
+
 
 </body>
 

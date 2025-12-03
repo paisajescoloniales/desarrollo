@@ -241,7 +241,7 @@ span.fuente-link { text-decoration: underline; }
 
 .nav-pills .nav-link.explorar-pill { background-color: #739CBF; text-align: center; font-family: 'Raleway', sans-serif; font-weight: 700; letter-spacing: .5px; color: #180B26!important; margin: 2%; text-transform: uppercase; }
 
-.nav-pills .nav-link.explorar-pill.active { background-color: #180B26!important; color: #739CBF; border: 1px solid #739CBF; }
+.nav-pills .nav-link.explorar-pill.active { background-color: #180B26; color: #739CBF!important; border: 1px solid #739CBF; }
 
 .tab-pane.explorar-tab { height: auto; padding-bottom: 10%; }
 

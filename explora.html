@@ -2147,21 +2147,21 @@
         var accordionBtn = document.querySelector(
           "#headingOne button[data-toggle='collapse']"
         );
+
+        var collapse = document.getElementById("collapseOne");
         var triangle = accordionBtn
           ? accordionBtn.querySelector(".text-triangle")
           : null;
 
-        if (!accordionBtn || !triangle) return;
+        if (!accordionBtn || !collapse || !triangle) return;
 
-        // Bootstrap dispara 'shown.bs.collapse' y 'hidden.bs.collapse'
-        var collapse = document.getElementById("collapseOne");
-
+        // Bootstrap 5 collapse events (no jQuery!)
         collapse.addEventListener("shown.bs.collapse", function () {
-          triangle.classList.add("open"); // panel ABIERTO → flecha abajo
+          triangle.classList.add("open"); // flecha ↓
         });
 
         collapse.addEventListener("hidden.bs.collapse", function () {
-          triangle.classList.remove("open"); // panel CERRADO → flecha arriba
+          triangle.classList.remove("open"); // flecha ↑
         });
       });
     </script>
