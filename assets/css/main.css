@@ -557,8 +557,8 @@ b, strong { font-weight: 600; }
 /* CONTENEDOR: columna fija a toda la altura */
 .scrollspy-nav {
   position: fixed;
-  top: 0;
-  left: 20px;
+  top: 40px;
+  left: 10px;
   width: 30px;
   height: 100vh;
   z-index: 900;
@@ -583,11 +583,18 @@ b, strong { font-weight: 600; }
   list-style: none;
   margin: 0;
   padding: 0;
-  position: relative;     /* para que los puntos queden sobre la línea */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  height: 100%; /* match full height of scrollspy */
 }
 
 .scrollspy-nav ul ul {
+  display: block;
   margin-left: 0;
+  padding-left: 0;
 }
 
 /* PUNTOS */
@@ -596,16 +603,15 @@ b, strong { font-weight: 600; }
   width: 8px;
   height: 8px;
   margin: 6px auto;
-  border: 1.75px solid var(--spy-dot-border);
   border-radius: 50%;
-  background-color: transparent;
+  background-color: var(--spy-dot-border);
   transition: background-color 0.2s ease, transform 0.15s ease;
 }
 
 /* Capítulos: puntos más grandes (y donde pondremos iconos) */
 .chapter-dot {
-  width: 14px;
-  height: 14px;
+  width: 30px;
+  height: 30px;
   margin: 12px auto;
 }
 
