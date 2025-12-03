@@ -2586,29 +2586,21 @@ Los resguardos otorgaban “posesión” de la tierra a los indígenas, sin que 
   });
 </script>
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+  $(function () {
+    var $btn = $("#headingOne button[data-toggle='collapse']");
+    var $triangle = $btn.find(".text-triangle");
+    var $collapse = $("#collapseOne");
 
-  var accordionBtn = document.querySelector(
-    "#headingOne button[data-toggle='collapse']"
-  );
+    $collapse.on("shown.bs.collapse", function () {
+      $triangle.addClass("open");
+    });
 
-  var collapse = document.getElementById("collapseOne");
-  var triangle = accordionBtn
-    ? accordionBtn.querySelector(".text-triangle")
-    : null;
-
-  if (!accordionBtn || !collapse || !triangle) return;
-
-  // Bootstrap 5 collapse events (no jQuery!)
-  collapse.addEventListener("shown.bs.collapse", function () {
-    triangle.classList.add("open");    // flecha ↓
+    $collapse.on("hidden.bs.collapse", function () {
+      $triangle.removeClass("open");
+    });
   });
-
-  collapse.addEventListener("hidden.bs.collapse", function () {
-    triangle.classList.remove("open"); // flecha ↑
-  });
-});
 </script>
+
 
 
 </body>

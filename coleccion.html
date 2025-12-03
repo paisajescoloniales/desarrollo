@@ -794,25 +794,17 @@
     <script src="/assets/js/gallery.js"></script>
     <script src="/assets/js/modals.js"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var accordionBtn = document.querySelector(
-          "#headingOne button[data-toggle='collapse']"
-        );
+      $(function () {
+        var $btn = $("#headingOne button[data-toggle='collapse']");
+        var $triangle = $btn.find(".text-triangle");
+        var $collapse = $("#collapseOne");
 
-        var collapse = document.getElementById("collapseOne");
-        var triangle = accordionBtn
-          ? accordionBtn.querySelector(".text-triangle")
-          : null;
-
-        if (!accordionBtn || !collapse || !triangle) return;
-
-        // Bootstrap 5 collapse events (no jQuery!)
-        collapse.addEventListener("shown.bs.collapse", function () {
-          triangle.classList.add("open"); // flecha ↓
+        $collapse.on("shown.bs.collapse", function () {
+          $triangle.addClass("open");
         });
 
-        collapse.addEventListener("hidden.bs.collapse", function () {
-          triangle.classList.remove("open"); // flecha ↑
+        $collapse.on("hidden.bs.collapse", function () {
+          $triangle.removeClass("open");
         });
       });
     </script>
