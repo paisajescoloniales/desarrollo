@@ -654,7 +654,6 @@ b, strong { font-weight: 600; }
   background-size: contain;
 }
 
-
 /* Móvil: esconder */
 @media (max-width: 991px) {
   .scrollspy-nav { display: none; }
