@@ -2657,6 +2657,53 @@ $collapse.on("hide.bs.collapse", function () {
   });
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const items = [];
+  const dots = document.querySelectorAll(".scrollspy-nav .dot");
+
+  // 1. Vinculamos cada punto con su sección
+  dots.forEach(dot => {
+    const targetId = dot.getAttribute("href").substring(1);
+    const anchor = document.getElementById(targetId);
+    if (!anchor) return;
+
+    // Si el id está en un <a>, usamos el <section> contenedor
+    const section = anchor.closest("section") || anchor;
+
+    items.push({ dot, section });
+
+    // Scroll suave al hacer click
+    dot.addEventListener("click", function (e) {
+      e.preventDefault();
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
+
+  if (!items.length || !("IntersectionObserver" in window)) return;
+
+  // 2. Observer que marca el punto activo
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+
+        items.forEach(item => {
+          const isActive = item.section === entry.target;
+          item.dot.classList.toggle("active", isActive);
+        });
+      });
+    },
+    {
+      threshold: 0.4,
+      rootMargin: "-10% 0px -50% 0px"
+    }
+  );
+
+  // 3. Observamos cada sección asociada a un punto
+  items.forEach(item => observer.observe(item.section));
+});
+</script>
 
 
 </body>
