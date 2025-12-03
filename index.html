@@ -250,9 +250,9 @@
       </div>
     </div>
 <!-- Fin footer-->
-<script src="/assets/popper.js/dist/umd/popper.min.js"></script>
+<!-- <script src="/assets/popper.js/dist/umd/popper.min.js"></script>
 <script src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="/assets/js/scroll-handler.js"></script>
+<script src="/assets/js/scroll-handler.js"></script> -->
 
 <!---
   <script>
@@ -265,27 +265,32 @@
     interval: false,
   });
 </script> -->
+<!-- Minimal vanilla JS instead of Bootstrap/jQuery/ScrollTrigger -->
 <script>
-  $(document).on("click", "[data-toggle='modal']", function () {
-    $(".modal-backdrop").eq(0).css({
-      display: "none",
-    });
+  document.addEventListener("DOMContentLoaded", function () {
+    // Navbar toggler
+    var toggler = document.querySelector(".navbar-toggler");
+    var nav = document.getElementById("navbarText");
 
-    // if more than 1 modal openned.
-    if ($(".modal-backdrop").length > 1) {
-      // move backdrop up (in z)
-      var ZindexBackdrop =
-        parseInt($(".modal-backdrop").eq(0).css("z-index")) + 20;
-      console.log("Backdrop z-index: " + ZindexBackdrop);
-      $(".modal-backdrop").eq(1).css({
-        "z-index": ZindexBackdrop,
+    if (toggler && nav) {
+      toggler.addEventListener("click", function () {
+        var isShown = nav.classList.contains("show");
+        nav.classList.toggle("show", !isShown);
+        toggler.setAttribute("aria-expanded", String(!isShown));
       });
+    }
 
-      // move modal up (in z)
-      var ZindexModal = parseInt($(".modal").eq(0).css("z-index")) + 20;
-      console.log("Modal z-index: " + ZindexModal);
-      $(".modal").eq(1).css({
-        "z-index": ZindexModal,
+    // Footer accordion
+    var accordionBtn = document.querySelector(
+      "#headingOne button[data-toggle='collapse']"
+    );
+    var collapse = document.getElementById("collapseOne");
+
+    if (accordionBtn && collapse) {
+      accordionBtn.addEventListener("click", function () {
+        var isOpen = collapse.classList.contains("show");
+        collapse.classList.toggle("show", !isOpen);
+        accordionBtn.setAttribute("aria-expanded", String(!isOpen));
       });
     }
   });
