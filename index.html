@@ -268,7 +268,10 @@
 <!-- Minimal vanilla JS instead of Bootstrap/jQuery/ScrollTrigger -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    // Navbar toggler
+    /* ------------------------------ */
+    /* NAVBAR TOGGLER (versión vanilla JS) */
+    /* ------------------------------ */
+
     var toggler = document.querySelector(".navbar-toggler");
     var nav = document.getElementById("navbarText");
 
@@ -280,21 +283,40 @@
       });
     }
 
-    // Footer accordion
+    /* ------------------------------ */
+    /* FOOTER ACCORDION + ROTACIÓN DE FLECHA */
+    /* ------------------------------ */
+
     var accordionBtn = document.querySelector(
       "#headingOne button[data-toggle='collapse']"
     );
+
     var collapse = document.getElementById("collapseOne");
 
-    if (accordionBtn && collapse) {
+    // flecha SVG dentro del botón
+    var triangle = accordionBtn
+      ? accordionBtn.querySelector(".text-triangle")
+      : null;
+
+    if (accordionBtn && collapse && triangle) {
       accordionBtn.addEventListener("click", function () {
         var isOpen = collapse.classList.contains("show");
+
+        // Alternar panel (abre/cierra)
         collapse.classList.toggle("show", !isOpen);
         accordionBtn.setAttribute("aria-expanded", String(!isOpen));
+
+        // Rotar flecha ↑ ↓
+        if (isOpen) {
+          triangle.classList.remove("open"); // se cierra → flecha arriba
+        } else {
+          triangle.classList.add("open"); // se abre → flecha abajo
+        }
       });
     }
   });
 </script>
+
 
 </body>
 

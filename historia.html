@@ -2591,6 +2591,29 @@ Los resguardos otorgaban “posesión” de la tierra a los indígenas, sin que 
     }
   });
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var accordionBtn = document.querySelector(
+      "#headingOne button[data-toggle='collapse']"
+    );
+    var triangle = accordionBtn
+      ? accordionBtn.querySelector(".text-triangle")
+      : null;
+
+    if (!accordionBtn || !triangle) return;
+
+    // Bootstrap dispara 'shown.bs.collapse' y 'hidden.bs.collapse'
+    var collapse = document.getElementById("collapseOne");
+
+    collapse.addEventListener("shown.bs.collapse", function () {
+      triangle.classList.add("open");   // panel ABIERTO → flecha abajo
+    });
+
+    collapse.addEventListener("hidden.bs.collapse", function () {
+      triangle.classList.remove("open"); // panel CERRADO → flecha arriba
+    });
+  });
+</script>
 
 </body>
 

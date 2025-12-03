@@ -1,1246 +1,2169 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta
-    name="description"
-    content="Redibujando los territorios andinos del siglo XVII."
-  />
-  <meta property="og:title" content="Paisajes coloniales" />
-  <meta
-    property="og:description"
-    content="Redibujando los territorios andinos del siglo XVII."
-  />
-  <meta property="og:image" content="/assets/img/tb-fb.png" />
-  <meta property="og:url" content="https://www.paisajescoloniales.com" />
-  <meta name="twitter:title" content="Paisajes coloniales" />
-  <meta
-    name="twitter:description"
-    content="Redibujando los territorios andinos del siglo XVII."
-  />
-  <meta name="twitter:image" content="/assets/img/tb-tw.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <title>
-    Paisajes Coloniales
-    | Explorar
-  </title>
-
-  <link rel="canonical" href="https://paisajescoloniales.com/explora" />
-
-  <link
-    rel="icon"
-    type="image/png"
-    href="https://paisajescoloniales.com/assets/img/toritodelasuerte.png"
-  />
-
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link
-    href="//fonts.googleapis.com/css?family=Signika+Negative:300,400,600"
-    rel="stylesheet"
-    type="text/css"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="/assets/css/normalize.css"
-  />
-  <link
-    rel="stylesheet"
-    href="/assets/css/greensock.css"
-  />
-  <!-- Custom CSS compiled from main.scss -->
-  <link
-    rel="stylesheet"
-    href="/assets/css/main.css"
-  />
-  <!-- Bootstrap 4 CSS (local) -->
-  <link
-    rel="stylesheet"
-    href="/assets/bootstrap/dist/css/bootstrap.min.css"
-  />
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-0GZPX52XKY"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-0GZPX52XKY");
-  </script>
-</head>
-
-
-<body>
-  <!---<link rel='stylesheet' href='/assets/css/custom/header/style.css'>--->
-
-<nav class="navbar menu fixed-top">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-  <!-- <img class="casita" src="/assets/img/casita.png" /> -->
-  <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="navbar-text" href="#">Paisajes Coloniales<span class="idioma"><a class="active-idioma"href="https://paisajescoloniales.com">Es</a> | <a class="otro-idioma"href="https://colonial-landscapes.com">En</a></span></div>
-
-  <div class="collapse navbar-collapse" id="navbarText">
-    <div class="navbar-nav mr-auto">
-
-        <a class="nav-link principal" href="/index.html">Inicio <span class="sr-only">(current)</span></a>
-
-        <a class="nav-link principal" href="/historia.html">Historia de una pintura</a>
-
-        <a class="nav-link principal" href="/explora.html">Explorar el mapa</a>
-
-        <a class="nav-link principal" href="/coleccion.html">Colección de fuentes</a>
-
-        <a class="nav-link secundario" href="/profesores.html">Para profesores</a>
-
-        <a class="nav-link secundario" href="/acerca.html">Acerca de este proyecto</a>
-      
-
-    </div>
-
-  </div>
-</nav>
- <style>.embed-container {position: relative; padding-bottom: 70%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}
- @media screen and (max-width: 767.9px){
-   .embed-container{
-     padding-bottom: 150%;
-   }
- }
-</style>
-
-
-<div class="bg-oscuro explore">
-  <div class="title-explore">
-      <h2>Explorar</h2>
-  </div>
-
-  <div class="row contenedor-explore">
-
-  <div class="col-md-3 col-12">
-    <div class="nav flex-column nav-pills explorar-lista" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-      <a class="nav-link explorar-pill active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Descubrir</a>
-    <a class="nav-link explorar-pill" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Lupa</a>
-      <a class="nav-link explorar-pill" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Ubicación actual</a>
-      <a class="nav-link explorar-pill" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Vista satelital</a>
-    </div>
-  </div>
-  <div class="col-md-9 col-12">
-    <div class="tab-content" id="v-pills-tabContent">
-      <div class="tab-pane explorar-tab fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-        <div class="d-none d-md-block discover">
-        <p>Haz click en los íconos en el mapa para entender algunas de sus características. </p>
-        <div class="leyenda"><img class="icono-exp dato1" src="/assets/img/dato.svg"/>  <h6 class="descubrir-leyenda">Dato</h6></div>
-        <div class="leyenda "><img class="icono-exp fuente1" src="/assets/img/fuente.svg"/> <h6 class="descubrir-leyenda">Fuente</h6></div>
-        <div class="leyenda "><img class="icono-exp pintura1" src="/assets/img/pintura.svg"/> <h6 class="descubrir-leyenda">Imagen</h6></div>
-        <div class="bg-descubrir">
-      <img src="/assets/img/mapa.png" />
-
-<article class="descubrir-btn tooltip" style="top:3%;left:8%;">
-     <span class="tooltiptext right _dato"><div class="tooltip-title">PINTURA O MAPA</div>
-<div class="tooltip-explain">
-Este lienzo de 1614 oscila entre dos géneros: pintura de paisaje y mapa. Aunque se realizó para servir como prueba en una disputa legal por la propiedad de la tierra, el manuscrito no es un simple croquis como los demás mapas de la época. En cambio, trasciende al terreno del arte por su uso singular del color, sus elaborados diseños y la firma de su autor, Juan de Aguilar Rendón.  Estos tres elementos son indicios de que el autor no sólo estaba interesado en representar la distribución y usos de la tierra para el juicio, también estaba creando una obra para ser apreciada por sus cualidades estéticas.
-</div>
-</span>
-</article>
-<div class="descubrir-btn2 dato" style="top:3%;left:8%;">
-  <img class="icono-exp" src="/assets/img/dato.svg"/>
-</div>
-<article class="descubrir-btn tooltip" style="top:34%;left:23%;">
-     <span class="tooltiptext right _dato"><div class="tooltip-title">litigio por las tierras</div>
-<div class="tooltip-explain">
-En el año de 1603, Francisco Maldonado y Mendoza fue acusado de haber estafado a la monarquía por comprar unos terrenos muy extensos y fértiles a un precio muy bajo, lo cual dio inicio a un largo litigio. El propósito de la pintura consistió en demostrar si esto era cierto, o si por el contrario Maldonado tenía la razón al afirmar que se trataba de un pantano improductivo. Anotaciones como “pantano ynutil” y “tierra anegadiza” fueron fundamentales en el curso del juicio, pues Maldonado salió victorioso y su derecho sobre estos terrenos fue ratificado.
-</div>
-</span>
-</article>
-
-<div class="descubrir-btn2 dato" style="top:34%;left:23%;">
-    <img class="icono-exp" src="/assets/img/dato.svg"/>
-</div>
-
-<article class="descubrir-btn tooltip" style="top:28%;left:62%;">
-     <span class="tooltiptext left _dato"><div class="tooltip-title">pueblo de Bogotá</div>
-<div class="tooltip-explain">
-A pesar de que por mucho tiempo se conoció a la capital de Colombia como Santafé de Bogotá, en la pintura aparecen dos lugares diferenciados: el “pueblo de Bogotá” (hoy pueblo de Funza) y la ciudad de “Santa Fe” (hoy Santafé de Bogotá). Esto se explica porque la creación de pueblos era parte de unas medidas que buscaban crear dos repúblicas separadas espacialmente y con responsabilidades legales distintas: una de indios que vivieran en pueblos y una de españoles que residieran en ciudades. En la práctica la división entre las dos repúblicas no fue posible pues los pueblos eran lugares con una gran actividad económica que incluía a españoles y mestizos, al tiempo en las ciudades vivían muchos indígenas.
-</div>
-</span>
-</article>
-
-<div class="descubrir-btn2 dato" style="top:28%;left:62%;">
-  <img class="icono-exp" src="/assets/img/dato.svg"/>
-</div>
-
-<article class="descubrir-btn tooltip" style="top:52%;left:81%;">
-     <span class="tooltiptext left _dato"><div class="tooltip-title">pastos africanos</div>
-<div class="tooltip-explain">
-Tras la introducción de ganado en la Sabana de Bogotá, el paisaje fue modificado según los intereses ganaderos del momento. Por esta razón, los pastos representados en la pintura posiblemente no son los mismos que cubren la Sabana hoy en día. Desde el siglo XVIII los ganaderos impulsaron la importación de pastos africanos que producían mejores rendimientos para la ganadería. No obstante, la llegada de pastos africanos al Nuevo Mundo se puede rastrear desde antes, cuando se usaba para construir las camas en los barcos utilizados para el tráfico de esclavos.
-</div>
-</span>
-</article>
-
-<div class="descubrir-btn2 dato" style="top:52%;left:81%;">
-  <img class="icono-exp" src="/assets/img/dato.svg"/>
-</div>
-
-<article class="descubrir-btn tooltip" style="top:48%;left:73%;">
-     <span class="tooltiptext left _dato"><div class="tooltip-title">despojo de la tierra</div>
-<div class="tooltip-explain">
-En comparación con las extensas tierras ganaderas de la hacienda del español Francisco Maldonado y Mendoza, la tierra de labranza o cultivo de los indígenas se puede ver dramáticamente disminuida en la pintura. En este sentido, este documento es fundamentalmente un mapa del despojo de la tierra y de la transformación de los paisajes agrícolas y de las sociedades indígenas.
-</div>
-</span>
-</article>
-
-<div class="descubrir-btn2 dato" style="top:48%;left:73%;">
-  <img class="icono-exp" src="/assets/img/dato.svg"/>
-</div>
-
-<article class="descubrir-btn tooltip" style="top:67%;left:83%;">
-     <span class="tooltiptext left _dato"><div class="tooltip-title">sistema de camellones</div>
-<div class="tooltip-explain">
-Antes de la llegada de los españoles y la introducción de sus formas de cultivo y ganado, los muiscas que habitaban la región organizaban y aprovechaban las fuentes hídricas mediante el sistema de camellones. Dicho sistema consistía en plataformas elevadas que servían como terrazas de cultivo, las cuales a su vez estaban atravesadas por diques. Estos últimos proporcionaban grandes beneficios: por un lado, facilitaban el  drenaje  del agua excedente, permitiendo que el suelo elevado se pudiera utilizar para los cultivos. Por otro lado, los diques servían como canales de pesca.
-</div>
-</span>
-</article>
-
-<div class="descubrir-btn2 dato" style="top:67%;left:83%;">
-  <img class="icono-exp" src="/assets/img/dato.svg"/>
-</div>
-
-
-<article class="descubrir-btn tooltip" style="top:78%;left:67%;">
-     <span class="tooltiptext up _dato"><div class="tooltip-title">pueblos para indios</div>
-<div class="tooltip-explain">
-Los pueblos que se retratan en el mapa como “Fontibón” o “La Serrezuela”  se construyeron como parte de un proyecto puesto en marcha por el imperio español que buscaba que los indios vivieran vidas católicas y “olvidaran sus antiguos ritos y ceremonias”. Así, los indígenas eran forzados a abandonar sus espacios vitales para ubicarse en otros asentamientos que estuvieran organizados en torno a una plaza central, fueran trazados en forma de cuadrícula y tuvieran una iglesia. A este proceso se le conocía como “reducción” de indios.
-</div>
-</span>
-</article>
-
-<div class="descubrir-btn2 dato" style="top:78%;left:67%;">
-  <img class="icono-exp" src="/assets/img/dato.svg"/>
-</div>
-
-<article class="descubrir-btn tooltip" style="top:72%;left:39%;">
-     <span class="tooltiptext up _dato"><div class="tooltip-title">la escala del mapa</div>
-<div class="tooltip-explain">
-A diferencia de los mapas contemporáneos, cuya precisión consiste en mantener una escala única en toda la imagen, la Pintura utiliza una escala múltiple, flexible y variable. El centro del mapa—que representa el territorio en disputa entre Maldonado y el fiscal—cuenta con una escala más precisa mientras que los bordes son más variables, ubicando al observador con respecto a referentes más lejanos como la ciudad de Santafé y los pueblos de Fontibón o Madrid.
-</div>
-</span>
-</article>
-
-<div class="descubrir-btn2 dato" style="top:72%;left:39%;">
-  <img class="icono-exp" src="/assets/img/dato.svg"/>
-</div>
-
-<article class="descubrir-btn tooltip" style="top:74%;left:21%;">
-     <span class="tooltiptext up _dato"><div class="tooltip-title">los colores del mapa</div>
-<div class="tooltip-explain">
-Aunque no conocemos el origen de los colores utilizados en el mapa, la producción de los colores era un proceso complejo en que se tomaban elementos vegetales y animales y se transformaban en tintas a través de procesos ricos en significados culturales. Tenemos evidencias de que los Muiscas y otros grupos nativos utilizaban una rica paleta de tintas azules, rojas y marrones que aplicaban a sus diseños en textiles, rocas y otras superficies. Por ello, es posible que algunas de las tintas utilizadas en la Pintura fueran indígenas.
-</div>
-</span>
-</article>
-
-<div class="descubrir-btn2 dato" style="top:74%;left:21%;">
-  <img class="icono-exp" src="/assets/img/dato.svg"/>
-</div>
-
-
-<article class="descubrir-btn tooltip" style="top:45%;left:40%;">
-     <span class="tooltiptext left _dato"><div class="tooltip-title">ganado en américa</div>
-<div class="tooltip-explain">
-A lo largo del mundo antiguo y la edad media, en España se consolidó una cultura ganadera centrada en la cría de vacas, ovejas, cabras y cerdos. Esta se apoyaba en la utilización de caballos y perros para el control del ganado que se mantenía disperso.  Al ser introducidos a América, estos animales florecieron y se adaptaron fácilmente a un entorno en que no contaban con muchos depredadores naturales. Al mismo tiempo, en el Nuevo Mundo se propagaron otras especies menos deseadas, como la rata noruega, que llegó en los barcos de los colonos.
-</div>
-</span>
-</article>
-
-<div class="descubrir-btn2 dato" style="top:45%;left:40%;">
-  <img class="icono-exp" src="/assets/img/dato.svg"/>
-</div>
-
-<article class="descubrir-btn tooltip" style="top:25%;left:37%;">
-     <span class="tooltiptext left _dato"><div class="tooltip-title">Francisco maldonado y mendoza</div>
-<div class="tooltip-explain">
-Don Francisco Maldonado y Mendoza nació en España en 1551 y llegó a Santafé de Bogotá en 1583. En 1586 se casó con Jerónima de Orrego, la hija y única heredera del conquistador Alonso de Olalla. Desde ese año, Maldonado comenzó a comprar estancias en la Sabana de Bogotá y a recibir tierras que le otorgó la Corona española. Para mediados de 1590, Maldonado contaba con una de las haciendas ganaderas más ricas del Nuevo Reino de Granada. Esto se evidencia en la pintura, a través de los dibujos y etiquetas de distintos lugares de la hacienda: molino de Don Francisco, novillero de Don Francisco, estancia de Don Francisco, etc. Sus herederos mantuvieron el poder y la riqueza durante más de dos siglos.
-</div>
-</span>
-</article>
-
-<div class="descubrir-btn2 dato" style="top:25%;left:37%;">
-  <img class="icono-exp" src="/assets/img/dato.svg"/>
-</div>
-
-<article class="descubrir-btn tooltip" style="top:5%;left:93%;">
-     <span class="tooltiptext left _dato"><div class="tooltip-title">ciudad de Santafé</div>
-<div class="tooltip-explain">
-Este mapa-pintura representa la Sabana de Bogotá, una altiplanicie en la cordillera oriental de los Andes donde hoy es Colombia. A comienzos del siglo XVI, la Sabana estaba ocupada por indígenas Muiscas, de la familia lingüística Chibcha. Una expedición española liderada por Gonzalo Jiménez de Quesada llegó a este lugar en 1536. Desde esos años la ciudad de Bogotá se convirtió en la base de operaciones del imperio español en la zona y en 1549 la nombrarían como sede de la Audiencia de Santafé.
-</div>
-</span>
-</article>
-
-<div class="descubrir-btn2 dato" style="top:5%;left:93%;">
-  <img class="icono-exp" src="/assets/img/dato.svg"/>
-</div>
-
-<article class="descubrir-btn tooltip" style="top:12%;left:50%;">
-     <span class="tooltiptext down _dato"><div class="tooltip-title">cercado del viejo cacique</div>
-<div class="tooltip-explain">
-A la llegada de los españoles, los muiscas estaban organizados en sociedades agrícolas con varios niveles de jerarquía política y sus líderes residían en unos lugares ceremoniosos cercados por troncos de madera que decoraban con pinturas en tela de algodón de diversos colores y estilos.
-</div>
-</span>
-</article>
-
-<div class="descubrir-btn2 dato" style="top:12%;left:50%;">
-  <img class="icono-exp" src="/assets/img/dato.svg"/>
-</div>
-
-
-<article class="descubrir-btn tooltip" style="top:72%;left:55%;">
-     <span class="tooltiptext up _dato"><div class="tooltip-title">camino como camellón</div>
-<div class="tooltip-explain">
-El mapa identifica al camino como “camellón”. Este detalle recuerda que muchos caminos indígenas y coloniales en la Sabana eran plataformas elevadas para mantenerse secas en temporadas de lluvias. Aún hoy se le dice “camellones” a muchos caminos y carreteras en la Sabana.
-</div>
-</span>
-</article>
-
-<div class="descubrir-btn2 dato" style="top:72%;left:55%;">
-  <img class="icono-exp" src="/assets/img/dato.svg"/>
-</div>
-
-<article class="descubrir-btn tooltip" style="top:43%;left:67%;">
-     <span class="tooltiptext left _dato"><div class="tooltip-title">porquera del cacique</div>
-<div class="tooltip-explain">
-Las sociedades nativas del Nuevo Mundo contaban con varios animales domesticados, como los perros, el pavo y el pato. En los Andes peruanos y bolivianos se practicaba la ganadería a partir de camélidos, como las llamas y las alpacas, utilizados como animales de carga y fuente de lana. La inclusión en el mapa de la porquera (donde se conservaban los cerdos) y la estancia de ganado (donde pastaban las vacas) del cacique demuestra que los indígenas incorporaron los animales traídos de Europa en sus actividades económicas. Este fue el caso también de la gallina y de la oveja, cuya lana comenzaron a utilizar como reemplazo del algodón para tejer unas mantas más económicas.
-</div>
-</span>
-</article>
-
-<div class="descubrir-btn2 dato" style="top:43%;left:67%;">
-  <img class="icono-exp" src="/assets/img/dato.svg"/>
-</div>
-
-<article class="descubrir-btn tooltip" style="top:31%;left:73%;">
-     <span class="tooltiptext left _fuente"><div class="tooltip-title">reclamos de indígena</div>
-<div class="tooltip-explain">
-  “[...] aquí venimos ante vuestra merced a dar declaración [de] los trabajos y aniquilaciones que pasamos con nuestro pueblo que es en forma de daños de nuestra cementera. Está un vecino que es Agustín Vela con más de doscientas mulas y caballos, ganado vacuno y burros entre nuestro resguardo. Antes de recoger nuestra pobreza que es trigo y maíz y cebada y turmas hace entrar mulas mansas y zorreras [y] nos destruye [nuestras cosechas] teniendo muchas tierras [...] sino maliciosamente y por engordar sus mulas con nuestro grano [...].”
-  Indígenas de Turmequé, 1672.
-</div>
-</span>
-</article>
-
-<div class="descubrir-btn2 fuente" style="top:31%;left:73%;">
-  <img class="icono-exp" src="/assets/img/fuente.svg"/>
-</div>
-
-<article class="descubrir-btn tooltip" style="top:6%;left:35%;">
-     <span class="tooltiptext left _fuente"><div class="tooltip-title">Construcción de pueblos</div>
-<div class="tooltip-explain">
-  “Háganse los edifiçios del pueblo en esta forma que se sitúe y ponga la plaza en medio en razonable proporción y de ella salgan todas las calles con sus solares conforme a la cantidad del pueblo y los solares y casas sean de algún tamaño con su corral [...] que ante todas cosas todo el pueblo junto haga su Iglesia en un canto de la plaza al oriente el altar del grandor y tamaño que fuere el pueblo y algo mayor y a otro canto hagan la casa del cacique y señor en razonable grandor y a otro la casa de su cabildo y cárcel y a otro las de los más principales y tras esto pos sus calles se pongan los demás solares [...]”.
-  Tomás López Medel, 1559
-</div>
-</span>
-</article>
-
-<div class="descubrir-btn2 fuente" style="top:6%;left:35%;">
-  <img class="icono-exp" src="/assets/img/fuente.svg"/>
-</div>
-
-<article class="descubrir-btn tooltip" style="top:84%;left:71.5%;">
-     <span class="tooltiptext up _fuente"><div class="tooltip-title">indios en la ciudad</div>
-<div class="tooltip-explain">
-  “habiendo entendido las desórdenes y excesos que ha habido en esta ciudad de Santa Fe sobre que los indios e indias ladinos mulatos y mulatas que en ella viven no estén con amos a quien sirvan y por esta razón andan ociosos y vagabundos de que resulta de ordinario en grandes daños e inconvenientes [...] y queriendo proveer acerca de esto lo que más a propósito pareciere convenir de su remedio de manera que cesasen las dichas desórdenes [...] por ahora nombraba y nombro señor administrador de los dichos indios y mulatos [...]”.
-  Instrucciones para el Administrador de Indios de Santa Fe, 1594.
-</div>
-</span>
-</article>
-
-<div class="descubrir-btn2 fuente" style="top:84%;left:71.5%;">
-  <img class="icono-exp" src="/assets/img/fuente.svg"/>
-</div>
-
-<article class="descubrir-btn tooltip" style="top:28%;left:31%;">
-     <span class="tooltiptext left _pintura"><div class="tooltip-title">Francisco Maldonado de Mendoza</div>
-<div class="tooltip-explain">
-<img src="/assets/img/exp-3.jpg"/>
-<p class="piedefoto centro">
-  Francisco Maldonado de Mendoza. Anónimo, siglo XVIII. Cortesía del Museo Colonial, Bogotá.
-</p>
-</div>
-</span>
-</article>
-
-
-<div class="descubrir-btn2 pintura" style="top:28%;left:31%;">
-  <img class="icono-exp" src="/assets/img/pintura.svg"/>
-</div>
-
-<article class="descubrir-btn tooltip" style="top:14%;left:53%;">
-     <span class="tooltiptext left _pintura"><div class="tooltip-title">Figura votiva en orfebrería (Muisca)</div>
-<div class="tooltip-explain">
-<img src="/assets/img/exp-2.jpg"/>
-<p class="piedefoto centro">
-  Figura votiva en orfebrería. Cordillera Oriental - Muisca. Fecha: 600/1600. Cortesía del Museo del Oro (Bogotá).
-</p>
-</div>
-</span>
-</article>
-
-<div class="descubrir-btn2 pintura" style="top:14%;left:53%;">
-  <img class="icono-exp" src="/assets/img/pintura.svg"/>
-</div>
-
-<article class="descubrir-btn tooltip" style="top:63%;left:79%;">
-     <span class="tooltiptext up _pintura"><div class="tooltip-title">Foto aérea de un camellón (1956) </div>
-<div class="tooltip-explain">
-<img src="/assets/img/exp-4.jpg"/>
-<p class="piedefoto centro">
-  Vuelo C-778, Foto 869. Lugar y fecha de creación: Bogotá, 1956. Recuperada de: Instituto Geográfico Agustín Codazzi, Bogotá.
-</p>
-</div>
-</span>
-</article>
-
-<div class="descubrir-btn2 pintura" style="top:63%;left:79%;">
-  <img class="icono-exp" src="/assets/img/pintura.svg"/>
-</div>
-
-<article class="descubrir-btn tooltip" style="top:80%;left:74%;">
-     <span class="tooltiptext up _pintura"><div class="tooltip-title">Pueblo de Suta</div>
-<div class="tooltip-explain">
-<img src="/assets/img/exp-5.jpg"/>
-<p class="piedefoto centro">
-  Pueblo de Suta, 1803. Cortesía del Archivo General de la Nación, Bogotá.
-</p>
-</div>
-</span>
-</article>
-
-<div class="descubrir-btn2 pintura" style="top:80%;left:74%;">
-  <img class="icono-exp" src="/assets/img/pintura.svg"/>
-</div>
-
-<article class="descubrir-btn tooltip" style="top:81%;left:69%;">
-     <span class="tooltiptext up _pintura"><div class="tooltip-title">Pueblo de Guasca</div>
-<div class="tooltip-explain">
-<img src="/assets/img/exp-6.jpg"/>
-<p class="piedefoto centro">
-  Pueblo de Guasca elaborado por Fray Manuel Félix de Velasco, 1758. Cortesía del Archivo General de la Nación, Bogotá.
-</p>
-</div>
-</span>
-</article>
-
-<div class="descubrir-btn2 pintura" style="top:81%;left:69%;">
-  <img class="icono-exp" src="/assets/img/pintura.svg"/>
-</div>
-
-    </div>
-  </div>
-  <div class="d-md-none row discover-xs">
-    <h4>Haz clic en cada parte del mapa para conocer a profundidad algunas de sus características. </h4>
-    <div>
-    <div class="leyenda"><img class="icono-exp dato1" src="/assets/img/dato.svg"/>  <h5 class="descubrir-leyenda">Dato</h5></div>
-    <div class="leyenda "><img class="icono-exp fuente1" src="/assets/img/fuente.svg"/> <h5 class="descubrir-leyenda">Fuente</h5></div>
-    <div class="leyenda "><img class="icono-exp pintura1" src="/assets/img/pintura.svg"/> <h5 class="descubrir-leyenda">Imagen</h5></div>
-    </div>
-  <div class="col-4 pieza-mapa">
-    <button type="button" class="btn puzzle" data-toggle="modal" data-target="#myModale1"><img src="/assets/img/e1.png" /></button>
-  </div>
-
-  <div class="col-4 pieza-mapa">
-    <button type="button" class="btn puzzle" data-toggle="modal" data-target="#myModale2"><img src="/assets/img/e2.png" /></button>
-  </div>
-
-  <div class="col-4 pieza-mapa">
-    <button type="button" class="btn puzzle" data-toggle="modal" data-target="#myModale3"><img src="/assets/img/e3.png" /></button>
-  </div>
-
-  <div class="col-4 pieza-mapa">
-    <button type="button" class="btn puzzle" data-toggle="modal" data-target="#myModale4"><img src="/assets/img/e4.png" /></button>
-  </div>
-
-  <div class="col-4 pieza-mapa">
-    <button type="button" class="btn puzzle" data-toggle="modal" data-target="#myModale5"><img src="/assets/img/e5.png" /></button>
-  </div>
-
-  <div class="col-4 pieza-mapa">
-    <button type="button" class="btn puzzle" data-toggle="modal" data-target="#myModale6"><img src="/assets/img/e6.png" /></button>
-  </div>
-
-  <div class="col-4 pieza-mapa">
-    <button type="button" class="btn puzzle" data-toggle="modal" data-target="#myModale7"><img src="/assets/img/e7.png" /></button>
-  </div>
-
-  <div class="col-4 pieza-mapa">
-    <button type="button" class="btn puzzle" data-toggle="modal" data-target="#myModale8"><img src="/assets/img/e8.png" /></button>
-  </div>
-
-  <div class="col-4 pieza-mapa">
-    <button type="button" class="btn puzzle" data-toggle="modal" data-target="#myModale9"><img src="/assets/img/e9.png" /></button>
-  </div>
-
-  <div class="col-4 pieza-mapa">
-    <button type="button" class="btn puzzle" data-toggle="modal" data-target="#myModale10"><img src="/assets/img/e10.png" /></button>
-  </div>
-
-  <div class="col-4 pieza-mapa">
-    <button type="button" class="btn puzzle" data-toggle="modal" data-target="#myModale11"><img src="/assets/img/e11.png" /></button>
-  </div>
-
-  <div class="col-4 pieza-mapa">
-    <button type="button" class="btn puzzle" data-toggle="modal" data-target="#myModale12"><img src="/assets/img/e12.png" /></button>
-  </div>
-
-  <div class="col-4 pieza-mapa">
-    <button type="button" class="btn puzzle" data-toggle="modal" data-target="#myModale13"><img src="/assets/img/e13.png" /></button>
-  </div>
-
-  <div class="col-4 pieza-mapa">
-    <button type="button" class="btn puzzle" data-toggle="modal" data-target="#myModale14"><img src="/assets/img/e14.png" /></button>
-  </div>
-
-  <div class="col-4 pieza-mapa">
-    <button type="button" class="btn puzzle" data-toggle="modal" data-target="#myModale15"><img src="/assets/img/e15.png" /></button>
-  </div>
-
-  <div class="col-4 pieza-mapa">
-    <button type="button" class="btn puzzle" data-toggle="modal" data-target="#myModale16"><img src="/assets/img/e16.png" /></button>
-  </div>
-
-  <div class="col-4 pieza-mapa">
-    <button type="button" class="btn puzzle" data-toggle="modal" data-target="#myModale17"><img src="/assets/img/e17.png" /></button>
-  </div>
-
-  <div class="col-4 pieza-mapa">
-    <button type="button" class="btn puzzle" data-toggle="modal" data-target="#myModale18"><img src="/assets/img/e18.png" /></button>
-  </div>
-
-  <div class="col-4 pieza-mapa">
-    <button type="button" class="btn puzzle" data-toggle="modal" data-target="#myModale19"><img src="/assets/img/e19.png" /></button>
-  </div>
-
-  <div class="col-4 pieza-mapa">
-    <button type="button" class="btn puzzle" data-toggle="modal" data-target="#myModale20"><img src="/assets/img/e20.png" /></button>
-  </div>
-
-  <div class="col-4 pieza-mapa">
-    <button type="button" class="btn puzzle" data-toggle="modal" data-target="#myModale21"><img src="/assets/img/e21.png" /></button>
-  </div>
-
-  <div class="col-4 pieza-mapa">
-    <button type="button" class="btn puzzle" data-toggle="modal" data-target="#myModale22"><img src="/assets/img/e22.png" /></button>
-  </div>
-
-  <div class="col-4 pieza-mapa">
-    <button type="button" class="btn puzzle" data-toggle="modal" data-target="#myModale23"><img src="/assets/img/e23.png" /></button>
-  </div>
-</div>
-  </div>
-
-
-
-      <div class="tab-pane explorar-tab fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-        <p>Navega libremente por el mapa, ampliando y reduciendo para conocer sus detalles.</p>
-        <iframe src="https://catalogoenlinea.bibliotecanacional.gov.co/custom/web/content/mapoteca/Paisajes_coloniales/Paisajes_coloniales.html"
-        marginwidth="0" marginheight="0" name="ventana_iframe" scrolling="no" border="0"
-        frameborder="0" width="800" height="600"></iframe>
-</div>
-
-      <div class="tab-pane explorar-tab fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-  <p>Acá aparece la <i>Pintura de las tierras de Bogotá</i> superpuesta al mapa actual. La superposición es aproximada, dado que las escalas de la pintura y el mapa contemporáneo no coinciden exactamente.</p>
-
-<div class="d-none d-md-block">
- <div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Maldonado_1614" src="//www.arcgis.com/apps/Embed/index.html?webmap=e7271f198afd4379b6360cb738bd8250&extent=-74.533945,4.593524,-74.184213,4.88549&zoom=true&previewImage=false&scale=true&basemap_gallery=true&disable_scroll=true&theme=light"></iframe></div>
-</div>
-<div class="d-md-none">
-<div class="embed-container"><iframe width="400" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Maldonado_1614" src="//www.arcgis.com/apps/Embed/index.html?webmap=e7271f198afd4379b6360cb738bd8250&extent=-74.7847,4.3121,-73.4389,5.0088&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=dark"></iframe></div>
-</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="description"
+      content="Redibujando los territorios andinos del siglo XVII."
+    />
+    <meta property="og:title" content="Paisajes coloniales" />
+    <meta
+      property="og:description"
+      content="Redibujando los territorios andinos del siglo XVII."
+    />
+    <meta property="og:image" content="/assets/img/tb-fb.png" />
+    <meta property="og:url" content="https://www.paisajescoloniales.com" />
+    <meta name="twitter:title" content="Paisajes coloniales" />
+    <meta
+      name="twitter:description"
+      content="Redibujando los territorios andinos del siglo XVII."
+    />
+    <meta name="twitter:image" content="/assets/img/tb-tw.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Paisajes Coloniales | Explorar</title>
+
+    <link rel="canonical" href="https://paisajescoloniales.com/explora" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://paisajescoloniales.com/assets/img/toritodelasuerte.png"
+    />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="//fonts.googleapis.com/css?family=Signika+Negative:300,400,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" href="/assets/css/greensock.css" />
+    <!-- Custom CSS compiled from main.scss -->
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <!-- Bootstrap 4 CSS (local) -->
+    <link
+      rel="stylesheet"
+      href="/assets/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-0GZPX52XKY"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-0GZPX52XKY");
+    </script>
+  </head>
+
+  <body>
+    <!---<link rel='stylesheet' href='/assets/css/custom/header/style.css'>--->
+
+    <nav class="navbar menu fixed-top">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <!-- <img class="casita" src="/assets/img/casita.png" /> -->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-text" href="#">
+        Paisajes Coloniales<span class="idioma"
+          ><a class="active-idioma" href="https://paisajescoloniales.com">Es</a>
+          |
+          <a class="otro-idioma" href="https://colonial-landscapes.com"
+            >En</a
+          ></span
+        >
       </div>
-      <div class="tab-pane explorar-tab fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-      <p>Esta es una vista distorsionada de la <i>Pintura de las tierras de Bogotá</i> que construimos para mostrar la diferencia entre la escala que maneja con la que usamos hoy. Así se vería la Pintura si buscáramos que la escala representada en ella coincidiera con la de nuestro mapa actual.
-      </p>
-      <div class="d-none d-md-block">
-          <div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Maldonado_1614_III" src="//www.arcgis.com/apps/Embed/index.html?webmap=44ca2ca965d5456a9d6111a98187e575&extent=-74.4791,4.5149,-73.8062,4.8632&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=dark"></iframe></div> </div>
-<div class="d-md-none">
-<div class="embed-container"><iframe width="400" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Maldonado_1614_III" src="//www.arcgis.com/apps/Embed/index.html?webmap=44ca2ca965d5456a9d6111a98187e575&extent=-74.3286,4.5891,-73.9922,4.7633&zoom=true&previewImage=false&scale=true&disable_scroll=false&theme=dark"></iframe></div> </div>
-    </div>
 
-  </div>
-</div>
-</div>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <div class="navbar-nav mr-auto">
+          <a class="nav-link principal" href="/index.html"
+            >Inicio <span class="sr-only">(current)</span></a
+          >
 
-<!-- Explore modal -->
-<div id="myModale1" class="modal piezas fade" role="dialog">
-  <div class="modal-dialog">
+          <a class="nav-link principal" href="/historia.html"
+            >Historia de una pintura</a
+          >
 
-    <!-- Modal content-->
-    <div class="modal-content modal-dato">
-      <div class="modal-header">
-        <h6 class="modal-title"></h6>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <a class="nav-link principal" href="/explora.html"
+            >Explorar el mapa</a
+          >
 
+          <a class="nav-link principal" href="/coleccion.html"
+            >Colección de fuentes</a
+          >
+
+          <a class="nav-link secundario" href="/profesores.html"
+            >Para profesores</a
+          >
+
+          <a class="nav-link secundario" href="/acerca.html"
+            >Acerca de este proyecto</a
+          >
+        </div>
       </div>
-      <div class="modal-body">
-        <div class="_fuente"><div class="modal-explore-title">PINTURA O MAPA</div>
-     <div class="modal-explore-explain">
-    Este lienzo de 1614 oscila entre dos géneros: pintura de paisaje y mapa. Aunque se realizó para servir como prueba en una disputa legal por la propiedad de la tierra, el manuscrito no es un simple croquis como los demás mapas de la época. En cambio, trasciende al terreno del arte por su uso singular del color, sus elaborados diseños y la firma de su autor, Juan de Aguilar Rendón.  Estos tres elementos son indicios de que el autor no sólo estaba interesado en representar la distribución y usos de la tierra para el juicio, también estaba creando una obra para ser apreciada por sus cualidades estéticas.
-     </div>
+    </nav>
+    <style>
+      .embed-container {
+        position: relative;
+        padding-bottom: 70%;
+        height: 0;
+        max-width: 100%;
+      }
+      .embed-container iframe,
+      .embed-container object,
+      .embed-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      small {
+        position: absolute;
+        z-index: 40;
+        bottom: 0;
+        margin-bottom: -15px;
+      }
+      @media screen and (max-width: 767.9px) {
+        .embed-container {
+          padding-bottom: 150%;
+        }
+      }
+    </style>
+
+    <div class="bg-oscuro explore">
+      <div class="title-explore">
+        <h2>Explorar</h2>
       </div>
-    </div>
-  </div>
-</div>
-</div>
 
-<!-- Explore modal -->
-<div id="myModale2" class="modal piezas fade" role="dialog">
-<div class="modal-dialog">
-
-  <!-- Modal content-->
-  <div class="modal-content modal_fuente">
-    <div class="modal-header">
-      <h6 class="modal-title"></h6>
-      <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-    </div>
-    <div class="modal-body">
-      <div class="_fuente"><div class="modal-explore-title">Construcción de pueblos</div>
-   <div class="modal-explore-explain">
-     “Háganse los edifiçios del pueblo en esta forma que se sitúe y ponga la plaza en medio en razonable proporción y de ella salgan todas las calles con sus solares conforme a la cantidad del pueblo y los solares y casas sean de algún tamaño con su corral [...] que ante todas cosas todo el pueblo junto haga su Iglesia en un canto de la plaza al oriente el altar del grandor y tamaño que fuere el pueblo y algo mayor y a otro canto hagan la casa del cacique y señor en razonable grandor y a otro la casa de su cabildo y cárcel y a otro las de los más principales y tras esto pos sus calles se pongan los demás solares [...]”.
-     Tomás López Medel, 1559
-   </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-
-<!-- Explore modal -->
-<div id="myModale3" class="modal piezas fade" role="dialog">
-<div class="modal-dialog">
-
-  <!-- Modal content-->
-  <div class="modal-content modal-dato">
-    <div class="modal-header">
-      <h6 class="modal-title"></h6>
-      <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-    </div>
-    <div class="modal-body">
-      <div class="_fuente"><div class="modal-explore-title">cercado del viejo cacique</div>
-   <div class="modal-explore-explain">
-  A la llegada de los españoles, los muiscas estaban organizados en sociedades agrícolas con varios niveles de jerarquía política y sus líderes residían en unos lugares ceremoniosos cercados por troncos de madera que decoraban con pinturas en tela de algodón de diversos colores y estilos.
-   </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-
-<!-- Explore modal -->
-<div id="myModale4" class="modal piezas fade" role="dialog">
-<div class="modal-dialog">
-
-  <!-- Modal content-->
-  <div class="modal-content modal-pintura">
-    <div class="modal-header">
-      <h6 class="modal-title"></h6>
-      <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-    </div>
-    <div class="modal-body">
-      <div class="_fuente"><div class="modal-explore-title">Figura votiva en orfebrería (Muisca)</div>
-   <div class="modal-explore-explain">
-     <img src="/assets/img/exp-2.jpg"/>
-     <p class="piedefoto centro">
-       Figura votiva en orfebrería. Cordillera Oriental - Muisca. Fecha: 600/1600. Cortesía del Museo del Oro (Bogotá).
-     </p>
-   </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-
-<!-- Explore modal -->
-<div id="myModale5" class="modal piezas fade" role="dialog">
-<div class="modal-dialog">
-
-  <!-- Modal content-->
-  <div class="modal-content modal-dato">
-    <div class="modal-header">
-      <h6 class="modal-title"></h6>
-      <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-    </div>
-    <div class="modal-body">
-      <div class="_fuente"><div class="modal-explore-title">ciudad de Santafé</div>
-   <div class="modal-explore-explain">
-Este mapa-pintura representa la Sabana de Bogotá, una altiplanicie en la cordillera oriental de los Andes donde hoy es Colombia. A comienzos del siglo XVI, la Sabana estaba ocupada por indígenas Muiscas, de la familia lingüística Chibcha. Una expedición española liderada por Gonzalo Jiménez de Quesada llegó a este lugar en 1536. Desde esos años la ciudad de Bogotá se convirtió en la base de operaciones del imperio español en la zona y en 1549 la nombrarían como sede de la Audiencia de Santafé.
-   </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-
-<!-- Explore modal -->
-<div id="myModale6" class="modal piezas fade" role="dialog">
-<div class="modal-dialog">
-
-  <!-- Modal content-->
-  <div class="modal-content modal-dato">
-    <div class="modal-header">
-      <h6 class="modal-title"></h6>
-      <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-    </div>
-    <div class="modal-body">
-      <div class="_fuente"><div class="modal-explore-title">Francisco maldonado y mendoza</div>
-   <div class="modal-explore-explain">
-   Don Francisco Maldonado y Mendoza nació en España en 1551 y llegó a Santafé de Bogotá en 1583. En 1586 se casó con Jerónima de Orrego, la hija y única heredera del conquistador Alonso de Olalla. Desde ese año, Maldonado comenzó a comprar estancias en la Sabana de Bogotá y a recibir tierras que le otorgó la Corona española. Para mediados de 1590, Maldonado contaba con una de las haciendas ganaderas más ricas del Nuevo Reino de Granada. Esto se evidencia en la pintura, a través de los dibujos y etiquetas de distintos lugares de la hacienda: molino de Don Francisco, novillero de Don Francisco, estancia de Don Francisco, etc. Sus herederos mantuvieron el poder y la riqueza durante más de dos siglos.
-   </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-
-<!-- Explore modal -->
-<div id="myModale7" class="modal piezas fade" role="dialog">
-<div class="modal-dialog">
-
-  <!-- Modal content-->
-  <div class="modal-content modal-pintura">
-    <div class="modal-header">
-      <h6 class="modal-title"></h6>
-      <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-    </div>
-    <div class="modal-body">
-      <div class="_fuente"><div class="modal-explore-title">Francisco Maldonado de Mendoza</div>
-   <div class="modal-explore-explain">
-     <img src="/assets/img/exp-3.jpg"/>
-     <p class="piedefoto centro">
-       Francisco Maldonado de Mendoza. Anónimo, siglo XVIII. Cortesía del Museo Colonial, Bogotá.
-     </p>
-   </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-
-<!-- Explore modal -->
-<div id="myModale8" class="modal piezas fade" role="dialog">
-<div class="modal-dialog">
-
-  <!-- Modal content-->
-  <div class="modal-content modal-dato">
-    <div class="modal-header">
-      <h6 class="modal-title"></h6>
-      <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-    </div>
-    <div class="modal-body">
-      <div class="_fuente"><div class="modal-explore-title">litigio por las tierras</div>
-   <div class="modal-explore-explain">
-En el año de 1603, Francisco Maldonado y Mendoza fue acusado de haber estafado a la monarquía por comprar unos terrenos muy extensos y fértiles a un precio muy bajo, lo cual dio inicio a un largo litigio. El propósito de la pintura consistió en demostrar si esto era cierto, o si por el contrario Maldonado tenía la razón al afirmar que se trataba de un pantano improductivo. Anotaciones como “pantano ynutil” y “tierra anegadiza” fueron fundamentales en el curso del juicio, pues Maldonado salió victorioso y su derecho sobre estos terrenos fue ratificado.
-   </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-
-<!-- Explore modal -->
-<div id="myModale9" class="modal piezas fade" role="dialog">
-<div class="modal-dialog">
-
-  <!-- Modal content-->
-  <div class="modal-content modal-dato">
-    <div class="modal-header">
-      <h6 class="modal-title"></h6>
-      <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-    </div>
-    <div class="modal-body">
-      <div class="_fuente"><div class="modal-explore-title">pueblo de Bogotá</div>
-   <div class="modal-explore-explain">
-     A pesar de que por mucho tiempo se conoció a la capital de Colombia como Santafé de Bogotá, en la pintura aparecen dos lugares diferenciados: el “pueblo de Bogotá” (hoy pueblo de Funza) y la ciudad de “Santa Fe” (hoy Santafé de Bogotá). Esto se explica porque la creación de pueblos era parte de unas medidas que buscaban crear dos repúblicas separadas espacialmente y con responsabilidades legales distintas: una de indios que vivieran en pueblos y una de españoles que residieran en ciudades. En la práctica la división entre las dos repúblicas no fue posible pues los pueblos eran lugares con una gran actividad económica que incluía a españoles y mestizos, al tiempo en las ciudades vivían muchos indígenas.
-   </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-
-<!-- Explore modal -->
-<div id="myModale10" class="modal piezas fade" role="dialog">
-<div class="modal-dialog">
-
-  <!-- Modal content-->
-  <div class="modal-content modal-fuente">
-    <div class="modal-header">
-      <h6 class="modal-title"></h6>
-      <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-    </div>
-    <div class="modal-body">
-      <div class="_fuente"><div class="modal-explore-title">reclamos de indígena</div>
-   <div class="modal-explore-explain">
-     “[...] aquí venimos ante vuestra merced a dar declaración [de] los trabajos y aniquilaciones que pasamos con nuestro pueblo que es en forma de daños de nuestra cementera. Está un vecino que es Agustín Vela con más de doscientas mulas y caballos, ganado vacuno y burros entre nuestro resguardo. Antes de recoger nuestra pobreza que es trigo y maíz y cebada y turmas hace entrar mulas mansas y zorreras [y] nos destruye [nuestras cosechas] teniendo muchas tierras [...] sino maliciosamente y por engordar sus mulas con nuestro grano [...].”
-     Indígenas de Turmequé, 1672.
-   </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-
-<!-- Explore modal -->
-<div id="myModale11" class="modal piezas fade" role="dialog">
-<div class="modal-dialog">
-
-  <!-- Modal content-->
-  <div class="modal-content modal-dato">
-    <div class="modal-header">
-      <h6 class="modal-title"></h6>
-      <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-    </div>
-    <div class="modal-body">
-      <div class="_fuente"><div class="modal-explore-title">ganado en américa</div>
-   <div class="modal-explore-explain">
-A lo largo del mundo antiguo y la edad media, en España se consolidó una cultura ganadera centrada en la cría de vacas, ovejas, cabras y cerdos. Esta se apoyaba en la utilización de caballos y perros para el control del ganado que se mantenía disperso.  Al ser introducidos a América, estos animales florecieron y se adaptaron fácilmente a un entorno en que no contaban con muchos depredadores naturales. Al mismo tiempo, en el Nuevo Mundo se propagaron otras especies menos deseadas, como la rata noruega, que llegó en los barcos de los colonos.
-   </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-
-<!-- Explore modal -->
-<div id="myModale12" class="modal piezas fade" role="dialog">
-<div class="modal-dialog">
-
-  <!-- Modal content-->
-  <div class="modal-content modal-dato">
-    <div class="modal-header">
-      <h6 class="modal-title"></h6>
-      <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-    </div>
-    <div class="modal-body">
-      <div class="_fuente"><div class="modal-explore-title">porquera del cacique</div>
-   <div class="modal-explore-explain">
-Las sociedades nativas del Nuevo Mundo contaban con varios animales domesticados, como los perros, el pavo y el pato. En los Andes peruanos y bolivianos se practicaba la ganadería a partir de camélidos, como las llamas y las alpacas, utilizados como animales de carga y fuente de lana. La inclusión en el mapa de la porquera (donde se conservaban los cerdos) y la estancia de ganado (donde pastaban las vacas) del cacique demuestra que los indígenas incorporaron los animales traídos de Europa en sus actividades económicas. Este fue el caso también de la gallina y de la oveja, cuya lana comenzaron a utilizar como reemplazo del algodón para tejer unas mantas más económicas.
-   </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-
-<!-- Explore modal -->
-<div id="myModale13" class="modal piezas fade" role="dialog">
-<div class="modal-dialog">
-
-  <!-- Modal content-->
-  <div class="modal-content modal-dato">
-    <div class="modal-header">
-      <h6 class="modal-title"></h6>
-      <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-    </div>
-    <div class="modal-body">
-      <div class="_fuente"><div class="modal-explore-title">despojo de la tierra</div>
-   <div class="modal-explore-explain">
-En comparación con las extensas tierras ganaderas de la hacienda del español Francisco Maldonado y Mendoza, la tierra de labranza o cultivo de los indígenas se puede ver dramáticamente disminuida en la pintura. En este sentido, este documento es fundamentalmente un mapa del despojo de la tierra y de la transformación de los paisajes agrícolas y de las sociedades indígenas.
-   </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-
-<!-- Explore modal -->
-<div id="myModale14" class="modal piezas fade" role="dialog">
-<div class="modal-dialog">
-
-  <!-- Modal content-->
-  <div class="modal-content modal-dato">
-    <div class="modal-header">
-      <h6 class="modal-title"></h6>
-      <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-    </div>
-    <div class="modal-body">
-      <div class="_fuente"><div class="modal-explore-title">pastos africanos</div>
-   <div class="modal-explore-explain">
-Tras la introducción de ganado en la Sabana de Bogotá, el paisaje fue modificado según los intereses ganaderos del momento. Por esta razón, los pastos representados en la pintura posiblemente no son los mismos que cubren la Sabana hoy en día. Desde el siglo XVIII los ganaderos impulsaron la importación de pastos africanos que producían mejores rendimientos para la ganadería. No obstante, la llegada de pastos africanos al Nuevo Mundo se puede rastrear desde antes, cuando se usaba para construir las camas en los barcos utilizados para el tráfico de esclavos.
-   </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-
-<!-- Explore modal -->
-<div id="myModale15" class="modal piezas fade" role="dialog">
-<div class="modal-dialog">
-
-  <!-- Modal content-->
-  <div class="modal-content modal-pintura">
-    <div class="modal-header">
-      <h6 class="modal-title"></h6>
-      <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-    </div>
-    <div class="modal-body">
-      <div class="_fuente"><div class="modal-explore-title">Foto aérea de un camellón (1956)</div>
-   <div class="modal-explore-explain">
-     <img src="/assets/img/exp-4.jpg"/>
-     <p class="piedefoto centro">
-       Vuelo C-778, Foto 869. Lugar y fecha de creación: Bogotá, 1956. Recuperada de: Instituto Geográfico Agustín Codazzi, Bogotá.
-     </p>
-   </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-
-<!-- Explore modal -->
-<div id="myModale16" class="modal piezas fade" role="dialog">
-<div class="modal-dialog">
-
-  <!-- Modal content-->
-  <div class="modal-content modal-dato">
-    <div class="modal-header">
-      <h6 class="modal-title"></h6>
-      <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-    </div>
-    <div class="modal-body">
-      <div class="_fuente"><div class="modal-explore-title">sistema de camellones</div>
-   <div class="modal-explore-explain">
-Antes de la llegada de los españoles y la introducción de sus formas de cultivo y ganado, los muiscas que habitaban la región organizaban y aprovechaban las fuentes hídricas mediante el sistema de camellones. Dicho sistema consistía en plataformas elevadas que servían como terrazas de cultivo, las cuales a su vez estaban atravesadas por diques. Estos últimos proporcionaban grandes beneficios: por un lado, facilitaban el  drenaje  del agua excedente, permitiendo que el suelo elevado se pudiera utilizar para los cultivos. Por otro lado, los diques servían como canales de pesca.
-   </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-
-
-<!-- Explore modal -->
-<div id="myModale17" class="modal piezas fade" role="dialog">
-<div class="modal-dialog">
-
-  <!-- Modal content-->
-  <div class="modal-content modal-dato">
-    <div class="modal-header">
-      <h6 class="modal-title"></h6>
-      <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-    </div>
-    <div class="modal-body">
-      <div class="_fuente"><div class="modal-explore-title">los colores del mapa</div>
-   <div class="modal-explore-explain">
-Aunque no conocemos el origen de los colores utilizados en el mapa, la producción de los colores era un proceso complejo en que se tomaban elementos vegetales y animales y se transformaban en tintas a través de procesos ricos en significados culturales. Tenemos evidencias de que los Muiscas y otros grupos nativos utilizaban una rica paleta de tintas azules, rojas y marrones que aplicaban a sus diseños en textiles, rocas y otras superficies. Por ello, es posible que algunas de las tintas utilizadas en la Pintura fueran indígenas.
-   </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-
-<!-- Explore modal -->
-<div id="myModale18" class="modal piezas fade" role="dialog">
-<div class="modal-dialog">
-
-  <!-- Modal content-->
-  <div class="modal-content modal-dato">
-    <div class="modal-header">
-      <h6 class="modal-title"></h6>
-      <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-    </div>
-    <div class="modal-body">
-      <div class="_fuente"><div class="modal-explore-title">la escala del mapa</div>
-   <div class="modal-explore-explain">
-A diferencia de los mapas contemporáneos, cuya precisión consiste en mantener una escala única en toda la imagen, la Pintura utiliza una escala múltiple, flexible y variable. El centro del mapa—que representa el territorio en disputa entre Maldonado y el fiscal—cuenta con una escala más precisa mientras que los bordes son más variables, ubicando al observador con respecto a referentes más lejanos como la ciudad de Santafé y los pueblos de Fontibón o Madrid.
-   </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-
-<!-- Explore modal -->
-<div id="myModale19" class="modal piezas fade" role="dialog">
-<div class="modal-dialog">
-
-  <!-- Modal content-->
-  <div class="modal-content modal-dato">
-    <div class="modal-header">
-      <h6 class="modal-title"></h6>
-      <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-    </div>
-    <div class="modal-body">
-      <div class="_fuente"><div class="modal-explore-title">camino como camellón</div>
-   <div class="modal-explore-explain">
-El mapa identifica al camino como “camellón”. Este detalle recuerda que muchos caminos indígenas y coloniales en la Sabana eran plataformas elevadas para mantenerse secas en temporadas de lluvias. Aún hoy se le dice “camellones” a muchos caminos y carreteras en la Sabana.
-   </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-
-<!-- Explore modal -->
-<div id="myModale20" class="modal piezas fade" role="dialog">
-<div class="modal-dialog">
-
-  <!-- Modal content-->
-  <div class="modal-content modal-pintura">
-    <div class="modal-header">
-      <h6 class="modal-title"></h6>
-      <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-    </div>
-    <div class="modal-body">
-      <div class="_fuente"><div class="modal-explore-title">Pueblo de Guasca</div>
-   <div class="modal-explore-explain">
-     <img src="/assets/img/exp-6.jpg"/>
-     <p class="piedefoto centro">
-       Pueblo de Guasca elaborado por Fray Manuel Félix de Velasco, 1758. Cortesía del Archivo General de la Nación, Bogotá.
-     </p>
-   </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-
-<!-- Explore modal -->
-<div id="myModale21" class="modal piezas fade" role="dialog">
-<div class="modal-dialog">
-
-  <!-- Modal content-->
-  <div class="modal-content modal-dato">
-    <div class="modal-header">
-      <h6 class="modal-title"></h6>
-      <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-    </div>
-    <div class="modal-body">
-      <div class="_fuente"><div class="modal-explore-title">pueblos para indios</div>
-   <div class="modal-explore-explain">
-Los pueblos que se retratan en el mapa como “Fontibón” o “La Serrezuela”  se construyeron como parte de un proyecto puesto en marcha por el imperio español que buscaba que los indios vivieran vidas católicas y “olvidaran sus antiguos ritos y ceremonias”. Así, los indígenas eran forzados a abandonar sus espacios vitales para ubicarse en otros asentamientos que estuvieran organizados en torno a una plaza central, fueran trazados en forma de cuadrícula y tuvieran una iglesia. A este proceso se le conocía como “reducción” de indios.
-   </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-
-<!-- Explore modal -->
-<div id="myModale22" class="modal piezas fade" role="dialog">
-<div class="modal-dialog">
-
-  <!-- Modal content-->
-  <div class="modal-content modal-pintura">
-    <div class="modal-header">
-      <h6 class="modal-title"></h6>
-      <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-    </div>
-    <div class="modal-body">
-      <div class="_fuente"><div class="modal-explore-title">Pueblo de Suta</div>
-   <div class="modal-explore-explain">
-     <img src="/assets/img/exp-5.jpg"/>
-     <p class="piedefoto centro">
-       Pueblo de Suta, 1803. Cortesía del Archivo General de la Nación, Bogotá.
-     </p>
-   </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-
-<!-- Explore modal -->
-<div id="myModale23" class="modal piezas fade" role="dialog">
-<div class="modal-dialog">
-
-  <!-- Modal content-->
-  <div class="modal-content modal-fuente">
-    <div class="modal-header">
-      <h6 class="modal-title"></h6>
-      <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-    </div>
-    <div class="modal-body">
-      <div class="_fuente"><div class="modal-explore-title">indios en la ciudad</div>
-   <div class="modal-explore-explain">
-     <img src="/assets/img/exp-5.jpg"/>
-     <p class="piedefoto centro">
-       “Habiendo entendido las desórdenes y excesos que ha habido en esta ciudad de Santa Fe sobre que los indios e indias ladinos mulatos y mulatas que en ella viven no estén con amos a quien sirvan y por esta razón andan ociosos y vagabundos de que resulta de ordinario en grandes daños e inconvenientes [...] y queriendo proveer acerca de esto lo que más a propósito pareciere convenir de su remedio de manera que cesasen las dichas desórdenes [...] por ahora nombraba y nombro señor administrador de los dichos indios y mulatos [...]”.
-       Instrucciones para el Administrador de Indios de Santa Fe, 1594.
-     </p>
-   </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-
-
-
-<!-- Inicio Footer -->
-  <div class="accordion bottom" id="accordionExample">
-    <div class="card foot-menu">
-      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-        <div class="card-body">
-          <div class="row footer-list">
-            <div class="col-12 foot-right">
-              <div class="foot-capitulos">
-              <a href="/historia.html" class="foot-link principal">Historia de un mapa</a><br />
-              <div class="row">
-                  <div class="col-md-3 col-12 col-foot">
-                    <a href="/historia.html#capitulo1" class="foot-link secundario capitulos"><img class="foot-icon" src="/assets/img/cap1.png" /><span class="foot-title-cap"> Cap. 1: Una pintura de la Sabana</span></a><br />
-                    <a href="/historia.html#1-1" class="foot-link terciario">¿Para qué se dibujó este mapa?</a><br />
-                    <a href="/historia.html#1-2" class="foot-link terciario">¿Dónde es el mapa?</a><br />
-                    <a href="/historia.html#1-3" class="foot-link terciario">¿Es un mapa o una pintura?</a><br />
-                    <a href="/historia.html#1-4" class="foot-link terciario">¿Quiénes eran los dueños de este terreno?</a><br />
+      <div class="row contenedor-explore">
+        <div class="col-md-3 col-12">
+          <div
+            class="nav flex-column nav-pills explorar-lista"
+            id="v-pills-tab"
+            role="tablist"
+            aria-orientation="vertical"
+          >
+            <a
+              class="nav-link explorar-pill active"
+              id="v-pills-home-tab"
+              data-toggle="pill"
+              href="#v-pills-home"
+              role="tab"
+              aria-controls="v-pills-home"
+              aria-selected="true"
+              >Descubrir</a
+            >
+            <a
+              class="nav-link explorar-pill"
+              id="v-pills-profile-tab"
+              data-toggle="pill"
+              href="#v-pills-profile"
+              role="tab"
+              aria-controls="v-pills-profile"
+              aria-selected="false"
+              >Lupa</a
+            >
+            <a
+              class="nav-link explorar-pill"
+              id="v-pills-messages-tab"
+              data-toggle="pill"
+              href="#v-pills-messages"
+              role="tab"
+              aria-controls="v-pills-messages"
+              aria-selected="false"
+              >Ubicación actual</a
+            >
+            <a
+              class="nav-link explorar-pill"
+              id="v-pills-settings-tab"
+              data-toggle="pill"
+              href="#v-pills-settings"
+              role="tab"
+              aria-controls="v-pills-settings"
+              aria-selected="false"
+              >Vista satelital</a
+            >
+          </div>
+        </div>
+        <div class="col-md-9 col-12">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div
+              class="tab-pane explorar-tab fade show active"
+              id="v-pills-home"
+              role="tabpanel"
+              aria-labelledby="v-pills-home-tab"
+            >
+              <div class="d-none d-md-block discover">
+                <p>
+                  Haz click en los íconos en el mapa para entender algunas de
+                  sus características.
+                </p>
+                <div class="leyenda">
+                  <img class="icono-exp dato1" src="/assets/img/dato.svg" />
+                  <h6 class="descubrir-leyenda">Dato</h6>
+                </div>
+                <div class="leyenda">
+                  <img class="icono-exp fuente1" src="/assets/img/fuente.svg" />
+                  <h6 class="descubrir-leyenda">Fuente</h6>
+                </div>
+                <div class="leyenda">
+                  <img
+                    class="icono-exp pintura1"
+                    src="/assets/img/pintura.svg"
+                  />
+                  <h6 class="descubrir-leyenda">Imagen</h6>
+                </div>
+                <div class="bg-descubrir">
+                  <img src="/assets/img/mapa.png" />
+
+                  <article
+                    class="descubrir-btn tooltip"
+                    style="top: 3%; left: 8%"
+                  >
+                    <span class="tooltiptext right _dato"
+                      ><div class="tooltip-title">PINTURA O MAPA</div>
+                      <div class="tooltip-explain">
+                        Este lienzo de 1614 oscila entre dos géneros: pintura de
+                        paisaje y mapa. Aunque se realizó para servir como
+                        prueba en una disputa legal por la propiedad de la
+                        tierra, el manuscrito no es un simple croquis como los
+                        demás mapas de la época. En cambio, trasciende al
+                        terreno del arte por su uso singular del color, sus
+                        elaborados diseños y la firma de su autor, Juan de
+                        Aguilar Rendón. Estos tres elementos son indicios de que
+                        el autor no sólo estaba interesado en representar la
+                        distribución y usos de la tierra para el juicio, también
+                        estaba creando una obra para ser apreciada por sus
+                        cualidades estéticas.
+                      </div>
+                    </span>
+                  </article>
+                  <div class="descubrir-btn2 dato" style="top: 3%; left: 8%">
+                    <img class="icono-exp" src="/assets/img/dato.svg" />
+                  </div>
+                  <article
+                    class="descubrir-btn tooltip"
+                    style="top: 34%; left: 23%"
+                  >
+                    <span class="tooltiptext right _dato"
+                      ><div class="tooltip-title">litigio por las tierras</div>
+                      <div class="tooltip-explain">
+                        En el año de 1603, Francisco Maldonado y Mendoza fue
+                        acusado de haber estafado a la monarquía por comprar
+                        unos terrenos muy extensos y fértiles a un precio muy
+                        bajo, lo cual dio inicio a un largo litigio. El
+                        propósito de la pintura consistió en demostrar si esto
+                        era cierto, o si por el contrario Maldonado tenía la
+                        razón al afirmar que se trataba de un pantano
+                        improductivo. Anotaciones como “pantano ynutil” y
+                        “tierra anegadiza” fueron fundamentales en el curso del
+                        juicio, pues Maldonado salió victorioso y su derecho
+                        sobre estos terrenos fue ratificado.
+                      </div>
+                    </span>
+                  </article>
+
+                  <div class="descubrir-btn2 dato" style="top: 34%; left: 23%">
+                    <img class="icono-exp" src="/assets/img/dato.svg" />
                   </div>
 
-                  <div class="col-md-3 col-12 col-foot">
-                    <a href="/historia.html#capitulo2" class="foot-link secundario capitulos"><img class="foot-icon" src="/assets/img/cap2.png" /> <span class="foot-title-cap"> Cap. 2: Pueblos para los indios</span></a><br />
-                    <a href="/historia.html#2-1" class="foot-link terciario">¿Por qué se llamó “indios” a los muiscas?</a><br />
-                    <a href="/historia.html#2-2" class="foot-link terciario">¿Por qué se ven pueblos en el mapa?</a><br />
-                    <a href="/historia.html#2-3" class="foot-link terciario">¿Desde cuándo existen pueblos en la sabana?</a><br />
-                    <a href="/historia.html#2-4" class="foot-link terciario">¿Cómo vivían los Muiscas antes de la llegada de los españoles?</a><br />
-                    <a href="/historia.html#2-5" class="foot-link terciario">¿Por qué salen en el mapa un sitio que se llama Bogotá y otro que se llama Santa Fe?</a><br />
+                  <article
+                    class="descubrir-btn tooltip"
+                    style="top: 28%; left: 62%"
+                  >
+                    <span class="tooltiptext left _dato"
+                      ><div class="tooltip-title">pueblo de Bogotá</div>
+                      <div class="tooltip-explain">
+                        A pesar de que por mucho tiempo se conoció a la capital
+                        de Colombia como Santafé de Bogotá, en la pintura
+                        aparecen dos lugares diferenciados: el “pueblo de
+                        Bogotá” (hoy pueblo de Funza) y la ciudad de “Santa Fe”
+                        (hoy Santafé de Bogotá). Esto se explica porque la
+                        creación de pueblos era parte de unas medidas que
+                        buscaban crear dos repúblicas separadas espacialmente y
+                        con responsabilidades legales distintas: una de indios
+                        que vivieran en pueblos y una de españoles que
+                        residieran en ciudades. En la práctica la división entre
+                        las dos repúblicas no fue posible pues los pueblos eran
+                        lugares con una gran actividad económica que incluía a
+                        españoles y mestizos, al tiempo en las ciudades vivían
+                        muchos indígenas.
+                      </div>
+                    </span>
+                  </article>
+
+                  <div class="descubrir-btn2 dato" style="top: 28%; left: 62%">
+                    <img class="icono-exp" src="/assets/img/dato.svg" />
                   </div>
 
-                  <div class="col-md-3 col-12 col-foot">
-                    <a href="/historia.html#capitulo3" class="foot-link secundario capitulos"><img class="foot-icon" src="/assets/img/cap3.png" /><span class="foot-title-cap">  Cap. 3: De terrazas a pastizales</span></a><br />
-                    <a href="/historia.html#3-1" class="foot-link terciario">¿Había cerdos, vacas, gallinas y burros en la sabana de Bogotá antes de que llegaran los españoles?</a><br />
-                    <a href="/historia.html#3-2" class="foot-link terciario">¿Cómo cultivaban los Muiscas en la Sabana de Bogotá?</a><br />
-                    <a href="/historia.html#3-3" class="foot-link terciario">¿La llegada de ganado afectó la agricultura indígena?	</a><br />
+                  <article
+                    class="descubrir-btn tooltip"
+                    style="top: 52%; left: 81%"
+                  >
+                    <span class="tooltiptext left _dato"
+                      ><div class="tooltip-title">pastos africanos</div>
+                      <div class="tooltip-explain">
+                        Tras la introducción de ganado en la Sabana de Bogotá,
+                        el paisaje fue modificado según los intereses ganaderos
+                        del momento. Por esta razón, los pastos representados en
+                        la pintura posiblemente no son los mismos que cubren la
+                        Sabana hoy en día. Desde el siglo XVIII los ganaderos
+                        impulsaron la importación de pastos africanos que
+                        producían mejores rendimientos para la ganadería. No
+                        obstante, la llegada de pastos africanos al Nuevo Mundo
+                        se puede rastrear desde antes, cuando se usaba para
+                        construir las camas en los barcos utilizados para el
+                        tráfico de esclavos.
+                      </div>
+                    </span>
+                  </article>
+
+                  <div class="descubrir-btn2 dato" style="top: 52%; left: 81%">
+                    <img class="icono-exp" src="/assets/img/dato.svg" />
                   </div>
 
-                  <div class="col-md-3 col-12 col-foot">
-                    <a href="/historia.html#capitulo4" class="foot-link secundario capitulos"><img class="foot-icon" src="/assets/img/cap-4.png" /><span class="foot-title-cap">  Cap. 4: Un paisaje dividido</span></a><br />
-                    <a href="/historia.html#4-1" class="foot-link terciario">¿Qué eran los resguardos?</a><br />
-                    <a href="/historia.html#4-2" class="foot-link terciario">¿Podían los indígenas trabajar donde querían?</a><br />
-                    <a href="/historia.html#4-3" class="foot-link terciario">¿Por qué es éste un paisaje dividido?</a><br />
-                    <a href="/historia.html#4-4" class="foot-link terciario">¿Qué pasó con los pueblos y los resguardos?</a><br />
+                  <article
+                    class="descubrir-btn tooltip"
+                    style="top: 48%; left: 73%"
+                  >
+                    <span class="tooltiptext left _dato"
+                      ><div class="tooltip-title">despojo de la tierra</div>
+                      <div class="tooltip-explain">
+                        En comparación con las extensas tierras ganaderas de la
+                        hacienda del español Francisco Maldonado y Mendoza, la
+                        tierra de labranza o cultivo de los indígenas se puede
+                        ver dramáticamente disminuida en la pintura. En este
+                        sentido, este documento es fundamentalmente un mapa del
+                        despojo de la tierra y de la transformación de los
+                        paisajes agrícolas y de las sociedades indígenas.
+                      </div>
+                    </span>
+                  </article>
+
+                  <div class="descubrir-btn2 dato" style="top: 48%; left: 73%">
+                    <img class="icono-exp" src="/assets/img/dato.svg" />
                   </div>
+
+                  <article
+                    class="descubrir-btn tooltip"
+                    style="top: 67%; left: 83%"
+                  >
+                    <span class="tooltiptext left _dato"
+                      ><div class="tooltip-title">sistema de camellones</div>
+                      <div class="tooltip-explain">
+                        Antes de la llegada de los españoles y la introducción
+                        de sus formas de cultivo y ganado, los muiscas que
+                        habitaban la región organizaban y aprovechaban las
+                        fuentes hídricas mediante el sistema de camellones.
+                        Dicho sistema consistía en plataformas elevadas que
+                        servían como terrazas de cultivo, las cuales a su vez
+                        estaban atravesadas por diques. Estos últimos
+                        proporcionaban grandes beneficios: por un lado,
+                        facilitaban el drenaje del agua excedente, permitiendo
+                        que el suelo elevado se pudiera utilizar para los
+                        cultivos. Por otro lado, los diques servían como canales
+                        de pesca.
+                      </div>
+                    </span>
+                  </article>
+
+                  <div class="descubrir-btn2 dato" style="top: 67%; left: 83%">
+                    <img class="icono-exp" src="/assets/img/dato.svg" />
+                  </div>
+
+                  <article
+                    class="descubrir-btn tooltip"
+                    style="top: 78%; left: 67%"
+                  >
+                    <span class="tooltiptext up _dato"
+                      ><div class="tooltip-title">pueblos para indios</div>
+                      <div class="tooltip-explain">
+                        Los pueblos que se retratan en el mapa como “Fontibón” o
+                        “La Serrezuela” se construyeron como parte de un
+                        proyecto puesto en marcha por el imperio español que
+                        buscaba que los indios vivieran vidas católicas y
+                        “olvidaran sus antiguos ritos y ceremonias”. Así, los
+                        indígenas eran forzados a abandonar sus espacios vitales
+                        para ubicarse en otros asentamientos que estuvieran
+                        organizados en torno a una plaza central, fueran
+                        trazados en forma de cuadrícula y tuvieran una iglesia.
+                        A este proceso se le conocía como “reducción” de indios.
+                      </div>
+                    </span>
+                  </article>
+
+                  <div class="descubrir-btn2 dato" style="top: 78%; left: 67%">
+                    <img class="icono-exp" src="/assets/img/dato.svg" />
+                  </div>
+
+                  <article
+                    class="descubrir-btn tooltip"
+                    style="top: 72%; left: 39%"
+                  >
+                    <span class="tooltiptext up _dato"
+                      ><div class="tooltip-title">la escala del mapa</div>
+                      <div class="tooltip-explain">
+                        A diferencia de los mapas contemporáneos, cuya precisión
+                        consiste en mantener una escala única en toda la imagen,
+                        la Pintura utiliza una escala múltiple, flexible y
+                        variable. El centro del mapa—que representa el
+                        territorio en disputa entre Maldonado y el fiscal—cuenta
+                        con una escala más precisa mientras que los bordes son
+                        más variables, ubicando al observador con respecto a
+                        referentes más lejanos como la ciudad de Santafé y los
+                        pueblos de Fontibón o Madrid.
+                      </div>
+                    </span>
+                  </article>
+
+                  <div class="descubrir-btn2 dato" style="top: 72%; left: 39%">
+                    <img class="icono-exp" src="/assets/img/dato.svg" />
+                  </div>
+
+                  <article
+                    class="descubrir-btn tooltip"
+                    style="top: 74%; left: 21%"
+                  >
+                    <span class="tooltiptext up _dato"
+                      ><div class="tooltip-title">los colores del mapa</div>
+                      <div class="tooltip-explain">
+                        Aunque no conocemos el origen de los colores utilizados
+                        en el mapa, la producción de los colores era un proceso
+                        complejo en que se tomaban elementos vegetales y
+                        animales y se transformaban en tintas a través de
+                        procesos ricos en significados culturales. Tenemos
+                        evidencias de que los Muiscas y otros grupos nativos
+                        utilizaban una rica paleta de tintas azules, rojas y
+                        marrones que aplicaban a sus diseños en textiles, rocas
+                        y otras superficies. Por ello, es posible que algunas de
+                        las tintas utilizadas en la Pintura fueran indígenas.
+                      </div>
+                    </span>
+                  </article>
+
+                  <div class="descubrir-btn2 dato" style="top: 74%; left: 21%">
+                    <img class="icono-exp" src="/assets/img/dato.svg" />
+                  </div>
+
+                  <article
+                    class="descubrir-btn tooltip"
+                    style="top: 45%; left: 40%"
+                  >
+                    <span class="tooltiptext left _dato"
+                      ><div class="tooltip-title">ganado en américa</div>
+                      <div class="tooltip-explain">
+                        A lo largo del mundo antiguo y la edad media, en España
+                        se consolidó una cultura ganadera centrada en la cría de
+                        vacas, ovejas, cabras y cerdos. Esta se apoyaba en la
+                        utilización de caballos y perros para el control del
+                        ganado que se mantenía disperso. Al ser introducidos a
+                        América, estos animales florecieron y se adaptaron
+                        fácilmente a un entorno en que no contaban con muchos
+                        depredadores naturales. Al mismo tiempo, en el Nuevo
+                        Mundo se propagaron otras especies menos deseadas, como
+                        la rata noruega, que llegó en los barcos de los colonos.
+                      </div>
+                    </span>
+                  </article>
+
+                  <div class="descubrir-btn2 dato" style="top: 45%; left: 40%">
+                    <img class="icono-exp" src="/assets/img/dato.svg" />
+                  </div>
+
+                  <article
+                    class="descubrir-btn tooltip"
+                    style="top: 25%; left: 37%"
+                  >
+                    <span class="tooltiptext left _dato"
+                      ><div class="tooltip-title">
+                        Francisco maldonado y mendoza
+                      </div>
+                      <div class="tooltip-explain">
+                        Don Francisco Maldonado y Mendoza nació en España en
+                        1551 y llegó a Santafé de Bogotá en 1583. En 1586 se
+                        casó con Jerónima de Orrego, la hija y única heredera
+                        del conquistador Alonso de Olalla. Desde ese año,
+                        Maldonado comenzó a comprar estancias en la Sabana de
+                        Bogotá y a recibir tierras que le otorgó la Corona
+                        española. Para mediados de 1590, Maldonado contaba con
+                        una de las haciendas ganaderas más ricas del Nuevo Reino
+                        de Granada. Esto se evidencia en la pintura, a través de
+                        los dibujos y etiquetas de distintos lugares de la
+                        hacienda: molino de Don Francisco, novillero de Don
+                        Francisco, estancia de Don Francisco, etc. Sus herederos
+                        mantuvieron el poder y la riqueza durante más de dos
+                        siglos.
+                      </div>
+                    </span>
+                  </article>
+
+                  <div class="descubrir-btn2 dato" style="top: 25%; left: 37%">
+                    <img class="icono-exp" src="/assets/img/dato.svg" />
+                  </div>
+
+                  <article
+                    class="descubrir-btn tooltip"
+                    style="top: 5%; left: 93%"
+                  >
+                    <span class="tooltiptext left _dato"
+                      ><div class="tooltip-title">ciudad de Santafé</div>
+                      <div class="tooltip-explain">
+                        Este mapa-pintura representa la Sabana de Bogotá, una
+                        altiplanicie en la cordillera oriental de los Andes
+                        donde hoy es Colombia. A comienzos del siglo XVI, la
+                        Sabana estaba ocupada por indígenas Muiscas, de la
+                        familia lingüística Chibcha. Una expedición española
+                        liderada por Gonzalo Jiménez de Quesada llegó a este
+                        lugar en 1536. Desde esos años la ciudad de Bogotá se
+                        convirtió en la base de operaciones del imperio español
+                        en la zona y en 1549 la nombrarían como sede de la
+                        Audiencia de Santafé.
+                      </div>
+                    </span>
+                  </article>
+
+                  <div class="descubrir-btn2 dato" style="top: 5%; left: 93%">
+                    <img class="icono-exp" src="/assets/img/dato.svg" />
+                  </div>
+
+                  <article
+                    class="descubrir-btn tooltip"
+                    style="top: 12%; left: 50%"
+                  >
+                    <span class="tooltiptext down _dato"
+                      ><div class="tooltip-title">
+                        cercado del viejo cacique
+                      </div>
+                      <div class="tooltip-explain">
+                        A la llegada de los españoles, los muiscas estaban
+                        organizados en sociedades agrícolas con varios niveles
+                        de jerarquía política y sus líderes residían en unos
+                        lugares ceremoniosos cercados por troncos de madera que
+                        decoraban con pinturas en tela de algodón de diversos
+                        colores y estilos.
+                      </div>
+                    </span>
+                  </article>
+
+                  <div class="descubrir-btn2 dato" style="top: 12%; left: 50%">
+                    <img class="icono-exp" src="/assets/img/dato.svg" />
+                  </div>
+
+                  <article
+                    class="descubrir-btn tooltip"
+                    style="top: 72%; left: 55%"
+                  >
+                    <span class="tooltiptext up _dato"
+                      ><div class="tooltip-title">camino como camellón</div>
+                      <div class="tooltip-explain">
+                        El mapa identifica al camino como “camellón”. Este
+                        detalle recuerda que muchos caminos indígenas y
+                        coloniales en la Sabana eran plataformas elevadas para
+                        mantenerse secas en temporadas de lluvias. Aún hoy se le
+                        dice “camellones” a muchos caminos y carreteras en la
+                        Sabana.
+                      </div>
+                    </span>
+                  </article>
+
+                  <div class="descubrir-btn2 dato" style="top: 72%; left: 55%">
+                    <img class="icono-exp" src="/assets/img/dato.svg" />
+                  </div>
+
+                  <article
+                    class="descubrir-btn tooltip"
+                    style="top: 43%; left: 67%"
+                  >
+                    <span class="tooltiptext left _dato"
+                      ><div class="tooltip-title">porquera del cacique</div>
+                      <div class="tooltip-explain">
+                        Las sociedades nativas del Nuevo Mundo contaban con
+                        varios animales domesticados, como los perros, el pavo y
+                        el pato. En los Andes peruanos y bolivianos se
+                        practicaba la ganadería a partir de camélidos, como las
+                        llamas y las alpacas, utilizados como animales de carga
+                        y fuente de lana. La inclusión en el mapa de la porquera
+                        (donde se conservaban los cerdos) y la estancia de
+                        ganado (donde pastaban las vacas) del cacique demuestra
+                        que los indígenas incorporaron los animales traídos de
+                        Europa en sus actividades económicas. Este fue el caso
+                        también de la gallina y de la oveja, cuya lana
+                        comenzaron a utilizar como reemplazo del algodón para
+                        tejer unas mantas más económicas.
+                      </div>
+                    </span>
+                  </article>
+
+                  <div class="descubrir-btn2 dato" style="top: 43%; left: 67%">
+                    <img class="icono-exp" src="/assets/img/dato.svg" />
+                  </div>
+
+                  <article
+                    class="descubrir-btn tooltip"
+                    style="top: 31%; left: 73%"
+                  >
+                    <span class="tooltiptext left _fuente"
+                      ><div class="tooltip-title">reclamos de indígena</div>
+                      <div class="tooltip-explain">
+                        “[...] aquí venimos ante vuestra merced a dar
+                        declaración [de] los trabajos y aniquilaciones que
+                        pasamos con nuestro pueblo que es en forma de daños de
+                        nuestra cementera. Está un vecino que es Agustín Vela
+                        con más de doscientas mulas y caballos, ganado vacuno y
+                        burros entre nuestro resguardo. Antes de recoger nuestra
+                        pobreza que es trigo y maíz y cebada y turmas hace
+                        entrar mulas mansas y zorreras [y] nos destruye
+                        [nuestras cosechas] teniendo muchas tierras [...] sino
+                        maliciosamente y por engordar sus mulas con nuestro
+                        grano [...].” Indígenas de Turmequé, 1672.
+                      </div>
+                    </span>
+                  </article>
+
+                  <div
+                    class="descubrir-btn2 fuente"
+                    style="top: 31%; left: 73%"
+                  >
+                    <img class="icono-exp" src="/assets/img/fuente.svg" />
+                  </div>
+
+                  <article
+                    class="descubrir-btn tooltip"
+                    style="top: 6%; left: 35%"
+                  >
+                    <span class="tooltiptext left _fuente"
+                      ><div class="tooltip-title">Construcción de pueblos</div>
+                      <div class="tooltip-explain">
+                        “Háganse los edifiçios del pueblo en esta forma que se
+                        sitúe y ponga la plaza en medio en razonable proporción
+                        y de ella salgan todas las calles con sus solares
+                        conforme a la cantidad del pueblo y los solares y casas
+                        sean de algún tamaño con su corral [...] que ante todas
+                        cosas todo el pueblo junto haga su Iglesia en un canto
+                        de la plaza al oriente el altar del grandor y tamaño que
+                        fuere el pueblo y algo mayor y a otro canto hagan la
+                        casa del cacique y señor en razonable grandor y a otro
+                        la casa de su cabildo y cárcel y a otro las de los más
+                        principales y tras esto pos sus calles se pongan los
+                        demás solares [...]”. Tomás López Medel, 1559
+                      </div>
+                    </span>
+                  </article>
+
+                  <div class="descubrir-btn2 fuente" style="top: 6%; left: 35%">
+                    <img class="icono-exp" src="/assets/img/fuente.svg" />
+                  </div>
+
+                  <article
+                    class="descubrir-btn tooltip"
+                    style="top: 84%; left: 71.5%"
+                  >
+                    <span class="tooltiptext up _fuente"
+                      ><div class="tooltip-title">indios en la ciudad</div>
+                      <div class="tooltip-explain">
+                        “habiendo entendido las desórdenes y excesos que ha
+                        habido en esta ciudad de Santa Fe sobre que los indios e
+                        indias ladinos mulatos y mulatas que en ella viven no
+                        estén con amos a quien sirvan y por esta razón andan
+                        ociosos y vagabundos de que resulta de ordinario en
+                        grandes daños e inconvenientes [...] y queriendo proveer
+                        acerca de esto lo que más a propósito pareciere convenir
+                        de su remedio de manera que cesasen las dichas
+                        desórdenes [...] por ahora nombraba y nombro señor
+                        administrador de los dichos indios y mulatos [...]”.
+                        Instrucciones para el Administrador de Indios de Santa
+                        Fe, 1594.
+                      </div>
+                    </span>
+                  </article>
+
+                  <div
+                    class="descubrir-btn2 fuente"
+                    style="top: 84%; left: 71.5%"
+                  >
+                    <img class="icono-exp" src="/assets/img/fuente.svg" />
+                  </div>
+
+                  <article
+                    class="descubrir-btn tooltip"
+                    style="top: 28%; left: 31%"
+                  >
+                    <span class="tooltiptext left _pintura"
+                      ><div class="tooltip-title">
+                        Francisco Maldonado de Mendoza
+                      </div>
+                      <div class="tooltip-explain">
+                        <img src="/assets/img/exp-3.jpg" />
+                        <p class="piedefoto centro">
+                          Francisco Maldonado de Mendoza. Anónimo, siglo XVIII.
+                          Cortesía del Museo Colonial, Bogotá.
+                        </p>
+                      </div>
+                    </span>
+                  </article>
+
+                  <div
+                    class="descubrir-btn2 pintura"
+                    style="top: 28%; left: 31%"
+                  >
+                    <img class="icono-exp" src="/assets/img/pintura.svg" />
+                  </div>
+
+                  <article
+                    class="descubrir-btn tooltip"
+                    style="top: 14%; left: 53%"
+                  >
+                    <span class="tooltiptext left _pintura"
+                      ><div class="tooltip-title">
+                        Figura votiva en orfebrería (Muisca)
+                      </div>
+                      <div class="tooltip-explain">
+                        <img src="/assets/img/exp-2.jpg" />
+                        <p class="piedefoto centro">
+                          Figura votiva en orfebrería. Cordillera Oriental -
+                          Muisca. Fecha: 600/1600. Cortesía del Museo del Oro
+                          (Bogotá).
+                        </p>
+                      </div>
+                    </span>
+                  </article>
+
+                  <div
+                    class="descubrir-btn2 pintura"
+                    style="top: 14%; left: 53%"
+                  >
+                    <img class="icono-exp" src="/assets/img/pintura.svg" />
+                  </div>
+
+                  <article
+                    class="descubrir-btn tooltip"
+                    style="top: 63%; left: 79%"
+                  >
+                    <span class="tooltiptext up _pintura"
+                      ><div class="tooltip-title">
+                        Foto aérea de un camellón (1956)
+                      </div>
+                      <div class="tooltip-explain">
+                        <img src="/assets/img/exp-4.jpg" />
+                        <p class="piedefoto centro">
+                          Vuelo C-778, Foto 869. Lugar y fecha de creación:
+                          Bogotá, 1956. Recuperada de: Instituto Geográfico
+                          Agustín Codazzi, Bogotá.
+                        </p>
+                      </div>
+                    </span>
+                  </article>
+
+                  <div
+                    class="descubrir-btn2 pintura"
+                    style="top: 63%; left: 79%"
+                  >
+                    <img class="icono-exp" src="/assets/img/pintura.svg" />
+                  </div>
+
+                  <article
+                    class="descubrir-btn tooltip"
+                    style="top: 80%; left: 74%"
+                  >
+                    <span class="tooltiptext up _pintura"
+                      ><div class="tooltip-title">Pueblo de Suta</div>
+                      <div class="tooltip-explain">
+                        <img src="/assets/img/exp-5.jpg" />
+                        <p class="piedefoto centro">
+                          Pueblo de Suta, 1803. Cortesía del Archivo General de
+                          la Nación, Bogotá.
+                        </p>
+                      </div>
+                    </span>
+                  </article>
+
+                  <div
+                    class="descubrir-btn2 pintura"
+                    style="top: 80%; left: 74%"
+                  >
+                    <img class="icono-exp" src="/assets/img/pintura.svg" />
+                  </div>
+
+                  <article
+                    class="descubrir-btn tooltip"
+                    style="top: 81%; left: 69%"
+                  >
+                    <span class="tooltiptext up _pintura"
+                      ><div class="tooltip-title">Pueblo de Guasca</div>
+                      <div class="tooltip-explain">
+                        <img src="/assets/img/exp-6.jpg" />
+                        <p class="piedefoto centro">
+                          Pueblo de Guasca elaborado por Fray Manuel Félix de
+                          Velasco, 1758. Cortesía del Archivo General de la
+                          Nación, Bogotá.
+                        </p>
+                      </div>
+                    </span>
+                  </article>
+
+                  <div
+                    class="descubrir-btn2 pintura"
+                    style="top: 81%; left: 69%"
+                  >
+                    <img class="icono-exp" src="/assets/img/pintura.svg" />
+                  </div>
+                </div>
               </div>
-            </div>
-            </div>
-            <div class="col-12 foot-right">
-              <div class="row foot-explorar">
-                  <div class="col-md-3 col-12 foot-margin">
-                    <a href="/explora.html" class="foot-link principal">Explorar</a><br />
-                    <div class="row">
-                        <div class="col-6">
-                          <a href="/explora.html" class="foot-link terciario">Descubrir</a><br />
-                          <a href="/explora.html" class="foot-link terciario">Ubicación actual</a><br />
-                        </div>
-                        <div class="col-6">
-                          <!---<a href="#" class="foot-link terciario">Lupa</a><br />--->
-                          <a href="/explora.html" class="foot-link terciario">Imagen satelital</a><br />
-                        </div>
-                    </div>
+              <div class="d-md-none row discover-xs">
+                <h4>
+                  Haz clic en cada parte del mapa para conocer a profundidad
+                  algunas de sus características.
+                </h4>
+                <div>
+                  <div class="leyenda">
+                    <img class="icono-exp dato1" src="/assets/img/dato.svg" />
+                    <h5 class="descubrir-leyenda">Dato</h5>
                   </div>
-            <div class="col-md-3 col-12 foot-margin">
-              <a href="/coleccion.html" class="foot-link principal explorar">Coleccion de fuentes</a><br />
-              </div>
-
-              <div class="col-md-3 col-12 foot-margin">
-                <a href="/profesores.html" class="foot-link principal explorar">Para profesores</a><br />
+                  <div class="leyenda">
+                    <img
+                      class="icono-exp fuente1"
+                      src="/assets/img/fuente.svg"
+                    />
+                    <h5 class="descubrir-leyenda">Fuente</h5>
+                  </div>
+                  <div class="leyenda">
+                    <img
+                      class="icono-exp pintura1"
+                      src="/assets/img/pintura.svg"
+                    />
+                    <h5 class="descubrir-leyenda">Imagen</h5>
+                  </div>
+                </div>
+                <div class="col-4 pieza-mapa">
+                  <button
+                    type="button"
+                    class="btn puzzle"
+                    data-toggle="modal"
+                    data-target="#myModale1"
+                  >
+                    <img src="/assets/img/e1.png" />
+                  </button>
                 </div>
 
-                <div class="col-md-3 col-12 foot-margin">
-                    <a href="/acerca.html" class="foot-link principal explorar">Acerca de este proyecto</a><br />
-                  </div>
+                <div class="col-4 pieza-mapa">
+                  <button
+                    type="button"
+                    class="btn puzzle"
+                    data-toggle="modal"
+                    data-target="#myModale2"
+                  >
+                    <img src="/assets/img/e2.png" />
+                  </button>
+                </div>
+
+                <div class="col-4 pieza-mapa">
+                  <button
+                    type="button"
+                    class="btn puzzle"
+                    data-toggle="modal"
+                    data-target="#myModale3"
+                  >
+                    <img src="/assets/img/e3.png" />
+                  </button>
+                </div>
+
+                <div class="col-4 pieza-mapa">
+                  <button
+                    type="button"
+                    class="btn puzzle"
+                    data-toggle="modal"
+                    data-target="#myModale4"
+                  >
+                    <img src="/assets/img/e4.png" />
+                  </button>
+                </div>
+
+                <div class="col-4 pieza-mapa">
+                  <button
+                    type="button"
+                    class="btn puzzle"
+                    data-toggle="modal"
+                    data-target="#myModale5"
+                  >
+                    <img src="/assets/img/e5.png" />
+                  </button>
+                </div>
+
+                <div class="col-4 pieza-mapa">
+                  <button
+                    type="button"
+                    class="btn puzzle"
+                    data-toggle="modal"
+                    data-target="#myModale6"
+                  >
+                    <img src="/assets/img/e6.png" />
+                  </button>
+                </div>
+
+                <div class="col-4 pieza-mapa">
+                  <button
+                    type="button"
+                    class="btn puzzle"
+                    data-toggle="modal"
+                    data-target="#myModale7"
+                  >
+                    <img src="/assets/img/e7.png" />
+                  </button>
+                </div>
+
+                <div class="col-4 pieza-mapa">
+                  <button
+                    type="button"
+                    class="btn puzzle"
+                    data-toggle="modal"
+                    data-target="#myModale8"
+                  >
+                    <img src="/assets/img/e8.png" />
+                  </button>
+                </div>
+
+                <div class="col-4 pieza-mapa">
+                  <button
+                    type="button"
+                    class="btn puzzle"
+                    data-toggle="modal"
+                    data-target="#myModale9"
+                  >
+                    <img src="/assets/img/e9.png" />
+                  </button>
+                </div>
+
+                <div class="col-4 pieza-mapa">
+                  <button
+                    type="button"
+                    class="btn puzzle"
+                    data-toggle="modal"
+                    data-target="#myModale10"
+                  >
+                    <img src="/assets/img/e10.png" />
+                  </button>
+                </div>
+
+                <div class="col-4 pieza-mapa">
+                  <button
+                    type="button"
+                    class="btn puzzle"
+                    data-toggle="modal"
+                    data-target="#myModale11"
+                  >
+                    <img src="/assets/img/e11.png" />
+                  </button>
+                </div>
+
+                <div class="col-4 pieza-mapa">
+                  <button
+                    type="button"
+                    class="btn puzzle"
+                    data-toggle="modal"
+                    data-target="#myModale12"
+                  >
+                    <img src="/assets/img/e12.png" />
+                  </button>
+                </div>
+
+                <div class="col-4 pieza-mapa">
+                  <button
+                    type="button"
+                    class="btn puzzle"
+                    data-toggle="modal"
+                    data-target="#myModale13"
+                  >
+                    <img src="/assets/img/e13.png" />
+                  </button>
+                </div>
+
+                <div class="col-4 pieza-mapa">
+                  <button
+                    type="button"
+                    class="btn puzzle"
+                    data-toggle="modal"
+                    data-target="#myModale14"
+                  >
+                    <img src="/assets/img/e14.png" />
+                  </button>
+                </div>
+
+                <div class="col-4 pieza-mapa">
+                  <button
+                    type="button"
+                    class="btn puzzle"
+                    data-toggle="modal"
+                    data-target="#myModale15"
+                  >
+                    <img src="/assets/img/e15.png" />
+                  </button>
+                </div>
+
+                <div class="col-4 pieza-mapa">
+                  <button
+                    type="button"
+                    class="btn puzzle"
+                    data-toggle="modal"
+                    data-target="#myModale16"
+                  >
+                    <img src="/assets/img/e16.png" />
+                  </button>
+                </div>
+
+                <div class="col-4 pieza-mapa">
+                  <button
+                    type="button"
+                    class="btn puzzle"
+                    data-toggle="modal"
+                    data-target="#myModale17"
+                  >
+                    <img src="/assets/img/e17.png" />
+                  </button>
+                </div>
+
+                <div class="col-4 pieza-mapa">
+                  <button
+                    type="button"
+                    class="btn puzzle"
+                    data-toggle="modal"
+                    data-target="#myModale18"
+                  >
+                    <img src="/assets/img/e18.png" />
+                  </button>
+                </div>
+
+                <div class="col-4 pieza-mapa">
+                  <button
+                    type="button"
+                    class="btn puzzle"
+                    data-toggle="modal"
+                    data-target="#myModale19"
+                  >
+                    <img src="/assets/img/e19.png" />
+                  </button>
+                </div>
+
+                <div class="col-4 pieza-mapa">
+                  <button
+                    type="button"
+                    class="btn puzzle"
+                    data-toggle="modal"
+                    data-target="#myModale20"
+                  >
+                    <img src="/assets/img/e20.png" />
+                  </button>
+                </div>
+
+                <div class="col-4 pieza-mapa">
+                  <button
+                    type="button"
+                    class="btn puzzle"
+                    data-toggle="modal"
+                    data-target="#myModale21"
+                  >
+                    <img src="/assets/img/e21.png" />
+                  </button>
+                </div>
+
+                <div class="col-4 pieza-mapa">
+                  <button
+                    type="button"
+                    class="btn puzzle"
+                    data-toggle="modal"
+                    data-target="#myModale22"
+                  >
+                    <img src="/assets/img/e22.png" />
+                  </button>
+                </div>
+
+                <div class="col-4 pieza-mapa">
+                  <button
+                    type="button"
+                    class="btn puzzle"
+                    data-toggle="modal"
+                    data-target="#myModale23"
+                  >
+                    <img src="/assets/img/e23.png" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="tab-pane explorar-tab fade"
+              id="v-pills-profile"
+              role="tabpanel"
+              aria-labelledby="v-pills-profile-tab"
+            >
+              <p>
+                Navega libremente por el mapa, ampliando y reduciendo para
+                conocer sus detalles.
+              </p>
+              <iframe
+                src="https://catalogoenlinea.bibliotecanacional.gov.co/custom/web/content/mapoteca/Paisajes_coloniales/Paisajes_coloniales.html"
+                marginwidth="0"
+                marginheight="0"
+                name="ventana_iframe"
+                scrolling="no"
+                border="0"
+                frameborder="0"
+                width="800"
+                height="600"
+              ></iframe>
+            </div>
+
+            <div
+              class="tab-pane explorar-tab fade"
+              id="v-pills-messages"
+              role="tabpanel"
+              aria-labelledby="v-pills-messages-tab"
+            >
+              <p>
+                Acá aparece la
+                <i>Pintura de las tierras de Bogotá</i> superpuesta al mapa
+                actual. La superposición es aproximada, dado que las escalas de
+                la pintura y el mapa contemporáneo no coinciden exactamente.
+              </p>
+
+              <div class="d-none d-md-block">
+                <div class="embed-container">
+                  <iframe
+                    width="500"
+                    height="400"
+                    frameborder="0"
+                    scrolling="no"
+                    marginheight="0"
+                    marginwidth="0"
+                    title="Maldonado_1614"
+                    src="//www.arcgis.com/apps/Embed/index.html?webmap=e7271f198afd4379b6360cb738bd8250&extent=-74.533945,4.593524,-74.184213,4.88549&zoom=true&previewImage=false&scale=true&basemap_gallery=true&disable_scroll=true&theme=light"
+                  ></iframe>
+                </div>
+              </div>
+              <div class="d-md-none">
+                <div class="embed-container">
+                  <iframe
+                    width="400"
+                    height="600"
+                    frameborder="0"
+                    scrolling="no"
+                    marginheight="0"
+                    marginwidth="0"
+                    title="Maldonado_1614"
+                    src="//www.arcgis.com/apps/Embed/index.html?webmap=e7271f198afd4379b6360cb738bd8250&extent=-74.7847,4.3121,-73.4389,5.0088&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=dark"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane explorar-tab fade"
+              id="v-pills-settings"
+              role="tabpanel"
+              aria-labelledby="v-pills-settings-tab"
+            >
+              <p>
+                Esta es una vista distorsionada de la
+                <i>Pintura de las tierras de Bogotá</i> que construimos para
+                mostrar la diferencia entre la escala que maneja con la que
+                usamos hoy. Así se vería la Pintura si buscáramos que la escala
+                representada en ella coincidiera con la de nuestro mapa actual.
+              </p>
+              <div class="d-none d-md-block">
+                <div class="embed-container">
+                  <iframe
+                    width="500"
+                    height="400"
+                    frameborder="0"
+                    scrolling="no"
+                    marginheight="0"
+                    marginwidth="0"
+                    title="Maldonado_1614_III"
+                    src="//www.arcgis.com/apps/Embed/index.html?webmap=44ca2ca965d5456a9d6111a98187e575&extent=-74.4791,4.5149,-73.8062,4.8632&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=dark"
+                  ></iframe>
+                </div>
+              </div>
+              <div class="d-md-none">
+                <div class="embed-container">
+                  <iframe
+                    width="400"
+                    height="600"
+                    frameborder="0"
+                    scrolling="no"
+                    marginheight="0"
+                    marginwidth="0"
+                    title="Maldonado_1614_III"
+                    src="//www.arcgis.com/apps/Embed/index.html?webmap=44ca2ca965d5456a9d6111a98187e575&extent=-74.3286,4.5891,-73.9922,4.7633&zoom=true&previewImage=false&scale=true&disable_scroll=false&theme=dark"
+                  ></iframe>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="card-header" id="headingOne">
-          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-chevron-compact-up text-triangle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894l6-3z"/>
-            </svg>
-          </button>
+
+      <!-- Explore modal -->
+      <div id="myModale1" class="modal piezas fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content modal-dato">
+            <div class="modal-header">
+              <h6 class="modal-title"></h6>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="_fuente">
+                <div class="modal-explore-title">PINTURA O MAPA</div>
+                <div class="modal-explore-explain">
+                  Este lienzo de 1614 oscila entre dos géneros: pintura de
+                  paisaje y mapa. Aunque se realizó para servir como prueba en
+                  una disputa legal por la propiedad de la tierra, el manuscrito
+                  no es un simple croquis como los demás mapas de la época. En
+                  cambio, trasciende al terreno del arte por su uso singular del
+                  color, sus elaborados diseños y la firma de su autor, Juan de
+                  Aguilar Rendón. Estos tres elementos son indicios de que el
+                  autor no sólo estaba interesado en representar la distribución
+                  y usos de la tierra para el juicio, también estaba creando una
+                  obra para ser apreciada por sus cualidades estéticas.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <!-- Explore modal -->
+      <div id="myModale2" class="modal piezas fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content modal_fuente">
+            <div class="modal-header">
+              <h6 class="modal-title"></h6>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="_fuente">
+                <div class="modal-explore-title">Construcción de pueblos</div>
+                <div class="modal-explore-explain">
+                  “Háganse los edifiçios del pueblo en esta forma que se sitúe y
+                  ponga la plaza en medio en razonable proporción y de ella
+                  salgan todas las calles con sus solares conforme a la cantidad
+                  del pueblo y los solares y casas sean de algún tamaño con su
+                  corral [...] que ante todas cosas todo el pueblo junto haga su
+                  Iglesia en un canto de la plaza al oriente el altar del
+                  grandor y tamaño que fuere el pueblo y algo mayor y a otro
+                  canto hagan la casa del cacique y señor en razonable grandor y
+                  a otro la casa de su cabildo y cárcel y a otro las de los más
+                  principales y tras esto pos sus calles se pongan los demás
+                  solares [...]”. Tomás López Medel, 1559
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Explore modal -->
+      <div id="myModale3" class="modal piezas fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content modal-dato">
+            <div class="modal-header">
+              <h6 class="modal-title"></h6>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="_fuente">
+                <div class="modal-explore-title">cercado del viejo cacique</div>
+                <div class="modal-explore-explain">
+                  A la llegada de los españoles, los muiscas estaban organizados
+                  en sociedades agrícolas con varios niveles de jerarquía
+                  política y sus líderes residían en unos lugares ceremoniosos
+                  cercados por troncos de madera que decoraban con pinturas en
+                  tela de algodón de diversos colores y estilos.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Explore modal -->
+      <div id="myModale4" class="modal piezas fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content modal-pintura">
+            <div class="modal-header">
+              <h6 class="modal-title"></h6>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="_fuente">
+                <div class="modal-explore-title">
+                  Figura votiva en orfebrería (Muisca)
+                </div>
+                <div class="modal-explore-explain">
+                  <img src="/assets/img/exp-2.jpg" />
+                  <p class="piedefoto centro">
+                    Figura votiva en orfebrería. Cordillera Oriental - Muisca.
+                    Fecha: 600/1600. Cortesía del Museo del Oro (Bogotá).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Explore modal -->
+      <div id="myModale5" class="modal piezas fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content modal-dato">
+            <div class="modal-header">
+              <h6 class="modal-title"></h6>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="_fuente">
+                <div class="modal-explore-title">ciudad de Santafé</div>
+                <div class="modal-explore-explain">
+                  Este mapa-pintura representa la Sabana de Bogotá, una
+                  altiplanicie en la cordillera oriental de los Andes donde hoy
+                  es Colombia. A comienzos del siglo XVI, la Sabana estaba
+                  ocupada por indígenas Muiscas, de la familia lingüística
+                  Chibcha. Una expedición española liderada por Gonzalo Jiménez
+                  de Quesada llegó a este lugar en 1536. Desde esos años la
+                  ciudad de Bogotá se convirtió en la base de operaciones del
+                  imperio español en la zona y en 1549 la nombrarían como sede
+                  de la Audiencia de Santafé.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Explore modal -->
+      <div id="myModale6" class="modal piezas fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content modal-dato">
+            <div class="modal-header">
+              <h6 class="modal-title"></h6>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="_fuente">
+                <div class="modal-explore-title">
+                  Francisco maldonado y mendoza
+                </div>
+                <div class="modal-explore-explain">
+                  Don Francisco Maldonado y Mendoza nació en España en 1551 y
+                  llegó a Santafé de Bogotá en 1583. En 1586 se casó con
+                  Jerónima de Orrego, la hija y única heredera del conquistador
+                  Alonso de Olalla. Desde ese año, Maldonado comenzó a comprar
+                  estancias en la Sabana de Bogotá y a recibir tierras que le
+                  otorgó la Corona española. Para mediados de 1590, Maldonado
+                  contaba con una de las haciendas ganaderas más ricas del Nuevo
+                  Reino de Granada. Esto se evidencia en la pintura, a través de
+                  los dibujos y etiquetas de distintos lugares de la hacienda:
+                  molino de Don Francisco, novillero de Don Francisco, estancia
+                  de Don Francisco, etc. Sus herederos mantuvieron el poder y la
+                  riqueza durante más de dos siglos.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Explore modal -->
+      <div id="myModale7" class="modal piezas fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content modal-pintura">
+            <div class="modal-header">
+              <h6 class="modal-title"></h6>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="_fuente">
+                <div class="modal-explore-title">
+                  Francisco Maldonado de Mendoza
+                </div>
+                <div class="modal-explore-explain">
+                  <img src="/assets/img/exp-3.jpg" />
+                  <p class="piedefoto centro">
+                    Francisco Maldonado de Mendoza. Anónimo, siglo XVIII.
+                    Cortesía del Museo Colonial, Bogotá.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Explore modal -->
+      <div id="myModale8" class="modal piezas fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content modal-dato">
+            <div class="modal-header">
+              <h6 class="modal-title"></h6>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="_fuente">
+                <div class="modal-explore-title">litigio por las tierras</div>
+                <div class="modal-explore-explain">
+                  En el año de 1603, Francisco Maldonado y Mendoza fue acusado
+                  de haber estafado a la monarquía por comprar unos terrenos muy
+                  extensos y fértiles a un precio muy bajo, lo cual dio inicio a
+                  un largo litigio. El propósito de la pintura consistió en
+                  demostrar si esto era cierto, o si por el contrario Maldonado
+                  tenía la razón al afirmar que se trataba de un pantano
+                  improductivo. Anotaciones como “pantano ynutil” y “tierra
+                  anegadiza” fueron fundamentales en el curso del juicio, pues
+                  Maldonado salió victorioso y su derecho sobre estos terrenos
+                  fue ratificado.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Explore modal -->
+      <div id="myModale9" class="modal piezas fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content modal-dato">
+            <div class="modal-header">
+              <h6 class="modal-title"></h6>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="_fuente">
+                <div class="modal-explore-title">pueblo de Bogotá</div>
+                <div class="modal-explore-explain">
+                  A pesar de que por mucho tiempo se conoció a la capital de
+                  Colombia como Santafé de Bogotá, en la pintura aparecen dos
+                  lugares diferenciados: el “pueblo de Bogotá” (hoy pueblo de
+                  Funza) y la ciudad de “Santa Fe” (hoy Santafé de Bogotá). Esto
+                  se explica porque la creación de pueblos era parte de unas
+                  medidas que buscaban crear dos repúblicas separadas
+                  espacialmente y con responsabilidades legales distintas: una
+                  de indios que vivieran en pueblos y una de españoles que
+                  residieran en ciudades. En la práctica la división entre las
+                  dos repúblicas no fue posible pues los pueblos eran lugares
+                  con una gran actividad económica que incluía a españoles y
+                  mestizos, al tiempo en las ciudades vivían muchos indígenas.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Explore modal -->
+      <div id="myModale10" class="modal piezas fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content modal-fuente">
+            <div class="modal-header">
+              <h6 class="modal-title"></h6>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="_fuente">
+                <div class="modal-explore-title">reclamos de indígena</div>
+                <div class="modal-explore-explain">
+                  “[...] aquí venimos ante vuestra merced a dar declaración [de]
+                  los trabajos y aniquilaciones que pasamos con nuestro pueblo
+                  que es en forma de daños de nuestra cementera. Está un vecino
+                  que es Agustín Vela con más de doscientas mulas y caballos,
+                  ganado vacuno y burros entre nuestro resguardo. Antes de
+                  recoger nuestra pobreza que es trigo y maíz y cebada y turmas
+                  hace entrar mulas mansas y zorreras [y] nos destruye [nuestras
+                  cosechas] teniendo muchas tierras [...] sino maliciosamente y
+                  por engordar sus mulas con nuestro grano [...].” Indígenas de
+                  Turmequé, 1672.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Explore modal -->
+      <div id="myModale11" class="modal piezas fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content modal-dato">
+            <div class="modal-header">
+              <h6 class="modal-title"></h6>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="_fuente">
+                <div class="modal-explore-title">ganado en américa</div>
+                <div class="modal-explore-explain">
+                  A lo largo del mundo antiguo y la edad media, en España se
+                  consolidó una cultura ganadera centrada en la cría de vacas,
+                  ovejas, cabras y cerdos. Esta se apoyaba en la utilización de
+                  caballos y perros para el control del ganado que se mantenía
+                  disperso. Al ser introducidos a América, estos animales
+                  florecieron y se adaptaron fácilmente a un entorno en que no
+                  contaban con muchos depredadores naturales. Al mismo tiempo,
+                  en el Nuevo Mundo se propagaron otras especies menos deseadas,
+                  como la rata noruega, que llegó en los barcos de los colonos.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Explore modal -->
+      <div id="myModale12" class="modal piezas fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content modal-dato">
+            <div class="modal-header">
+              <h6 class="modal-title"></h6>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="_fuente">
+                <div class="modal-explore-title">porquera del cacique</div>
+                <div class="modal-explore-explain">
+                  Las sociedades nativas del Nuevo Mundo contaban con varios
+                  animales domesticados, como los perros, el pavo y el pato. En
+                  los Andes peruanos y bolivianos se practicaba la ganadería a
+                  partir de camélidos, como las llamas y las alpacas, utilizados
+                  como animales de carga y fuente de lana. La inclusión en el
+                  mapa de la porquera (donde se conservaban los cerdos) y la
+                  estancia de ganado (donde pastaban las vacas) del cacique
+                  demuestra que los indígenas incorporaron los animales traídos
+                  de Europa en sus actividades económicas. Este fue el caso
+                  también de la gallina y de la oveja, cuya lana comenzaron a
+                  utilizar como reemplazo del algodón para tejer unas mantas más
+                  económicas.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Explore modal -->
+      <div id="myModale13" class="modal piezas fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content modal-dato">
+            <div class="modal-header">
+              <h6 class="modal-title"></h6>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="_fuente">
+                <div class="modal-explore-title">despojo de la tierra</div>
+                <div class="modal-explore-explain">
+                  En comparación con las extensas tierras ganaderas de la
+                  hacienda del español Francisco Maldonado y Mendoza, la tierra
+                  de labranza o cultivo de los indígenas se puede ver
+                  dramáticamente disminuida en la pintura. En este sentido, este
+                  documento es fundamentalmente un mapa del despojo de la tierra
+                  y de la transformación de los paisajes agrícolas y de las
+                  sociedades indígenas.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Explore modal -->
+      <div id="myModale14" class="modal piezas fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content modal-dato">
+            <div class="modal-header">
+              <h6 class="modal-title"></h6>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="_fuente">
+                <div class="modal-explore-title">pastos africanos</div>
+                <div class="modal-explore-explain">
+                  Tras la introducción de ganado en la Sabana de Bogotá, el
+                  paisaje fue modificado según los intereses ganaderos del
+                  momento. Por esta razón, los pastos representados en la
+                  pintura posiblemente no son los mismos que cubren la Sabana
+                  hoy en día. Desde el siglo XVIII los ganaderos impulsaron la
+                  importación de pastos africanos que producían mejores
+                  rendimientos para la ganadería. No obstante, la llegada de
+                  pastos africanos al Nuevo Mundo se puede rastrear desde antes,
+                  cuando se usaba para construir las camas en los barcos
+                  utilizados para el tráfico de esclavos.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Explore modal -->
+      <div id="myModale15" class="modal piezas fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content modal-pintura">
+            <div class="modal-header">
+              <h6 class="modal-title"></h6>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="_fuente">
+                <div class="modal-explore-title">
+                  Foto aérea de un camellón (1956)
+                </div>
+                <div class="modal-explore-explain">
+                  <img src="/assets/img/exp-4.jpg" />
+                  <p class="piedefoto centro">
+                    Vuelo C-778, Foto 869. Lugar y fecha de creación: Bogotá,
+                    1956. Recuperada de: Instituto Geográfico Agustín Codazzi,
+                    Bogotá.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Explore modal -->
+      <div id="myModale16" class="modal piezas fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content modal-dato">
+            <div class="modal-header">
+              <h6 class="modal-title"></h6>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="_fuente">
+                <div class="modal-explore-title">sistema de camellones</div>
+                <div class="modal-explore-explain">
+                  Antes de la llegada de los españoles y la introducción de sus
+                  formas de cultivo y ganado, los muiscas que habitaban la
+                  región organizaban y aprovechaban las fuentes hídricas
+                  mediante el sistema de camellones. Dicho sistema consistía en
+                  plataformas elevadas que servían como terrazas de cultivo, las
+                  cuales a su vez estaban atravesadas por diques. Estos últimos
+                  proporcionaban grandes beneficios: por un lado, facilitaban el
+                  drenaje del agua excedente, permitiendo que el suelo elevado
+                  se pudiera utilizar para los cultivos. Por otro lado, los
+                  diques servían como canales de pesca.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Explore modal -->
+      <div id="myModale17" class="modal piezas fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content modal-dato">
+            <div class="modal-header">
+              <h6 class="modal-title"></h6>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="_fuente">
+                <div class="modal-explore-title">los colores del mapa</div>
+                <div class="modal-explore-explain">
+                  Aunque no conocemos el origen de los colores utilizados en el
+                  mapa, la producción de los colores era un proceso complejo en
+                  que se tomaban elementos vegetales y animales y se
+                  transformaban en tintas a través de procesos ricos en
+                  significados culturales. Tenemos evidencias de que los Muiscas
+                  y otros grupos nativos utilizaban una rica paleta de tintas
+                  azules, rojas y marrones que aplicaban a sus diseños en
+                  textiles, rocas y otras superficies. Por ello, es posible que
+                  algunas de las tintas utilizadas en la Pintura fueran
+                  indígenas.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Explore modal -->
+      <div id="myModale18" class="modal piezas fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content modal-dato">
+            <div class="modal-header">
+              <h6 class="modal-title"></h6>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="_fuente">
+                <div class="modal-explore-title">la escala del mapa</div>
+                <div class="modal-explore-explain">
+                  A diferencia de los mapas contemporáneos, cuya precisión
+                  consiste en mantener una escala única en toda la imagen, la
+                  Pintura utiliza una escala múltiple, flexible y variable. El
+                  centro del mapa—que representa el territorio en disputa entre
+                  Maldonado y el fiscal—cuenta con una escala más precisa
+                  mientras que los bordes son más variables, ubicando al
+                  observador con respecto a referentes más lejanos como la
+                  ciudad de Santafé y los pueblos de Fontibón o Madrid.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Explore modal -->
+      <div id="myModale19" class="modal piezas fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content modal-dato">
+            <div class="modal-header">
+              <h6 class="modal-title"></h6>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="_fuente">
+                <div class="modal-explore-title">camino como camellón</div>
+                <div class="modal-explore-explain">
+                  El mapa identifica al camino como “camellón”. Este detalle
+                  recuerda que muchos caminos indígenas y coloniales en la
+                  Sabana eran plataformas elevadas para mantenerse secas en
+                  temporadas de lluvias. Aún hoy se le dice “camellones” a
+                  muchos caminos y carreteras en la Sabana.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Explore modal -->
+      <div id="myModale20" class="modal piezas fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content modal-pintura">
+            <div class="modal-header">
+              <h6 class="modal-title"></h6>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="_fuente">
+                <div class="modal-explore-title">Pueblo de Guasca</div>
+                <div class="modal-explore-explain">
+                  <img src="/assets/img/exp-6.jpg" />
+                  <p class="piedefoto centro">
+                    Pueblo de Guasca elaborado por Fray Manuel Félix de Velasco,
+                    1758. Cortesía del Archivo General de la Nación, Bogotá.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Explore modal -->
+      <div id="myModale21" class="modal piezas fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content modal-dato">
+            <div class="modal-header">
+              <h6 class="modal-title"></h6>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="_fuente">
+                <div class="modal-explore-title">pueblos para indios</div>
+                <div class="modal-explore-explain">
+                  Los pueblos que se retratan en el mapa como “Fontibón” o “La
+                  Serrezuela” se construyeron como parte de un proyecto puesto
+                  en marcha por el imperio español que buscaba que los indios
+                  vivieran vidas católicas y “olvidaran sus antiguos ritos y
+                  ceremonias”. Así, los indígenas eran forzados a abandonar sus
+                  espacios vitales para ubicarse en otros asentamientos que
+                  estuvieran organizados en torno a una plaza central, fueran
+                  trazados en forma de cuadrícula y tuvieran una iglesia. A este
+                  proceso se le conocía como “reducción” de indios.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Explore modal -->
+      <div id="myModale22" class="modal piezas fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content modal-pintura">
+            <div class="modal-header">
+              <h6 class="modal-title"></h6>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="_fuente">
+                <div class="modal-explore-title">Pueblo de Suta</div>
+                <div class="modal-explore-explain">
+                  <img src="/assets/img/exp-5.jpg" />
+                  <p class="piedefoto centro">
+                    Pueblo de Suta, 1803. Cortesía del Archivo General de la
+                    Nación, Bogotá.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Explore modal -->
+      <div id="myModale23" class="modal piezas fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content modal-fuente">
+            <div class="modal-header">
+              <h6 class="modal-title"></h6>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="_fuente">
+                <div class="modal-explore-title">indios en la ciudad</div>
+                <div class="modal-explore-explain">
+                  <img src="/assets/img/exp-5.jpg" />
+                  <p class="piedefoto centro">
+                    “Habiendo entendido las desórdenes y excesos que ha habido
+                    en esta ciudad de Santa Fe sobre que los indios e indias
+                    ladinos mulatos y mulatas que en ella viven no estén con
+                    amos a quien sirvan y por esta razón andan ociosos y
+                    vagabundos de que resulta de ordinario en grandes daños e
+                    inconvenientes [...] y queriendo proveer acerca de esto lo
+                    que más a propósito pareciere convenir de su remedio de
+                    manera que cesasen las dichas desórdenes [...] por ahora
+                    nombraba y nombro señor administrador de los dichos indios y
+                    mulatos [...]”. Instrucciones para el Administrador de
+                    Indios de Santa Fe, 1594.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Inicio Footer -->
+      <div class="accordion bottom" id="accordionExample">
+        <div class="card foot-menu">
+          <div
+            id="collapseOne"
+            class="collapse"
+            aria-labelledby="headingOne"
+            data-parent="#accordionExample"
+          >
+            <div class="card-body">
+              <div class="row footer-list">
+                <div class="col-12 foot-right">
+                  <div class="foot-capitulos">
+                    <a href="/historia.html" class="foot-link principal"
+                      >Historia de un mapa</a
+                    ><br />
+                    <div class="row">
+                      <div class="col-md-3 col-12 col-foot">
+                        <a
+                          href="/historia.html#capitulo1"
+                          class="foot-link secundario capitulos"
+                          ><img
+                            class="foot-icon"
+                            src="/assets/img/cap1.png"
+                          /><span class="foot-title-cap">
+                            Cap. 1: Una pintura de la Sabana</span
+                          ></a
+                        ><br />
+                        <a href="/historia.html#1-1" class="foot-link terciario"
+                          >¿Para qué se dibujó este mapa?</a
+                        ><br />
+                        <a href="/historia.html#1-2" class="foot-link terciario"
+                          >¿Dónde es el mapa?</a
+                        ><br />
+                        <a href="/historia.html#1-3" class="foot-link terciario"
+                          >¿Es un mapa o una pintura?</a
+                        ><br />
+                        <a href="/historia.html#1-4" class="foot-link terciario"
+                          >¿Quiénes eran los dueños de este terreno?</a
+                        ><br />
+                      </div>
+
+                      <div class="col-md-3 col-12 col-foot">
+                        <a
+                          href="/historia.html#capitulo2"
+                          class="foot-link secundario capitulos"
+                          ><img class="foot-icon" src="/assets/img/cap2.png" />
+                          <span class="foot-title-cap">
+                            Cap. 2: Pueblos para los indios</span
+                          ></a
+                        ><br />
+                        <a href="/historia.html#2-1" class="foot-link terciario"
+                          >¿Por qué se llamó “indios” a los muiscas?</a
+                        ><br />
+                        <a href="/historia.html#2-2" class="foot-link terciario"
+                          >¿Por qué se ven pueblos en el mapa?</a
+                        ><br />
+                        <a href="/historia.html#2-3" class="foot-link terciario"
+                          >¿Desde cuándo existen pueblos en la sabana?</a
+                        ><br />
+                        <a href="/historia.html#2-4" class="foot-link terciario"
+                          >¿Cómo vivían los Muiscas antes de la llegada de los
+                          españoles?</a
+                        ><br />
+                        <a href="/historia.html#2-5" class="foot-link terciario"
+                          >¿Por qué salen en el mapa un sitio que se llama
+                          Bogotá y otro que se llama Santa Fe?</a
+                        ><br />
+                      </div>
+
+                      <div class="col-md-3 col-12 col-foot">
+                        <a
+                          href="/historia.html#capitulo3"
+                          class="foot-link secundario capitulos"
+                          ><img
+                            class="foot-icon"
+                            src="/assets/img/cap3.png"
+                          /><span class="foot-title-cap">
+                            Cap. 3: De terrazas a pastizales</span
+                          ></a
+                        ><br />
+                        <a href="/historia.html#3-1" class="foot-link terciario"
+                          >¿Había cerdos, vacas, gallinas y burros en la sabana
+                          de Bogotá antes de que llegaran los españoles?</a
+                        ><br />
+                        <a href="/historia.html#3-2" class="foot-link terciario"
+                          >¿Cómo cultivaban los Muiscas en la Sabana de
+                          Bogotá?</a
+                        ><br />
+                        <a href="/historia.html#3-3" class="foot-link terciario"
+                          >¿La llegada de ganado afectó la agricultura indígena? </a
+                        ><br />
+                      </div>
+
+                      <div class="col-md-3 col-12 col-foot">
+                        <a
+                          href="/historia.html#capitulo4"
+                          class="foot-link secundario capitulos"
+                          ><img
+                            class="foot-icon"
+                            src="/assets/img/cap-4.png"
+                          /><span class="foot-title-cap">
+                            Cap. 4: Un paisaje dividido</span
+                          ></a
+                        ><br />
+                        <a href="/historia.html#4-1" class="foot-link terciario"
+                          >¿Qué eran los resguardos?</a
+                        ><br />
+                        <a href="/historia.html#4-2" class="foot-link terciario"
+                          >¿Podían los indígenas trabajar donde querían?</a
+                        ><br />
+                        <a href="/historia.html#4-3" class="foot-link terciario"
+                          >¿Por qué es éste un paisaje dividido?</a
+                        ><br />
+                        <a href="/historia.html#4-4" class="foot-link terciario"
+                          >¿Qué pasó con los pueblos y los resguardos?</a
+                        ><br />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 foot-right">
+                  <div class="row foot-explorar">
+                    <div class="col-md-3 col-12 foot-margin">
+                      <a href="/explora.html" class="foot-link principal"
+                        >Explorar</a
+                      ><br />
+                      <div class="row">
+                        <div class="col-6">
+                          <a href="/explora.html" class="foot-link terciario"
+                            >Descubrir</a
+                          ><br />
+                          <a href="/explora.html" class="foot-link terciario"
+                            >Ubicación actual</a
+                          ><br />
+                        </div>
+                        <div class="col-6">
+                          <!---<a href="#" class="foot-link terciario">Lupa</a><br />--->
+                          <a href="/explora.html" class="foot-link terciario"
+                            >Imagen satelital</a
+                          ><br />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-12 foot-margin">
+                      <a
+                        href="/coleccion.html"
+                        class="foot-link principal explorar"
+                        >Coleccion de fuentes</a
+                      ><br />
+                    </div>
+
+                    <div class="col-md-3 col-12 foot-margin">
+                      <a
+                        href="/profesores.html"
+                        class="foot-link principal explorar"
+                        >Para profesores</a
+                      ><br />
+                    </div>
+
+                    <div class="col-md-3 col-12 foot-margin">
+                      <a
+                        href="/acerca.html"
+                        class="foot-link principal explorar"
+                        >Acerca de este proyecto</a
+                      ><br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-header" id="headingOne">
+            <button
+              class="btn btn-link btn-block text-left"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              <svg
+                width="2em"
+                height="2em"
+                viewBox="0 0 16 16"
+                class="bi bi-chevron-compact-up text-triangle"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.776 5.553a.5.5 0 0 1 .448 0l6 3a.5.5 0 1 1-.448.894L8 6.56 2.224 9.447a.5.5 0 1 1-.448-.894l6-3z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Fin footer --->
     </div>
-  </div>
-<!-- Fin footer --->
+    <script src="/assets/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/popper.js/dist/umd/popper.min.js"></script>
+    <script src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/assets/js/scroll-handler.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var accordionBtn = document.querySelector(
+          "#headingOne button[data-toggle='collapse']"
+        );
+        var triangle = accordionBtn
+          ? accordionBtn.querySelector(".text-triangle")
+          : null;
 
+        if (!accordionBtn || !triangle) return;
 
-</div>
-<script src="/assets/jquery/dist/jquery.min.js"></script>
-<script src="/assets/popper.js/dist/umd/popper.min.js"></script>
-<script src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="/assets/js/scroll-handler.js"></script>
+        // Bootstrap dispara 'shown.bs.collapse' y 'hidden.bs.collapse'
+        var collapse = document.getElementById("collapseOne");
 
-<!---
-  <script>
-    ScrollTrigger.create({
-      snap:[0, 0.1, 0.5, 0.8, 1] // snap whole page to the closest section!
-    });
-  </script>-->
-<!-- <script>
-  $(".carousel").carousel({
-    interval: false,
-  });
-</script> -->
-<script>
-  $(document).on("click", "[data-toggle='modal']", function () {
-    $(".modal-backdrop").eq(0).css({
-      display: "none",
-    });
+        collapse.addEventListener("shown.bs.collapse", function () {
+          triangle.classList.add("open"); // panel ABIERTO → flecha abajo
+        });
 
-    // if more than 1 modal openned.
-    if ($(".modal-backdrop").length > 1) {
-      // move backdrop up (in z)
-      var ZindexBackdrop =
-        parseInt($(".modal-backdrop").eq(0).css("z-index")) + 20;
-      console.log("Backdrop z-index: " + ZindexBackdrop);
-      $(".modal-backdrop").eq(1).css({
-        "z-index": ZindexBackdrop,
+        collapse.addEventListener("hidden.bs.collapse", function () {
+          triangle.classList.remove("open"); // panel CERRADO → flecha arriba
+        });
       });
-
-      // move modal up (in z)
-      var ZindexModal = parseInt($(".modal").eq(0).css("z-index")) + 20;
-      console.log("Modal z-index: " + ZindexModal);
-      $(".modal").eq(1).css({
-        "z-index": ZindexModal,
-      });
-    }
-  });
-</script>
-
-</body>
-
+    </script>
+  </body>
 </html>

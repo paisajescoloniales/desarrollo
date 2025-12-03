@@ -594,33 +594,31 @@
     <script src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/assets/js/scroll-handler.js"></script>
 
-    <!---
-  <script>
-    ScrollTrigger.create({
-      snap:[0, 0.1, 0.5, 0.8, 1] // snap whole page to the closest section!
-    });
-  </script>-->
-    <!-- <script>
-  $(".carousel").carousel({
-    interval: false,
-  });
-</script> -->
     <!-- Gallery filtering and modal handling -->
     <script src="/assets/js/gallery.js"></script>
     <script src="/assets/js/modals.js"></script>
-  </body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var accordionBtn = document.querySelector(
+          "#headingOne button[data-toggle='collapse']"
+        );
+        var triangle = accordionBtn
+          ? accordionBtn.querySelector(".text-triangle")
+          : null;
 
-  <!-- <script
-    type="text/javascript"
-    async
-    defer
-    src="assets/bootstrap/bootstrap.min.js"
-  ></script>
-  <script
-    type="text/javascript"
-    async
-    defer
-    src="assets/popper.js/dist/umd/popper.min.js"
-  ></script>
-  <script src="/assets/js/scroll-handler.js"></script> -->
+        if (!accordionBtn || !triangle) return;
+
+        // Bootstrap dispara 'shown.bs.collapse' y 'hidden.bs.collapse'
+        var collapse = document.getElementById("collapseOne");
+
+        collapse.addEventListener("shown.bs.collapse", function () {
+          triangle.classList.add("open"); // panel ABIERTO → flecha abajo
+        });
+
+        collapse.addEventListener("hidden.bs.collapse", function () {
+          triangle.classList.remove("open"); // panel CERRADO → flecha arriba
+        });
+      });
+    </script>
+  </body>
 </html>
